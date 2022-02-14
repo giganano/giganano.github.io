@@ -17,6 +17,7 @@ const navbar = document.getElementById("navigation");
 const navdivs = [
 	document.getElementById("home"),
 	document.getElementById("research"),
+	document.getElementById("collabs"),
 	document.getElementById("comptools"),
 	document.getElementById("teaching"),
 	document.getElementById("outreach"),
