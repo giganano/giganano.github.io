@@ -222,10 +222,20 @@ header.hero {
 }
 
 .use-background-image {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+}
+
+/* Mobile browsers force fixed background anyway, so retain good formatting */
+@media (max-width: 1024px) {
+	.use-background-image {
+		background-attachment: scroll;
+	}
 }
 
 .section-title {
