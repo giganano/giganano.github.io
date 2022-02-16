@@ -5,59 +5,107 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script
+		src="https://kit.fontawesome.com/26ad8e3311.js"
+		crossorigin="anonymous"></script>
+
 	<title>James W. Johnson</title>
 </head>
 
 <body id="page-top">
 
+	<div id="home"></div>
+
+	<!-- ===== Mobile Menu ===== -->
+	<div class="mobile-nav">
+		<nav id="mobile-navigation">
+			<a href="#" class="navbar-brand">James W. Johnson</a>
+			<button class="toggle-collapse">
+				<i class="fa-solid fa-align-center fa-xl"></i>
+			</button>
+			<div class="navbar-collapse">
+				<ul class="navbar-nav">
+					<li><a href="#" class="nav-item focus">
+						Home
+					</a></li>
+					<li><a href="#research" class="nav-item dormant">
+						Research
+					</a></li>
+					<li><a href="#talks" class="nav-item dormant">
+						Talks
+					</a></li>
+					<li><a href="#collabs" class="nav-item dormant">
+						Collaborators
+					</a></li>
+					<li><a href="#comptools" class="nav-item dormant">
+						Computational Tools
+					</a></li>
+						<li><a href="#teaching" class="nav-item dormant">
+						Teaching
+					</a></li>
+					<li><a href="#outreach" class="nav-item dormant">
+						Outreach
+					</a></li>
+					<li><a href="#bio" class="nav-item dormant">
+						Bio
+					</a></li>
+					<li><a href="#contact" class="nav-item dormant">
+						Contact
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
 	<!-- ===== Webpage Home ===== -->
-	<div id="home">
+	<div id="header-top">
 		<header class="hero">
 			<!-- last image in cycle on top -->
-			<!-- <img src="./images/cosmic_web.jpeg" class="bg"> -->
 			<img src="./images/startrails.jpeg" class="bg">
 			<img src="./images/tidaltail.jpeg" class="bg">
 			<img src="./images/gemininorth.jpeg" class="bg">
 				<h1 class="page-header">James W. Johnson</h1>
-				<span class="divider center"></span>
+				<span class="divider center shadow"></span>
 				<h2 class="page-subheader">
-					Astrophysicist | Ohio State Presidential Fellow
+					Astrophysicist | Presidential Fellow | Software Developer
 				</h2>
 		</header>
 	</div>
 
 	<!-- ===== Navigation Bar ===== -->
-	<nav id="navigation" class="navbar navbar-fixed-top">
-		<!-- <ul> -->
-			<li><a href="#home" class="nav-item focus">
-				Home
-			</a></li>
-			<li><a href="#research" class="nav-item dormant">
-				Research
-			</a></li>
-			<li><a href="#talks" class="nav-item dormant">
-				Talks
-			</a></li>
-			<li><a href="#collabs" class="nav-item dormant">
-				Collaborators
-			</a></li>
-			<li><a href="#comptools" class="nav-item dormant">
-				Computational Tools
-			</a></li>
-			<li><a href="#teaching" class="nav-item dormant">
-				Teaching
-			</a></li>
-			<li><a href="#outreach" class="nav-item dormant">
-				Outreach
-			</a></li>
-			<li><a href="#bio" class="nav-item dormant">
-				Bio
-			</a></li>
-			<li><a href="#contact" class="nav-item dormant">
-				Contact
-			</a></li>
-		<!-- </ul> -->
-	</nav>
+	<div class="navbar">
+		<nav id="navigation">
+			<ul>
+				<li><a href="#" class="nav-item focus">
+					Home
+				</a></li>
+				<li><a href="#research" class="nav-item dormant">
+					Research
+				</a></li>
+				<li><a href="#talks" class="nav-item dormant">
+					Talks
+				</a></li>
+				<li><a href="#collabs" class="nav-item dormant">
+					Collaborators
+				</a></li>
+				<li><a href="#comptools" class="nav-item dormant">
+					Computational Tools
+				</a></li>
+				<li><a href="#teaching" class="nav-item dormant">
+					Teaching
+				</a></li>
+				<li><a href="#outreach" class="nav-item dormant">
+					Outreach
+				</a></li>
+				<li><a href="#bio" class="nav-item dormant">
+					Bio
+				</a></li>
+				<li><a href="#contact" class="nav-item dormant">
+					Contact
+				</a></li>
+			</ul>
+		</nav>
+	</div>
 
 	<!-- ===== Research ===== -->
 	<div id="research">
@@ -170,8 +218,8 @@
 			<div>
 				<img
 					src="./images/jajohnson_periodic_table.png"
-					width="40%"
-					height="28%"
+					width="50%"
+					height="35%"
 				>
 			</div>
 			<p class="section-content">
@@ -907,11 +955,18 @@
 			target="_blank">image 4</a> -->
 	</footer>
 
-	<script type="text/javascript" 
-	src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<!-- ===== javascripts ===== -->
+	<script
+		type="text/javascript" 
+		src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
 
 	<script src="./js/counter.js"></script>
 	<script src="./js/navbar_focus.js"></script>
+	<script src="./js/navbar_collapse.js"></script>
 
 </body>
 

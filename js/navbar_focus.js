@@ -8,14 +8,16 @@
  * Globals
  * -------
  * navbar : The navigation bar from the calling HTML script.
+ * mobileNavbar : The same as navbar but for mobile screens.
  * navdivs : The div items in the calling script that have sections represented
  * 		on the navigation bar.
  * focus, dormant : The strings to swap in and out of navbar.innerHTML when
  * 		different sections come in and out of view.
  */
 const navbar = document.getElementById("navigation");
+const mobileNavbar = document.getElementById("mobile-navigation");
 const navdivs = [
-	document.getElementById("home"),
+	document.getElementById("header-top"),
 	document.getElementById("research"),
 	document.getElementById("talks"),
 	document.getElementById("collabs"),
@@ -27,43 +29,71 @@ const navdivs = [
 ]
 const focus = "focus\">"
 const dormant = "dormant\">"
-cycleNavbar();
+cycleNavbars();
 
 
 /*
  * Continually monitors the navbar and cycles elements in and out of the
  * "focus" state as the user scrolls up and down the page.
  */
-function cycleNavbar() {
+function cycleNavbars() {
 
 	updateNavbar();
-	setTimeout(cycleNavbar, 100);
+	updateMobileNavbar();
+	setTimeout(cycleNavbars, 100);
 
 }
 
 
 /* 
- * Updates the navbar's innerHTML. If the resultant HTML is the same as the
- * current HTML, it does nothing.
+ * Toggles the link classes between "focus" and "dormant" based on which
+ * section of the webpage is currently occupying the largest screen fraction.
+ * Carries out this functionality for the full webpage (i.e. not mobile).
  */
 function updateNavbar() {
 
-	var navbarElements = navbar.innerHTML.split(/(\s+)/);
 	var divIndex = biggestDivOnScreen();
-	var occurrence = 0;
-	for (var i = 0; i < navbarElements.length; i++) {
-		if (navbarElements[i] === focus || navbarElements[i] === dormant) {
-			if (occurrence === divIndex) {
-				navbarElements[i] = focus;
-			} else {
-				navbarElements[i] = dormant;
-			}
-			occurrence++;
-		}
+	var current = -1;
+	for (var i = 0; i < navbar.childNodes[1].children.length; i++) {
+		if (navbar.childNodes[1].children[i].children[0].classList.contains(
+			"focus")) current = i;
 	}
 
-	let newHTML = navbarElements.join('');
-	if (navbar.innerHTML != newHTML) navbar.innerHTML = navbarElements.join('');
+	if (current >= 0 && current != divIndex) {
+		let newChild = navbar.children[0].children[divIndex].children[0];
+		let oldChild = navbar.children[0].children[current].children[0];
+		newChild.classList.toggle("dormant");
+		newChild.classList.toggle("focus");
+		oldChild.classList.toggle("dormant");
+		oldChild.classList.toggle("focus");
+	} else {}
+
+
+}
+
+
+/*
+ * Performs the exact same function as updateNavbar, but for the mobile version
+ * of the webpage.
+ */
+function updateMobileNavbar() {
+
+	var divIndex = biggestDivOnScreen();
+	var current = -1;
+	for (var i = 0; i < mobileNavbar.children[2].children[0].children.length;
+		i++) {
+		let elem = mobileNavbar.children[2].children[0].children[i].children[0];
+		if (elem.classList.contains("focus")) current = i;
+	}
+
+	if (current >= 0 && current != divIndex) {
+		let newChild = mobileNavbar.children[2].children[0].children[divIndex];
+		let oldChild = mobileNavbar.children[2].children[0].children[current];
+		newChild.children[0].classList.toggle("dormant");
+		newChild.children[0].classList.toggle("focus");
+		oldChild.children[0].classList.toggle("dormant");
+		oldChild.children[0].classList.toggle("focus");
+	}
 
 }
 
