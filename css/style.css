@@ -204,6 +204,11 @@ header.hero {
 	height: 50px;
 	background-color: #171717;
 	border-bottom: 1px solid #282428;
+	/* mobile platform versions of position: sticky; */
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 9999;
@@ -244,6 +249,11 @@ header.hero {
 	height: 150px;
 	background-color: #171717;
 	border-bottom: 1px solid #282428;
+	/* mobile platform versions of position: sticky; */
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 9999;
