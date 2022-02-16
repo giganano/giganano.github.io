@@ -1,3 +1,12 @@
+/*
+ * CSS styling for the webpage. Website transitions to a mobile device viewing
+ * mode below a screen width of 1050 px. Changes to this value should be made
+ * across all media queries for this specific screen width.
+ */
+
+html, body {
+	height: 100%;
+}
 
 html {
 	display: table;
@@ -45,13 +54,19 @@ figcaption {
 	caption-side: bottom;
 	color: white;
 	font-size: 22px;
+	text-align: center;
+}
+
+@media (max-width: 1050px) {
+	figcaption {
+		font-size: 33px;
+	}
 }
 
 img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-right: 20px;
 }
 
 iframe {
@@ -71,6 +86,13 @@ iframe {
 	z-index: 0;
 }
 
+@media (max-width: 1050px) {
+	.custom-btn {
+		font-size: 32px;
+		padding: 12px 24px;
+	}
+}
+
 .page-header {
 	font-size: 75px;
 	padding-top: 10vh;
@@ -79,12 +101,26 @@ iframe {
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
+@media (max-width: 1050px) {
+	.page-header {
+		font-size: 100px;
+		padding-top: 50px;
+	}
+}
+
 .page-subheader {
 	font-size: 30px;
 	text-align: center;
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
+@media (max-width: 1050px) {
+	.page-subheader {
+		font-size: 35px;
+	}
+}
+
+/* Make sure header text still fits for particularly narrow screens */
 @media (max-width: 750px) {
 	.page-subheader {
 		font-size: 25px;
@@ -142,6 +178,12 @@ header.hero {
 	left: 0;
 }
 
+@media (max-width: 1050px) {
+	header.hero {
+		height: 500px;
+	}
+}
+
 .bg {
 	position: absolute;
 	z-index: -1;
@@ -160,6 +202,12 @@ header.hero {
 	animation-iteration-count: infinite;
 	animation-duration: 21s;
 	opacity: 1;
+}
+
+@media (max-width: 1050px) {
+	.bg {
+		height: 500px; /* must be same as header.hero */
+	}
 }
 
 @keyframes fade-in-out {
@@ -216,6 +264,13 @@ header.hero {
 	align-items: center;
 }
 
+/* Turn off desktop navbar for mobile screens */
+@media (max-width: 1050px) {
+	.navbar {
+		display: none;
+	}
+}
+
 .nav-item {
 	text-decoration: none;
 	display: inline;
@@ -223,6 +278,12 @@ header.hero {
 	margin-right: 15px;
 	font-size: 18px;
 	color: #a1a1a1;
+}
+
+@media (max-width: 1050px) {
+	.nav-item {
+		font-size: 54px;
+	}
 }
 
 .nav-item.focus {
@@ -260,7 +321,34 @@ header.hero {
 	vertical-align: middle;
 }
 
-.navbar-brand {
+/* Turn on for mobile screens */
+@media (max-width: 1050px) {
+	#mobile-nav {
+		display: block;
+	}
+}
+
+#mobile-nav .navbar-collapse .navbar-nav li {
+	list-style: none;
+	font-size: 25px;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav li a:hover {
+	color: white;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav .nav-item.focus {
+	color: #DD0000;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav .nav-item.dormant {
+	color: #a1a1a1;
+}
+
+#mobile-nav .navbar-brand {
 	float: left;
 	text-decoration: none;
 	display: inline;
@@ -286,9 +374,24 @@ header.hero {
 	cursor: pointer;
 }
 
-.toggle-collapse:hover {
+#mobile-nav .toggle-collapse:hover {
 	background-color: white;
 	color: #171717;
+}
+
+.navbar-collapse {
+	position: absolute;
+	top: 125px;
+	margin: 10px 10px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	height: 0vh;
+	transition: all 600ms ease;
+}
+
+.collapse {
+	height: 100vh;
 }
 
 .use-background-image {
@@ -301,72 +404,8 @@ header.hero {
 	background-attachment: fixed;
 }
 
+/* Mobile browsers force fixed background anyway, retain good formatting */
 @media (max-width: 1050px) {
-	header.hero {
-		height: 500px;
-	}
-
-	.page-header {
-		padding-top: 100px;
-	}
-
-	.bg {
-		height: 500px; /* must be same as header.hero */
-	}
-
-	.navbar {
-		display: none;
-	}
-
-	#mobile-nav {
-		display: block;
-	}
-
-	.nav-item {
-		font-size: 54px;
-	}
-
-	#mobile-nav .navbar-collapse .navbar-nav li {
-		list-style: none;
-		font-size: 25px;
-		display: block;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	#mobile-nav .navbar-collapse .navbar-nav li a:hover {
-		color: white;
-	}
-
-	#mobile-nav .navbar-collapse .navbar-nav .nav-item.focus {
-		color: #DD0000;
-	}
-
-	#mobile-nav .navbar-collapse .navbar-nav .nav-item.dormant {
-		color: #a1a1a1;
-	}
-
-	.navbar-collapse {
-		position: absolute;
-		top: 125px;
-		margin: 10px 10px;
-		width: 100%;
-		overflow: hidden;
-		text-align: center;
-		height: 0vh;
-		transition: all 600ms ease;
-	}
-
-	.collapse {
-		height: 100vh;
-	}
-
-	.custom-btn {
-		font-size: 32px;
-		padding: 12px 24px;
-	}
-
-	/* Mobile browsers force fixed background anyway, retain good formatting */
 	.use-background-image {
 		background-attachment: scroll;
 	}
@@ -382,13 +421,26 @@ header.hero {
 	letter-spacing: 1px;
 }
 
+@media (max-width: 1050px) {
+	.section-title {
+		font-size: 80px;
+	}
+}
+
 .section-subtitle {
 	color: #a1a1a1;
 	font-size: 22px;
 	text-align: center;
 }
 
+@media (max-width: 1050px) {
+	.section-subtitle {
+		font-size: 33px;
+	}
+}
+
 .section-content {
+	color: white;
 	font-size: 22px;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -396,6 +448,7 @@ header.hero {
 
 @media (max-width: 1050px) {
 	.section-content {
+		font-size: 33px;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -410,7 +463,15 @@ header.hero {
 	margin-right: 30%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
+	.quotation {
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 33px;
+	}
+}
+
+/*@media (max-width: 800px) {
 	.quotation {
 		margin-left: 20%;
 		margin-right: 20%;
@@ -422,7 +483,7 @@ header.hero {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
-}
+}*/
 
 .cv-pubs .container {
 	display: grid;
@@ -444,6 +505,12 @@ header.hero {
 	color: #DD0000;
 	justify-content: center;
 	text-align: center;
+}
+
+@media (max-width: 1050px) {
+	.counter-label {
+		font-size: 38px;
+	}
 }
 
 .counter {
@@ -471,6 +538,12 @@ header.hero {
 	justify-content: center;
 }
 
+.metrics .container div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+}
+
 @media (max-width: 1200px) {
 	.metrics .container {
 		grid-template-rows: repeat(2, 1fr);
@@ -489,6 +562,30 @@ header.hero {
 	.metrics .container {
 		grid-template-rows: repeat(6, 1fr);
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+#research-interests .jaj-periodic-table {
+	height: 35%;
+	width: 50%;
+}
+
+@media (max-width: 1050px) {
+	#research-interests .jaj-periodic-table {
+		height: 70%;
+		width: 100%;
+	}
+}
+
+#research-interests .asassn-logo {
+	height: 21%;
+	width: 30%;
+}
+
+@media (max-width: 1050px) {
+	#research-interests .asassn-logo {
+		height: 42%;
+		width: 60%;
 	}
 }
 
@@ -516,6 +613,8 @@ header.hero {
 .collaborators .container div {
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	max-width: 300px;
 }
 
@@ -578,12 +677,35 @@ header.hero {
 	font-size: 40px;
 }
 
-#teaching-content .container {
-	display: grid;
-	margin-left: 10%;
-	margin-right: 10%;
-	grid-gap: 0;
-	grid-template-columns: repeat(2, 1fr);
+#teaching-content .bootcamp-recording figure {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#teaching-content .bootcamp-recording .youtube-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
+	width: 60vw; /* aligns with a 20% margin */
+	justify-content: center;
+}
+
+#teaching-content .bootcamp-recording .youtube-wrapper iframe {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1050px) {
+	#teaching-content .bootcamp-recording .youtube-wrapper {
+		width: 100vw;
+	}
+
+	#teaching-content .bootcamp-recording figcaption {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 #bio-content .section-content {
@@ -604,8 +726,16 @@ header.hero {
 	color: white;
 }
 
-#contact .section-subtitle {
+/*.contact-line {
+	color: #a1a1a1;
+	font-size: 28px;
+	text-align: center;
+}*/
+
+#contact .contact-line {
 	color: white;
+	font-size: 28px;
+	text-align: center;
 }
 
 #contact .container {
@@ -618,12 +748,19 @@ header.hero {
 	height: 168px;
 }
 
+@media (max-width: 1050px) {
+	#contact .contact-line {
+		font-size: 42px;
+	}
+}
+
+/* Don't let contact info extend beyond section on short screens */
 @media (max-height: 800px) {
 	#contact .container img {
 		width: 105px;
 		height: 84px;
 	}
-	#contact .section-subtitle {
+	#contact .contact-line {
 		font-size: 18px;
 	}
 }
@@ -633,17 +770,55 @@ header.hero {
 		width: 52px;
 		height: 42px;
 	}
-	#contact .section-subtitle {
+	#contact .contact-line {
 		font-size: 14px;
 	}
 }
 
-.socials .container {
+footer .socials .container {
 	display: grid;
 	margin-left: 40%;
 	margin-right: 40%;
+	grid-column-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
+}
+
+footer .socials .container .twitter-logo {
+	height: 50px;
+	width: 50px;
+}
+
+footer .socials .container .github-logo {
+	height: 50px;
+	width: 50px;
+}
+
+footer .socials .container .facebook-logo {
+	height: 45px;
+	width: 45px;
+}
+
+@media (max-width: 1050px) {
+	footer .socials .container {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	footer .socials .container .twitter-logo {
+		height: 100px;
+		width: 100px;
+	}
+
+	footer .socials .container .github-logo {
+		height: 100px;
+		width: 100px;
+	}
+
+	footer .socials .container .facebook-logo {
+		height: 90px;
+		width: 90px;
+	}
 }
 
 .paper-title {
