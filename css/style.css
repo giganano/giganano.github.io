@@ -348,7 +348,7 @@ header.hero {
 
 	.navbar-collapse {
 		position: absolute;
-		top: 75px; /* half of the mobile-nav height */
+		top: 125px;
 		margin: 10px 10px;
 		width: 100%;
 		overflow: hidden;
