@@ -241,7 +241,7 @@ header.hero {
 	width: 100vw;
 	margin: 0;
 	border: 0;
-	height: 50px;
+	height: 150px;
 	background-color: #171717;
 	border-bottom: 1px solid #282428;
 	position: sticky;
@@ -254,8 +254,8 @@ header.hero {
 	float: left;
 	text-decoration: none;
 	display: inline;
-	font-size: 20px;
-	margin: 15px 10px;
+	font-size: 60px;
+	margin: 40px 40px;
 	color: white;
 }
 
@@ -267,9 +267,9 @@ header.hero {
 
 .mobile-nav .toggle-collapse {
 	float: right;
-	width: 45px;
-	height: 32px;
-	margin: 10px 10px;
+	width: 90px;
+	height: 64px;
+	margin: 40px 40px;
 	background-color: transparent;
 	color: white;
 	border: 1px solid white;
@@ -308,6 +308,10 @@ header.hero {
 		display: inline-block;
 	}
 
+	.nav-item {
+		font-size: 54px;
+	}
+
 	.mobile-nav .navbar-collapse .navbar-nav li {
 		list-style: none;
 		font-size: 25px;
@@ -330,7 +334,7 @@ header.hero {
 
 	.navbar-collapse {
 		position: absolute;
-		top: 25px; /* half of the mobile-nav height */
+		top: 75px; /* half of the mobile-nav height */
 		margin: 10px 10px;
 		width: 100%;
 		overflow: hidden;
@@ -341,6 +345,11 @@ header.hero {
 
 	.collapse {
 		height: 100vh;
+	}
+
+	.custom-btn {
+		font-size: 32px;
+		padding: 12px 24px;
 	}
 
 	/* Mobile browsers force fixed background anyway, retain good formatting */
