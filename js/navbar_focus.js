@@ -15,7 +15,7 @@
  * 		different sections come in and out of view.
  */
 const navbar = document.getElementById("navigation");
-const mobileNavbar = document.getElementById("mobile-navigation");
+const mobileNavbar = document.getElementById("mobile-nav");
 const navdivs = [
 	document.getElementById("header-top"),
 	document.getElementById("research"),

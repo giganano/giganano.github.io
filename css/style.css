@@ -241,7 +241,7 @@ header.hero {
 	color: #FFFFFF;
 }
 
-.mobile-nav {
+#mobile-nav {
 	display: none;
 	width: 100vw;
 	margin: 0;
@@ -269,13 +269,13 @@ header.hero {
 	color: white;
 }
 
-.mobile-nav .navbar-nav {
+#mobile-nav .navbar-nav {
 	background-color: #171717;
 	text-align: left;
 	color: white;
 }
 
-.mobile-nav .toggle-collapse {
+#mobile-nav .toggle-collapse {
 	float: right;
 	width: 90px;
 	height: 64px;
@@ -318,15 +318,15 @@ header.hero {
 		display: none;
 	}
 
-	.mobile-nav {
-		display: inline-block;
+	#mobile-nav {
+		display: block;
 	}
 
 	.nav-item {
 		font-size: 54px;
 	}
 
-	.mobile-nav .navbar-collapse .navbar-nav li {
+	#mobile-nav .navbar-collapse .navbar-nav li {
 		list-style: none;
 		font-size: 25px;
 		display: block;
@@ -334,15 +334,15 @@ header.hero {
 		padding-bottom: 10px;
 	}
 
-	#mobile-navigation .navbar-collapse .navbar-nav li a:hover {
+	#mobile-nav .navbar-collapse .navbar-nav li a:hover {
 		color: white;
 	}
 
-	.mobile-nav .navbar-collapse .navbar-nav .nav-item.focus {
+	#mobile-nav .navbar-collapse .navbar-nav .nav-item.focus {
 		color: #DD0000;
 	}
 
-	.mobile-nav .navbar-collapse .navbar-nav .nav-item.dormant {
+	#mobile-nav .navbar-collapse .navbar-nav .nav-item.dormant {
 		color: #a1a1a1;
 	}
 
