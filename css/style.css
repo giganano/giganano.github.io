@@ -296,6 +296,10 @@ header.hero {
 		height: 500px;
 	}
 
+	.page-header {
+		padding-top: 100px;
+	}
+
 	.bg {
 		height: 500px; /* must be same as header.hero */
 	}
