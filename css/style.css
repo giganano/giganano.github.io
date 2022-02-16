@@ -424,6 +424,17 @@ header.hero {
 	}
 }
 
+.cv-pubs .container {
+	display: grid;
+	margin-left: 10%;
+	margin-right: 10%;
+	grid-row-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+	justify-content: center;
+}
+
 #research-metrics {
 	text-align: center;
 }
