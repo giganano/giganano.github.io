@@ -504,44 +504,19 @@ header.hero {
 	margin-right: 5%;
 }
 
-/*.slides .container {
-	position: relative;
-	display: grid;
-	margin-left: 20%;
-	margin-right: 20%;
-	grid-column-gap: 20%;
-	grid-row-gap: 20px;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 2fr 1fr;
-	text-align: center;
-	justify-content: center;
-}*/
-
 .collaborators .container {
-	position: relative;
-	display: grid;
-	margin-left: 20%;
-	margin-right: 20%;
-	grid-column-gap: 20%;
-	grid-row-gap: 20px;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: repeat(3, 1fr);
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-@media (max-width: 1000px) {
-	.collaborators .container {
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 650px) {
-	.collaborators .container {
-		grid-template-rows: repeat(6, 1fr);
-		grid-template-columns: repeat(1, 1fr);
-	}
+.collaborators .container div {
+	margin-left: 20px;
+	margin-right: 20px;
+	max-width: 300px;
 }
 
 .collaborators .container .circular-landscape {
