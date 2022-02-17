@@ -1,0 +1,19 @@
+/*
+ * This style sheet doesn't require any adaptive response, because this section
+ * adopts a minimum width to ensure the image doesn't bleed into the contact
+ * section on large pages where the text doesn't reach that far down the page.
+ */
+
+#bio-content .section-content {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bio-content .section-content img {
+	float: left;
+	width: 267px;
+	height: 355px;
+	padding-right: 20px;
+}
+

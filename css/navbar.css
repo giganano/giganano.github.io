@@ -1,0 +1,210 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+.navbar {
+	display: flex;
+	width: 100vw;
+	margin: 0;
+	border: 0;
+	height: 50px;
+	background-color: #171717;
+	border-bottom: 1px solid #282428;
+	/* mobile platform versions of position: sticky; */
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item {
+	text-decoration: none;
+	display: inline;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 18px;
+	color: #a1a1a1;
+}
+
+.nav-item.focus {
+	color: #DD0000;
+}
+
+.nav-item.dormant {
+	color: #a1a1a1;
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+.navbar ul li a:hover {
+	color: #FFFFFF;
+}
+
+#mobile-nav {
+	display: none;
+	margin: 0;
+	border: 0;
+	height: 75px;
+	background-color: #171717;
+	border-bottom: 1px solid #282428;
+	/* mobile platform versions of position: sticky; */
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -o-sticky;
+	position: -ms-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	vertical-align: middle;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav li {
+	list-style: none;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav li a:hover {
+	color: white;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav .nav-item.focus {
+	color: #DD0000;
+}
+
+#mobile-nav .navbar-collapse .navbar-nav .nav-item.dormant {
+	color: #a1a1a1;
+}
+
+#mobile-nav .navbar-brand {
+	float: left;
+	text-decoration: none;
+	display: inline;
+	align-items: center;
+	line-height: 75px; /* same as #mobile-nav height */
+	font-size: 30px;
+	margin-left: 40px;
+	color: white;
+}
+
+#mobile-nav .navbar-nav {
+	background-color: #171717;
+	text-align: left;
+	color: white;
+}
+
+#mobile-nav .toggle-collapse {
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin: 17.5px 30px;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#mobile-nav .toggle-collapse:hover {
+	background-color: white;
+	color: #171717;
+}
+
+.navbar-collapse {
+	position: absolute;
+	top: 59px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	height: 0vh;
+	transition: all 600ms ease;
+}
+
+.collapse {
+	height: 100vh;
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	.navbar {
+		display: none;
+	}
+
+	#mobile-nav {
+		display: block;
+	}
+
+	.nav-item {
+		font-size: 30px;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	#mobile-nav {
+		height: 150px;
+	}
+
+	#mobile-nav .navbar-brand {
+		line-height: 150px;
+		margin-left: 40px;
+		font-size: 40px;
+	}
+
+	#mobile-nav .toggle-collapse {
+		width: 90px;
+		height: 90px;
+		margin: 30px 30px;
+		font-size: 2em;
+	}
+
+	.navbar-collapse {
+		top: 135px;
+	}
+
+	#mobile-nav .navbar-collapse .navbar-nav li {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.nav-item {
+		font-size: 60px;
+	}
+
+}
+
+/*
+ * Override the smartphone settings for the navbar in landscape mode, because
+ * otherwise the nav-items don't fit on the screen
+ */
+@media screen and (max-width: 980px) and (orientation: landscape) {
+
+	#mobile-nav .navbar-collapse .navbar-nav li {
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	.nav-item {
+		font-size: 25px;
+	}
+
+}

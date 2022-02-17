@@ -1,0 +1,160 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+.custom-btn {
+	text-decoration: none;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.4285713;
+	background-color: #BB0000;
+	color: #FFFFFF;
+	border-radius: 3px;
+	text-align: center;
+	z-index: 0;
+}
+
+.cv-pubs .container {
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+	grid-row-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+	justify-content: center;
+}
+
+#research-metrics {
+	text-align: center;
+}
+
+.counter {
+	font-size: 40px;
+	color: #FFFFFF;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background: #DD0000;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 80px;
+	border: 2px solid #FFFFFF;
+}
+
+.counter-label {
+	font-size: 25px;
+	color: #DD0000;
+	justify-content: center;
+	text-align: center;
+}
+
+.metrics .container {
+	display: grid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+	text-align: center;
+	justify-content: center;
+}
+
+.metrics .container div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+#research-interests .jaj-periodic-table {
+	height: 35%;
+	width: 50%;
+}
+
+#research-interests .asassn-logo {
+	height: 21%;
+	width: 30%;
+}
+
+/* narrower laptop displays */
+@media screen and (max-width: 1050px) {
+
+	.metrics .container {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	.custom-btn {
+		font-size: 24px;
+		padding: 9px 18px;
+	}
+
+	.metrics .container {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counter {
+		font-size: 60px;
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+	}
+
+	.counter-label {
+		font-size: 38px;
+	}
+
+	#research-interests .jaj-periodic-table {
+		height: 63%;
+		width: 90%;
+	}
+
+	#research-interests .asassn-logo {
+		height: 42%;
+		width: 60%;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	.custom-btn {
+		font-size: 32px;
+		padding: 12px 24px;
+	}
+
+	.metrics .container {
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.counter {
+		font-size: 80px;
+		width: 160px;
+		height: 160px;
+		line-height: 160px;
+	}
+
+	.counter-label {
+		font-size: 51px;
+	}
+
+}
+

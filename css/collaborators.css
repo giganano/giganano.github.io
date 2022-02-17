@@ -1,0 +1,83 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+.collaborators .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.collaborators .container div {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 300px;
+	display: table;
+}
+
+.collaborators .container .circular-landscape {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #DD0000;
+}
+
+.collaborators .container .circular-landscape img {
+	width: 250px;
+	height: auto;
+}
+
+.collaborators .container .circular-landscape img.jbredall {
+	object-position: -100px 0px;
+	width: 360px;
+	height: 480px;
+}
+
+.collaborators .container .section-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	.collaborators .container div {
+		max-width: 400px;
+	}
+
+	.collaborators .container .circular-landscape {
+		width: 350px;
+		height: 350px;
+	}
+
+	.collaborators .container .circular-landscape img {
+		width: 350px;
+		height: auto;
+	}
+
+	.collaborators .container .circular-landscape img.jbredall {
+		object-position: -100px 0px;
+		width: 450px;
+		height: 600px;
+	}
+
+	.collaborators .container .section-content {
+		font-size: 45px;
+	}
+
+}
+

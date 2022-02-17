@@ -3,12 +3,20 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta
+		charset="utf-8"
+		name="viewport"
+		content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script
-		src="https://kit.fontawesome.com/26ad8e3311.js"
-		crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/research.css">
+	<link rel="stylesheet" type="text/css" href="css/talks.css">
+	<link rel="stylesheet" type="text/css" href="css/collaborators.css">
+	<link rel="stylesheet" type="text/css" href="css/comptools.css">
+	<link rel="stylesheet" type="text/css" href="css/bio.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<title>James W. Johnson</title>
 </head>
 
@@ -146,7 +154,6 @@
 
 		<!-- ===== Research Metrics ===== -->
 		<div id="research-merics">
-			<div>&nbsp;</div>
 			<div class="metrics">
 				<div class="container">
 					<div>
@@ -438,12 +445,10 @@
 							style="object-position: 0px -40px;"
 						>
 					</div>
-					<div>
-						<div class="section-content">
-							James W. Johnson
-							<br>
-							[Myself]
-						</div>
+					<div class="section-content">
+						James W. Johnson
+						<br>
+						[Myself]
 					</div>
 				</div>
 				<div>
@@ -576,8 +581,7 @@
 					<div class="circular-landscape">
 						<img
 							src="./images/collaborators/john_bredall.jpeg"
-							style="object-position: -100px 0px;
-								width: 360px; height: 480px;">
+							class="jbredall">
 					</div>
 					<div>
 						<div class="section-content">
@@ -655,10 +659,9 @@
 			</div>
 		</div>
 
-		<div>&nbsp;</div>
 
 		<div id="vice">
-			<h3 class="page-subheader">
+			<h3 class="vice-acronym">
 				Versatile Integrator for Chemical Evolution
 			</h3>
 		</div>
@@ -669,79 +672,60 @@
 			</div>
 		</div>
 
-		<!-- spacing -->
-		<div>&nbsp;</div>
-
 		<div class="vice-links">
 			<div class="container">
 				<div>
-					<div>
+					<figure>
 						<a
 							href="https://pypi.org/project/vice"
 							target="_blank">
-							<img
-								src="./images/pypi_logo.png"
-								height="100px"
-								width="100px"
-							>
+							<img src="./images/pypi_logo.png">
 						</a>
-					</div>
-					<div>
-						<a
-							href="https://pypi.org/project/vice"
-							target="_blank"
-							class="counter-label">
-							Install
-						</a>
-					</div>
+						<figcaption>
+							<a
+								href="https://pypi.org/project/vice"
+								target="_blank"
+								class="vice-link-label">
+								Install
+							</a>
+						</figcaption>
+					</figure>	
 				</div>
 				<div>
-					<div>
+					<figure>
 						<a
 							href="https://vice-astro.readthedocs.io"
 							target="_blank">
-							<img
-								src="./images/readthedocs_logo.png"
-								height="100px"
-								width="100px"
-							>
+							<img src="./images/readthedocs_logo.png">
 						</a>
-					</div>
-					<div>
-						<a
-							href="https://vice-astro.readthedocs.io"
-							target="_blank"
-							class="counter-label">
-							Documentation
-						</a>
-					</div>
+						<figcaption>
+							<a
+								href="https://vice-astro.readthedocs.io"
+								target="_blank"
+								class="vice-link-label">
+								Documentation
+							</a>
+						</figcaption>
+					</figure>
 				</div>
 				<div>
-					<div>
+					<figure>
 						<a href="https://github.com/giganano/VICE.git"
 							target="_blank">
-							<img
-								src="./images/github_logo.jpeg"
-								height="100px"
-								width="100px"
-							>
+							<img src="./images/github_logo.jpeg">
 						</a>
-					</div>
-					<div>
-						<a
-							href="htps://github.com/giganano/VICE.git"
-							taret="_blank"
-							class="counter-label">
-							Source Code
-						</a>
-					</div>
+						<figcaption>
+							<a
+								href="htps://github.com/giganano/VICE.git"
+								taret="_blank"
+								class="vice-link-label">
+								Source Code
+							</a>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
-
-		<!-- spacing -->
-		<div>&nbsp;</div>
-		<div>&nbsp;</div>
 
 		<div id="vice-description">
 			<div class="section-content">
@@ -959,13 +943,7 @@
 
 		<div id="bio-content">
 			<div class="section-content">
-				<img 
-					src="./images/me_lowres.jpeg"
-					align="left"
-					width="267px"
-					height="355px"
-					style="padding-right: 20px;"
-				>
+				<img src="./images/me_lowres.jpeg">
 				I am an astrophysicist in the 5th year of my Ph.D. at
 				<a href="https://astronomy.osu.edu" target="_blank">The Ohio
 				State University Department of Astronomy</a>.
@@ -978,8 +956,8 @@
 				<a href="https://as.vanderbilt.edu/physics/" target="_blank">
 				Vanderbilt University</a> in May 2017.
 				During my undergraduate I briefly lived in Berlin, Germany,
-				studying the German Language and the history of the Third
-				Reich at the <a href="https://www.fu-berlin.de/en/"
+				studying the German Language and the history of Nazi Germany at
+				the <a href="https://www.fu-berlin.de/en/"
 				target="_blank">Freie Universität Berlin</a>.
 				After graduating from Vanderbilt, I moved to Columbus, Ohio in
 				August 2017 to begin my graduate level studies at Ohio State.
@@ -990,6 +968,10 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- spacing -->
+	<div>&nbsp;</div>
+
 	</div>
 
 	<!-- ===== Contact Info ===== -->
@@ -1021,8 +1003,10 @@
 	</div>
 
 	<footer>
+
 		<!-- spacing -->
 		<div>&nbsp;</div>
+
 		<div class="socials">
 			<div class="container">
 				<a href="https://twitter.com/giganano9" target="_blank">
@@ -1059,9 +1043,16 @@
 			href="https://github.com/giganano/giganano.github.io"
 			target="_blank">Webpage source code</a>
 		</div>
+
+		<!-- spacing -->
+		<div>&nbsp;</div>
+
 	</footer>
 
 	<!-- ===== javascripts ===== -->
+	<script
+		src="https://kit.fontawesome.com/26ad8e3311.js"
+		crossorigin="anonymous"></script>
 	<script
 		type="text/javascript" 
 		src="https://code.jquery.com/jquery-1.7.1.min.js"></script>

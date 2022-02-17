@@ -1,0 +1,145 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+header.hero {
+	position: relative;
+	display: table;
+	z-index:  1;
+	min-width: 100%;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: calc(100vh - 50px);
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/* Fills the header with the background image while maintaining aspect ratio */
+header.hero img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	animation-name: fade-in-out;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 21s;
+	opacity: 1;
+}
+
+@keyframes fade-in-out {
+	0% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+	93% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.bg:nth-of-type(1) {
+	animation-delay: 14s;
+}
+
+.bg:nth-of-type(2) {
+	animation-delay: 7s;
+}
+
+.bg:nth-of-type(3) {
+	animation-delay: 0s;
+}
+
+.page-header {
+	font-size: 88px;
+	padding-top: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+
+.page-subheader {
+	font-size: 38px;
+	text-align: center;
+	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+
+/* wide screens */
+@media screen and (min-width: 1400px) {
+
+	.page-header {
+		font-size: 120px;
+	}
+
+	.page-subheader {
+		font-size: 48px;
+	}
+
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	header.hero {
+		height: 500px;
+	}
+
+	.bg {
+		height: 500px; /* must be the same as header.hero */
+	}
+
+	.page-header {
+		font-size: 65px;
+	}
+
+	.page-subheader {
+		font-size: 30px;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	.page-header {
+		font-size: 60px;
+	}
+
+	.page-subheader {
+		font-size: 25px;
+	}
+
+}
+

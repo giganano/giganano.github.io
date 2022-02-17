@@ -1,0 +1,80 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+
+#contact {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)), url(../images/me_ivy.jpeg);
+	height: calc(100vh - 50px);
+}
+
+#contact h2 {
+	color: white;
+}
+
+#contact .contact-line {
+	color: white;
+	font-size: 28px;
+	text-align: center;
+}
+
+#contact .container {
+	display: grid;
+	justify-content: center;
+}
+
+#contact .container img {
+	width: 210px;
+	height: 168px;
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+	#contact .contact-line {
+		font-size: 42px;
+	}
+}
+
+/*
+ * Override the section-title font-size for smartphones in landspace mode,
+ * because otherwise the text is too big to fit on the screen.
+ */
+@media screen and (max-width: 980px) and (orientation: landscape) {
+
+	#contact .section-title {
+		margin-top: 20px;
+		font-size: 35px;
+	}
+
+	#contact .contact-line {
+		font-size: 16px;
+	}
+
+	#contact .container img {
+		width: 52px;
+		height: 42px;
+	}
+
+}
+
+/*
+ * For particularly short screens, just remove the mail icon to allow
+ * everything to fit.
+ */
+@media screen and (max-height: 350px) {
+
+	#contact .container img {
+		display: none;
+	}
+
+}
+

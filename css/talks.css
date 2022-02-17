@@ -1,0 +1,26 @@
+/*
+ * This style sheet doesn't require any adaptive response, because this section
+ * of the website is just a flex display showing figures and captions within
+ * their own div containers. It renders fine on all screens.
+ */
+
+.slides .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.slides .container figure {
+	display: table;
+}
+
+.slides .container figure figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+}
+

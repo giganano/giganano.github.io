@@ -1,0 +1,67 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+footer {
+	text-align: center;
+}
+
+footer .socials .container {
+	display: grid;
+	margin-left: 40%;
+	margin-right: 40%;
+	grid-column-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+}
+
+footer .socials .container .twitter-logo {
+	height: 50px;
+	width: 50px;
+}
+
+footer .socials .container .github-logo {
+	height: 50px;
+	width: 50px;
+}
+
+footer .socials .container .facebook-logo {
+	height: 45px;
+	width: 45px;
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+	footer .socials .container {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	footer .socials .container .twitter-logo {
+		height: 100px;
+		width: 100px;
+	}
+
+	footer .socials .container .github-logo {
+		height: 100px;
+		width: 100px;
+	}
+
+	footer .socials .container .facebook-logo {
+		height: 90px;
+		width: 90px;
+	}
+
+	footer .section-content {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
