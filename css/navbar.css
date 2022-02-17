@@ -113,20 +113,14 @@
 	float: right;
 	width: 40px;
 	height: 40px;
-	margin: 17.5px 30px;
+	margin: 17.5px 50px;
 	align-items: center;
 	background-color: transparent;
 	color: white;
-	/*border: 1px solid white;*/
 	border: transparent;
 	cursor: pointer;
 	font-size: 1.5em;
 }
-
-/*#mobile-nav .toggle-collapse:hover {
-	background-color: white;
-	color: #171717;
-}*/
 
 .navbar-collapse {
 	position: absolute;
@@ -190,10 +184,8 @@
 	#mobile-nav .toggle-collapse {
 		width: 80px;
 		height: 80px;
-		margin: 10px 10px;
-/*		margin-right: 10px;
-		margin-top: 10px;
-*/		font-size: 2em;
+		margin: 10px 25px;
+		font-size: 2em;
 	}
 
 	.navbar-collapse {
@@ -201,12 +193,12 @@
 	}
 
 	#mobile-nav .navbar-collapse .navbar-nav li {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	.nav-item {
-		font-size: 60px;
+		font-size: 45px;
 	}
 
 }
