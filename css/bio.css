@@ -1,7 +1,12 @@
 /*
- * This style sheet doesn't require any adaptive response, because this section
- * adopts a minimum width to ensure the image doesn't bleed into the contact
- * section on large pages where the text doesn't reach that far down the page.
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
  */
 
 #bio-content .section-content {
@@ -15,5 +20,16 @@
 	width: 267px;
 	height: 355px;
 	padding-right: 20px;
+}
+
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	#bio-content .section-content {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
 }
 
