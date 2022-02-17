@@ -77,6 +77,7 @@
 	display: block;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	flex-wrap: hidden;
 }
 
 #mobile-nav .navbar-collapse .navbar-nav li a:hover {
@@ -187,11 +188,12 @@
 	}
 
 	#mobile-nav .toggle-collapse {
-		width: 90px;
-		height: 90px;
-		margin-right: 10px;
+		width: 80px;
+		height: 80px;
+		margin: 10px 10px;
+/*		margin-right: 10px;
 		margin-top: 10px;
-		font-size: 2em;
+*/		font-size: 2em;
 	}
 
 	.navbar-collapse {
