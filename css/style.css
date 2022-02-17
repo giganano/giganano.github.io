@@ -1,6 +1,6 @@
 /*
  * CSS styling for the webpage. Website transitions to a mobile device viewing
- * mode below a screen width of 1050 px. Changes to this value should be made
+ * mode below a screen width of 980 px. Changes to this value should be made
  * across all media queries for this specific screen width.
  */
 
@@ -31,10 +31,6 @@ h1, h2, nav {
 	text-align: center;
 }
 
-nav {
-	/*padding: 15px 15px;*/
-}
-
 a {
 	color: #DD0000;
 }
@@ -57,7 +53,7 @@ figcaption {
 	text-align: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	figcaption {
 		font-size: 33px;
 	}
@@ -86,7 +82,7 @@ iframe {
 	z-index: 0;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.custom-btn {
 		font-size: 32px;
 		padding: 12px 24px;
@@ -101,7 +97,7 @@ iframe {
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.page-header {
 		font-size: 100px;
 		padding-top: 50px;
@@ -114,7 +110,7 @@ iframe {
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.page-subheader {
 		font-size: 35px;
 	}
@@ -178,7 +174,7 @@ header.hero {
 	left: 0;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	header.hero {
 		height: 500px;
 	}
@@ -204,7 +200,7 @@ header.hero {
 	opacity: 1;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.bg {
 		height: 500px; /* must be same as header.hero */
 	}
@@ -265,7 +261,7 @@ header.hero {
 }
 
 /* Turn off desktop navbar for mobile screens */
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.navbar {
 		display: none;
 	}
@@ -280,7 +276,7 @@ header.hero {
 	color: #a1a1a1;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.nav-item {
 		font-size: 54px;
 	}
@@ -322,7 +318,7 @@ header.hero {
 }
 
 /* Turn on for mobile screens */
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	#mobile-nav {
 		display: block;
 	}
@@ -374,6 +370,10 @@ header.hero {
 	cursor: pointer;
 }
 
+#mobile-nav .toggle-collapse {
+	font-size: 2em;
+}
+
 #mobile-nav .toggle-collapse:hover {
 	background-color: white;
 	color: #171717;
@@ -405,7 +405,7 @@ header.hero {
 }
 
 /* Mobile browsers force fixed background anyway, retain good formatting */
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.use-background-image {
 		background-attachment: scroll;
 	}
@@ -421,7 +421,7 @@ header.hero {
 	letter-spacing: 1px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.section-title {
 		font-size: 80px;
 	}
@@ -433,7 +433,7 @@ header.hero {
 	text-align: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.section-subtitle {
 		font-size: 33px;
 	}
@@ -446,7 +446,7 @@ header.hero {
 	margin-right: 20%;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.section-content {
 		font-size: 33px;
 		margin-left: 10%;
@@ -463,7 +463,7 @@ header.hero {
 	margin-right: 30%;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.quotation {
 		margin-left: 10%;
 		margin-right: 10%;
@@ -507,7 +507,7 @@ header.hero {
 	text-align: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	.counter-label {
 		font-size: 38px;
 	}
@@ -570,10 +570,10 @@ header.hero {
 	width: 50%;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	#research-interests .jaj-periodic-table {
 		height: 70%;
-		width: 100%;
+		width: 80%;
 	}
 }
 
@@ -582,7 +582,7 @@ header.hero {
 	width: 30%;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	#research-interests .asassn-logo {
 		height: 42%;
 		width: 60%;
@@ -677,19 +677,37 @@ header.hero {
 	font-size: 40px;
 }
 
-#teaching-content .bootcamp-recording figure {
+.bootcamp-recordings .container {
+	display: grid;
+	margin-left: 10%;
+	margin-right: 10%;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+}
+
+@media (max-width: 980px) {
+	.bootcamp-recordings .container {
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.bootcamp-recordings .container figure {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#teaching-content .bootcamp-recording .youtube-wrapper {
+.bootcamp-recordings .container .youtube-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
-	width: 60vw; /* aligns with a 20% margin */
+	width: 35vw; /* aligns with a 10% margin */
 	justify-content: center;
 }
 
-#teaching-content .bootcamp-recording .youtube-wrapper iframe {
+.bootcamp-recordings .container .youtube-wrapper iframe {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -697,12 +715,12 @@ header.hero {
 	height: 100%;
 }
 
-@media (max-width: 1050px) {
-	#teaching-content .bootcamp-recording .youtube-wrapper {
-		width: 100vw;
+@media (max-width: 980px) {
+	.bootcamp-recordings .container .youtube-wrapper {
+		width: 80vw;
 	}
 
-	#teaching-content .bootcamp-recording figcaption {
+	.bootcamp-recordings .container figcaption {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -748,7 +766,7 @@ header.hero {
 	height: 168px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	#contact .contact-line {
 		font-size: 42px;
 	}
@@ -799,7 +817,7 @@ footer .socials .container .facebook-logo {
 	width: 45px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 980px) {
 	footer .socials .container {
 		margin-left: 20%;
 		margin-right: 20%;
