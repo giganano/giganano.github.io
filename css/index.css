@@ -135,6 +135,7 @@ span.divider.grey {
 	margin-right: 30%;
 }
 
+/* tablets */
 @media screen and (max-width: 980px) {
 
 	/* Mobile browsers force fixed background anyway, retain good formatting */
@@ -159,6 +160,20 @@ span.divider.grey {
 	}
 }
 
+/*
+ * tablets in landscape mode will not render the mobile version of the site,
+ * but will still force a fixed background image, so check for this and retain
+ * good formatting.
+ */
+@media screen and (max-height: 980px) and (orientation: landscape) {
+
+	.use-background-image {
+		background-attachment: scroll;
+	}
+
+}
+
+/* tablets */
 @media screen and (max-width: 500px) {
 
 	.section-title {
