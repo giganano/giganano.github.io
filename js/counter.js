@@ -43,16 +43,19 @@ function updateCount(counter) {
 /*
  * Determines if a div is currently on screen. Returns true if its position is
  * within the vertical width of the window, and false otherwise.
+ * 
+ * Change Notes
+ * ------------
+ * $(window).height() failed for mobile screens, and instead window.innerHeight
+ * is required to determine the correct height of the window in pixels. 
  */
 function isInView(div) {
 
-	var docViewTop = $(window).scrollTop();
-	var docViewBottom = docViewTop + $(window).height();
+	var divPos = div.getBoundingClientRect();
+	var divTop = divPos.top;
+	var divBottom = divPos.bottom;
 
-	var divTop = div.offsetTop;
-	var divBottom = divTop + div.offsetHeight;
-
-	return ((divBottom <= docViewBottom) && (divTop >= docViewTop));
+	return ((divTop >= 0) && (divBottom <= window.innerHeight));
 
 }
 
