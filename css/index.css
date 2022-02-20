@@ -9,8 +9,22 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+@import "navbar.css";
+@import "header.css";
+@import "research.css";
+@import "talks.css";
+@import "collaborators.css";
+@import "comptools.css";
+@import "bio.css";
+@import "contact.css";
+@import "footer.css";
+@import "publications.css";
+@import "bootcamp.css";
+
+
 html, body {
-	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 html {
@@ -19,9 +33,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+body, button {
 	background: #252525;
 	margin: 0px;
+}
+
+button {
+	border: transparent;
 }
 
 section {

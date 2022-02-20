@@ -9,7 +9,6 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-
 .bootcamp-recordings .container {
 	display: grid;
 	grid-column-gap: 20px;
@@ -37,6 +36,7 @@
 }
 
 .bootcamp-recordings .container .youtube-wrapper {
+/*.youtube-wrapper {*/
 	position: relative;
 	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
 	width: 35vw; /* aligns with a 10% margin */
@@ -44,6 +44,7 @@
 }
 
 .bootcamp-recordings .container .youtube-wrapper iframe {
+/*.youtube-wrapper iframe {*/
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -60,6 +61,7 @@
 	}
 
 	.bootcamp-recordings .container .youtube-wrapper {
+	/*.youtube-wrapper {*/
 		width: 90vw;
 	}
 

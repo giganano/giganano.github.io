@@ -1,0 +1,41 @@
+
+/*.bootcamp-recordings .container {
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;	
+}*/
+
+@import "../../css/bootcamp.css";
+
+#session-1 {
+	background-color: #000000;
+}
+
+#session-3 {
+	background-color: #000000;
+}
+
+#session-5 {
+	background-color: #000000;
+}
+
+.page-header {
+	margin-top: 0;
+	text-shadow: none;
+}
+
+.bootcamp-recordings .container {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.bootcamp-recordings .container .youtube-wrapper {
+	width: 70vw;
+}
+
+@media screen and (max-width: 980px) {
+
+	.bootcamp-recordings .container .youtube-wrapper {
+		width: 90vw;
+	}
+
+}
