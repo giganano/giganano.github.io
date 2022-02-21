@@ -163,9 +163,10 @@ span.divider.grey {
 /*
  * tablets in landscape mode will not render the mobile version of the site,
  * but will still force a fixed background image, so check for this and retain
- * good formatting.
+ * good formatting. Go based on device-height rather than screen-height to
+ * prevent this from affecting desktop rendering as well.
  */
-@media screen and (max-height: 980px) and (orientation: landscape) {
+@media (max-device-height: 980px) and (orientation: landscape) {
 
 	.use-background-image {
 		background-attachment: scroll;
@@ -173,7 +174,7 @@ span.divider.grey {
 
 }
 
-/* tablets */
+/* smartphones */
 @media screen and (max-width: 500px) {
 
 	.section-title {
