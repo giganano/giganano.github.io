@@ -179,17 +179,14 @@ span.divider.grey {
 }
 
 /*
- * tablets in landscape mode will not render the mobile version of the site,
- * but will still force a fixed background image, so check for this and retain
- * good formatting. Go based on device-height rather than screen-height to
- * prevent this from affecting desktop rendering as well.
+ * tablets in landscape mode will pass the media queries that switch the
+ * website to the more mobile-friendly view, but will always hold a scrolling
+ * background attachment that doesn't render well. This class swaps the image
+ * to scroll manually , and will be toggled on via JavaScript if background
+ * images are found in a mobile browser to retain good formatting.
  */
-@media (max-device-height: 980px) and (orientation: landscape) {
-
-	.use-background-image {
-		background-attachment: scroll;
-	}
-
+.use-background-image .scroll {
+	background-attachment: scroll;
 }
 
 /* smartphones */
