@@ -106,7 +106,6 @@ span.divider.grey {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 }
 
 .section-title {
@@ -135,13 +134,17 @@ span.divider.grey {
 	margin-right: 30%;
 }
 
+/* Turn on a fixed background image for screens safely larger than tablets */
+@media screen and (min-width: 1280px) {
+
+	.use-background-image {
+		background-attachment: fixed;
+	}
+
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
-
-	/* Mobile browsers force fixed background anyway, retain good formatting */
-	.use-background-image {
-		background-attachment: scroll;
-	}
 
 	.section-title {
 		font-size: 50px;
@@ -158,17 +161,6 @@ span.divider.grey {
 		margin-right: 10%;
 		font-size: 28px;
 	}
-}
-
-/*
- * tablets in landscape mode will pass the media queries that switch the
- * website to the more mobile-friendly view, but will always hold a scrolling
- * background attachment that doesn't render well. This class swaps the image
- * to scroll manually , and will be toggled on via JavaScript if background
- * images are found in a mobile browser to retain good formatting.
- */
-.use-background-image .scroll {
-	background-attachment: scroll;
 }
 
 /* smartphones */
