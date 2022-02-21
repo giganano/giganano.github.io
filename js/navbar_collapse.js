@@ -32,9 +32,9 @@ $(document).ready(function() {
 
 
 /* --------------------------------------------------------------------
- * 
- * Swap the mobile navigation buttom from the align-center icon to an X
- * when it's opened, and vice-versa when it's closed.
+ * Swap the mobile navigation button from the align-center icon to an X
+ * when it's opened, and vice-versa when it's closed. Don't forget to
+ * swap it back if a nav-item is clicked!
  */
 $(document).ready(function() {
 	$(".toggle-collapse").click(function() {
@@ -45,6 +45,18 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".toggle-collapse").click(function() {
 		$(".fa-solid").toggleClass("fa-x")
+	})
+});
+
+$(document).ready(function() {
+	$(".nav-item").click(function() {
+		$(".fa-solid").toggleClass("fa-align-center")
+	})
+});
+
+$(document).ready(function() {
+	$(".nav-item").click(function() {
+		$(".fa-solid").toggleClass("fa-x");
 	})
 });
 /* -------------------------------------------------------------------- */
