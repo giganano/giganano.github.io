@@ -4,10 +4,9 @@
 name: Update Research Metrics
 
 on:
-  workflow_dispatch: # testing
-  # schedule:
-  #   # Updates at midnight every day
-  #   - cron: "0 0 * * *"
+  # Updates at midnight (00:00) every day
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   update:
