@@ -1,0 +1,41 @@
+# This workflow updates my research metrics stored in the JSON file at
+# (webpage home)/data/metrics.json.
+
+name: Update Research Metrics
+
+on:
+  workflow_dispatch: # testing
+  # schedule:
+  #   # Updates at midnight every day
+  #   - cron: "0 0 * * *"
+
+jobs:
+  update:
+    name: NASA ADS Research Metric Query
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10
+
+      - name: Check for Updates and Push to Origin if Necessary
+        shell: bash
+        run: |
+          CHANGED=$(python ./.github/workflows/update_metrics.py ${{ secrets.ADS_API_TOKEN }})
+          if [[ $CHANGED == "true" ]] ; then
+            echo "Metrics have changed. Pushing updates...."
+            git config --global user.name "James W. Johnson"
+            git config --global user.email "43220904+giganano@users.noreply.github.com"
+            git add ./data/metrics.json
+            git commit -m "[auto] ci: research metrics updated"
+            git push
+          else
+            echo "Metrics have not changed. Exiting...."
+          fi
+
+

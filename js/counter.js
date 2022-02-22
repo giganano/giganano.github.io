@@ -11,7 +11,39 @@
  */
 const counters = document.querySelectorAll(".counter");
 const time = 1500;
-for (var i = 0; i < counters.length; i++) updateCount(counters[i]);
+for (var i = 0; i < counters.length; i++) {
+	let counter = counters[i];
+	readMetrics()
+		.then(metrics => {
+			updateCount(counter, metrics);
+		});
+}
+
+
+/*
+ * Reads the file at (webpage home)/data/metrics.json and returns the research
+ * metrics data as a dictionary.
+ */
+async function readMetrics() {
+
+	var data = {};
+
+	let response = await fetch("./data/metrics.json");
+	if (!response.ok) {
+		throw new Error(`HTTP Error! Status: ${response.status}`);
+	} else {
+		var contents = await response.json();
+		data["pubs"] = +contents["data"]["pubs"];
+		data["lead_author"] = +contents["data"]["lead_author"];
+		data["co_author"] = +contents["data"]["co_author"];
+		data["citations"] = +contents["data"]["citations"];
+		data["hindex"] = +contents["data"]["hindex"];
+		data["talks"] = +contents["data"]["talks"];
+	}
+
+	return data;
+
+}
 
 
 /*
@@ -19,22 +51,22 @@ for (var i = 0; i < counters.length; i++) updateCount(counters[i]);
  * maximum value, then terminates and leaves the final values on screen for
  * the viewer.
  */
-function updateCount(counter) {
+function updateCount(counter, metrics) {
 
-	const target = +counter.getAttribute("data-target");
+	const target = metrics[counter.getAttribute("metric")];
 	const count = +counter.innerText;
 	const interval = time / target;
 
 	/* Only counts up if the counter is on screen, otherwise sleep */
 	if (isInView(counter)) {
 		if (count < target) {
-			setTimeout(updateCount, interval, counter);
+			setTimeout(updateCount, interval, counter, metrics);
 			counter.innerText = count + 1;
 		} else {
 			counter.innerText = target;
 		}
 	} else {
-		setTimeout(updateCount, 100, counter);
+		setTimeout(updateCount, 100, counter, metrics);
 	}
 
 }
