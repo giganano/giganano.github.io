@@ -4,9 +4,9 @@
 name: Update Research Metrics
 
 on:
-  # Updates at midnight (00:00) every day
+  # Update every day at 10 AM UTC (5 AM Eastern, 6 AM Eastern daylight)
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 10 * * *"
 
 jobs:
   update:
