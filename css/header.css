@@ -17,7 +17,7 @@ header.hero {
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: calc(100vh - 50px); /* subtract navbar width */
+	height: calc(100vh - 50px); /* subtract navbar height */
 	position: relative;
 	top: 0;
 	left: 0;
@@ -100,7 +100,7 @@ header.hero img {
 @media screen and (min-width: 1400px) {
 
 	header.hero {
-		height: calc(100vh - 75px); /* subtract navbar width */
+		height: calc(100vh - 75px); /* subtract navbar height */
 	}
 
 	.page-header {
