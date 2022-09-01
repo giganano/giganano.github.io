@@ -9,28 +9,84 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-.paper-title {
-	color: #DD0000;
-	font-style: italic;
-}
-
 .pubs-section-head {
 	color: #a1a1a1;
 	font-size: 22px;
 	text-align: center;
 }
 
+.pub-item {
+	color: white;
+	font-size: 22px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 10px;
+}
+
+.pub-item .title {
+	color: #DD0000;
+	font-style: italic;
+}
+
+.pub-item .authors {
+
+}
+
+.pub-item .pub-details {
+	display: flex;
+}
+
+.pub-item .pub-details .journal {
+	flex: 1;
+	text-align: left;
+}
+
+.pub-item .pub-details .arxiv {
+	text-align: right;
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
+
 	.pubs-section-head {
 		font-size: 35px;
 	}
+
+	.pub-item {
+		font-size: 35px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 30px;
+	}
+
+	.pub-item .authors {
+		margin-bottom: 20px;
+	}
+
+	.pub-item .pub-details {
+		display: inline;
+	}
+
+	.pub-item .pub-details .journal {
+		flex: 0;
+	}
+
+	.pub-item .pub-details .arxiv {
+		text-align: left;
+	}
+
 }
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
 	.pubs-section-head {
 		font-size: 45px;
 	}
+
+	.pub-item {
+		font-size: 45px;
+	}
+
 }
 

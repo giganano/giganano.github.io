@@ -151,6 +151,15 @@
 
 }
 
+/* minor adjustment below 1100px to make sure items can fit across the navbar */
+@media screen and (max-width: 1100px) {
+
+	.nav-item {
+		font-size: 16px;
+	}
+
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
 
