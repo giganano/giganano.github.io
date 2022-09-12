@@ -1,14 +1,23 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ *
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
 
-
-#session-2 {
+#fundamentals {
 	background-color: #000000;
 }
 
-#session-4 {
+#oop1 {
 	background-color: #000000;
 }
 
-#session-6 {
+#basicse {
 	background-color: #000000;
 }
 
@@ -22,22 +31,19 @@
 	justify-content: center;
 }
 
-.bootcamp-session .session-recording {
-	margin-right: 10vw;
-	margin-left: 10vw;
-}
-
 .bootcamp-session .session-recording figure {
+	display: table;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	justify-content: center;
 }
 
 .bootcamp-session .session-recording .youtube-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
-	width: 80vw;
+	width: 70vw;
 	justify-content: center;
 }
 
@@ -52,6 +58,7 @@
 .bootcamp-session .session-content {
 	display: grid;
 	grid-column-gap: 15vw;
+	grid-template-rows: repeat(1, 1fr);
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	margin-left: 15vw;
@@ -81,5 +88,65 @@
 
 .bootcamp-session .session-content ul {
 	margin-top: 0px;
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+
+	.bootcamp-session .session-recording .youtube-wrapper {
+		width: 80vw;
+	}
+
+	.bootcamp-session .session-content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	.bootcamp-session .session-content h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.bootcamp-session .session-content .session-material {
+		width: 80vw;
+		font-size: 28px;
+	}
+
+	.bootcamp-session .session-content .session-resources {
+		width: 80vw;
+		font-size: 28px;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	.bootcamp-session .session-recording .youtube-wrapper {
+		width: 100vw;
+	}
+
+	.bootcamp-session .session-content {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	.bootcamp-session .session-content h3 {
+		font-size: 50px;
+	}
+
+	.bootcamp-session .session-content .session-material {
+		width: 90vw;
+		font-size: 35px;
+	}
+
+	.bootcamp-session .session-content .session-resources {
+		width: 90vw;
+		font-size: 35px;
+	}
+
 }
 

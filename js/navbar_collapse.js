@@ -4,7 +4,6 @@
  */ 
 
 
-
 /* --------------------------------------------------------------------
  * Open or close the navbar when the collapse button is clicked.
  */
@@ -14,8 +13,6 @@ $(document).ready(function() {
 	})
 });
 /* -------------------------------------------------------------------- */
-
-
 
 
 /* --------------------------------------------------------------------
@@ -29,8 +26,6 @@ $(document).ready(function() {
 /* -------------------------------------------------------------------- */
 
 
-
-
 /* --------------------------------------------------------------------
  * Swap the mobile navigation button from the align-center icon to an X
  * when it's opened, and vice-versa when it's closed. Don't forget to
@@ -38,25 +33,25 @@ $(document).ready(function() {
  */
 $(document).ready(function() {
 	$(".toggle-collapse").click(function() {
-		$(".fa-solid").toggleClass("fa-align-center")
+		$(".toggle").toggleClass("fa-align-center");
 	})
 });
 
 $(document).ready(function() {
 	$(".toggle-collapse").click(function() {
-		$(".fa-solid").toggleClass("fa-x")
+		$(".toggle").toggleClass("fa-x");
 	})
 });
 
 $(document).ready(function() {
 	$(".nav-item").click(function() {
-		$(".fa-solid").toggleClass("fa-align-center")
+		$(".toggle").toggleClass("fa-align-center");
 	})
 });
 
 $(document).ready(function() {
 	$(".nav-item").click(function() {
-		$(".fa-solid").toggleClass("fa-x");
+		$(".toggle").toggleClass("fa-x");
 	})
 });
 /* -------------------------------------------------------------------- */
