@@ -18,12 +18,12 @@ const navbar = document.getElementById("navigation");
 const mobileNavbar = document.getElementById("mobile-nav");
 const navdivs = [
 	document.getElementById("navigation"),
-	document.getElementById("session-1"),
-	document.getElementById("session-2"),
-	document.getElementById("session-3"),
-	document.getElementById("session-4"),
-	document.getElementById("session-5"),
-	document.getElementById("session-6"),
+	document.getElementById("intro"),
+	document.getElementById("fundamentals"),
+	document.getElementById("packages"),
+	document.getElementById("oop1"),
+	document.getElementById("oop2"),
+	document.getElementById("basicse"),
 ]
 const focus = "focus\">"
 const dormant = "dormant\">"

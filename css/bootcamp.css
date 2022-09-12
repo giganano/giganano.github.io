@@ -1,7 +1,7 @@
 /*
  * Simple standard for distinguishing between monitors, tablets, and
  * smartphones:
- * 
+ *
  * Monitors - width of 980 CSS pixels and up
  * tablets - width of between 500 and 980 CSS pixels
  * smartphones - width of less than 500 CSS pixels
@@ -9,42 +9,45 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-.bootcamp-recordings .container {
-	display: grid;
-	grid-column-gap: 20px;
-	grid-row-gap: 30px;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
+#fundamentals {
+	background-color: #000000;
 }
 
-.bootcamp-recordings .container figure {
-	display: table;
+#oop1 {
+	background-color: #000000;
 }
 
-.bootcamp-recordings .container figcaption {
-	display: table-caption;
-	caption-side: bottom;
-	color: white;
-	font-size: 22px;
-	text-align: center;
+#basicse {
+	background-color: #000000;
 }
 
-.bootcamp-recordings .container figure {
+.bootcamp-page-header {
+	font-size: 88px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.bootcamp-recordings .container .youtube-wrapper {
-/*.youtube-wrapper {*/
-	position: relative;
-	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
-	width: 35vw; /* aligns with a 10% margin */
+.bootcamp-session {
 	justify-content: center;
 }
 
-.bootcamp-recordings .container .youtube-wrapper iframe {
-/*.youtube-wrapper iframe {*/
+.bootcamp-session .session-recording figure {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content: center;
+}
+
+.bootcamp-session .session-recording .youtube-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* YouTube's 16:9 aspect ratio */
+	width: 70vw;
+	justify-content: center;
+}
+
+.bootcamp-session .session-recording .youtube-wrapper iframe {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -52,21 +55,69 @@
 	height: 100%;
 }
 
+.bootcamp-session .session-content {
+	display: grid;
+	grid-column-gap: 15vw;
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.bootcamp-session .session-content h3 {
+	font-size: 25px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #a1a1a1;
+}
+
+.bootcamp-session .session-content .session-material {
+	text-align: left;
+	color: white;
+	width: 30vw;
+	font-size: 22px;
+}
+
+.bootcamp-session .session-content .session-resources {
+	text-align: left;
+	color: white;
+	width: 25vw;
+	font-size: 22px;
+}
+
+.bootcamp-session .session-content ul {
+	margin-top: 0px;
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
-	
-	.bootcamp-recordings .container {
-		grid-template-rows: repeat(6, 1fr);
-		grid-template-columns: repeat(1, 1fr);
+
+
+	.bootcamp-session .session-recording .youtube-wrapper {
+		width: 80vw;
 	}
 
-	.bootcamp-recordings .container .youtube-wrapper {
-	/*.youtube-wrapper {*/
-		width: 90vw;
+	.bootcamp-session .session-content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 10vw;
+		margin-right: 10vw;
 	}
 
-	.bootcamp-recordings .container figcaption {
-		font-size: 30px;
+	.bootcamp-session .session-content h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.bootcamp-session .session-content .session-material {
+		width: 80vw;
+		font-size: 28px;
+	}
+
+	.bootcamp-session .session-content .session-resources {
+		width: 80vw;
+		font-size: 28px;
 	}
 
 }
@@ -74,8 +125,27 @@
 /* smartphones */
 @media screen and (max-width: 500px) {
 
-	.bootcamp-recordings .container figcaption {
-		font-size: 38px;
+	.bootcamp-session .session-recording .youtube-wrapper {
+		width: 100vw;
+	}
+
+	.bootcamp-session .session-content {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	.bootcamp-session .session-content h3 {
+		font-size: 50px;
+	}
+
+	.bootcamp-session .session-content .session-material {
+		width: 90vw;
+		font-size: 35px;
+	}
+
+	.bootcamp-session .session-content .session-resources {
+		width: 90vw;
+		font-size: 35px;
 	}
 
 }
