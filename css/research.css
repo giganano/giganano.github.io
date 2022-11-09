@@ -9,6 +9,24 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+#dwarf-galaxies {
+	background-color: #000000;
+}
+
+.research-page-header {
+	font-size: 88px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+#background .jaj-periodic-table {
+	display: block;
+	float: left;
+	padding-right: 20px;
+	height: 35%;
+	width: 50%;
+}
+
 .button {
 	text-decoration: none;
 	padding: 6px 12px;
