@@ -1,0 +1,41 @@
+
+#impacts .section-content {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#impacts .use-background-image {
+	background-size: 30vw;
+}
+
+#impacts #polaris {
+	background-color: #666666;
+	/*background-position: right;*/
+	background-position-x: right 10%;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0)), url(../images/polaris.roundel.png);
+}
+
+#impacts #polaris .section-content {
+	padding-top: 20%;
+	padding-bottom: 20%;
+	margin-left: 10vw;
+	margin-right: 50vw;
+}
+
+#impacts #ursa {
+	/*background-color: #263168;*/
+	/*background-color: #000000;*/
+	/*background-position: left;*/
+	background-position-x: left 10%;
+	background-image: url(../images/URSA_NOBG.png);
+}
+
+#impacts #ursa .section-content {
+	padding-top: 20%;
+	padding-bottom: 20%;
+	margin-left: 50vw;
+	margin-right: 10vw;
+}
+
