@@ -140,8 +140,10 @@ span.divider.grey {
 .section-content {
 	color: white;
 	font-size: 22px;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .quotation {
