@@ -31,5 +31,14 @@
 		margin-right: 10%;
 	}
 
+	#bio-content .section-content img {
+		display: block;
+		float: none;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
 

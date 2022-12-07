@@ -21,7 +21,7 @@ const navdivs = [
 	document.getElementById("research"),
 	document.getElementById("talks"),
 	document.getElementById("collabs"),
-	document.getElementById("comptools"),
+	// document.getElementById("comptools"),
 	document.getElementById("teaching"),
 	document.getElementById("impacts"),
 	document.getElementById("bio"),

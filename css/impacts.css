@@ -1,8 +1,8 @@
 
-#impacts .section-content {
+/*#impacts .section-content {
 	text-align: justify;
 	text-justify: inter-word;
-}
+}*/
 
 #impacts .use-background-image {
 	background-size: 30vw;
@@ -11,58 +11,104 @@
 #impacts #polaris .polaris-logo {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	width: 50vw;
+	width: 50%;
 }
 
-#impacts #polaris #mentorship-course .polaris-roundel {
-	display: block;
-	float: right;
-	padding-left: 100px;
-	width: 20vw;
+#impacts #polaris #mentorship-course {
+	position: relative;
+	display: flex;
+	margin-left: 20vw; /* margins mimic base .section-content class */
+	margin-right: 20vw;
 }
 
 #impacts #polaris #mentorship-course .section-content {
-/*	margin-left: 15vw;
-	margin-right: 15vw;*/
-	/*padding-top: 5%;*/
-	padding-bottom: 5%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-#impacts #polaris {
-	background-color: #666666;
-	/*background-position: right;*/
-	/*background-position-x: right 10%;*/
-/*	background-image: linear-gradient(
-		rgba(0, 0, 0, 0),
-		rgba(0, 0, 0, 0)), url(../images/polaris.roundel.png);*/
+#impacts #polaris #mentorship-course img.polaris-roundel {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 50px;
+	height: 20vh;
 }
 
-/*#impacts #polaris .section-content {*/
-/*	padding-top: 20%;
-	padding-bottom: 20%;*/
-/*	margin-left: 10vw;
-	margin-right: 10vw;*/
-/*}*/
+#impacts #polaris #ursa {
+	position: relative;
+	display: flex;
+	margin-left: 20vw; /* margins mimic base .section-content class */
+	margin-right: 20vw;
+	/*padding-bottom: 50px;*/
+}
 
-/*#impacts #ursa {*/
-	/*background-color: #263168;*/
-	/*background-color: #000000;*/
-	/*background-position: left;*/
-	/*background-position-x: left 10%;*/
-	/*background-image: url(../images/URSA_NOBG.png);*/
-/*}*/
+#impacts #polaris #ursa .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
 
-#impacts #polaris #ursa .ursa-logo {
-	display: block;
+#impacts #polaris #ursa img.ursa-logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+	height: 20vh;
+/*	display: block;
 	float: left;
-	padding-right: 100px;
+	padding-right: 50px;
 	width: 20vw;
+	padding-top: 50px;
+	padding-bottom: 50px;*/
 }
 
-/*#impacts #ursa .section-content {*/
-/*	padding-top: 20%;
-	padding-bottom: 20%;*/
-/*	margin-left: 50vw;
-	margin-right: 10vw;*/
-/*}*/
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	#impacts #polaris .polaris-logo {
+		width: 70%;
+	}
+
+	#impacts #polaris #mentorship-course .polaris-roundel {
+		width: 50vw;
+		float: none;
+		padding-left: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#impacts #polaris #ursa .ursa-logo {
+		width: 50vw;
+		float: none;
+		padding-right: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	#impacts #polaris .polaris-logo {
+		width: 90%;
+	}
+
+	#impacts #polaris #mentorship-course .polaris-roundel {
+		width: 80vw;
+	}
+
+	#impacts #polaris #ursa .ursa-logo {
+		width: 100vw;
+	}
+
+
+}
 

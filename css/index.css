@@ -73,6 +73,37 @@ img {
 }
 
 
+/* ------------- buttons ------------- */
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.button {
+	text-decoration: none;
+	padding: 6px 24px;
+	font-size: 25px;
+	line-height: 1.4285713;
+	background-color: #DD0000;
+	color: white;
+	text-align: center;
+}
+
+.button:focus {
+	background-color: #BB0000;
+}
+
+.button:hover {
+	background-color: #BB0000;
+}
+
+.botton:active {
+	background-color: #BB0000;
+}
+/* ----------------------------------- */
+
+
 
 /* ----- horizontal divider lines ----- */
 span.divider {
@@ -113,7 +144,11 @@ span.divider.grey {
 	background-color: #000000;
 }
 
-#impacts {
+#teaching {
+	background-color: #000000;
+}
+
+#bio {
 	background-color: #000000;
 }
 /* ------------------------------------- */
@@ -144,6 +179,13 @@ span.divider.grey {
 	margin-right: 20vw;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+footer .section-content {
+	text-align: center;
+	text-justify: none;
 }
 
 .quotation {
@@ -195,6 +237,7 @@ span.divider.grey {
 		font-size: 38px;
 		margin-left: 5%;
 		margin-right: 5%;
+		text-align: left;
 	}
 
 	.quotation {

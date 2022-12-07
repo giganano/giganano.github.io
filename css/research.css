@@ -19,60 +19,33 @@
 	margin-right: auto
 }
 
-#background .jaj-periodic-table {
-	display: block;
+.container {
+	position: relative;
+	display: flex;
+	margin-left: 20vw; /* margins mimic base .section-content class */
+	margin-right: 20vw;
+}
+
+.container .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#background .container .jaj-periodic-table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+	height: 40vh;
+/*	display: block;
 	float: left;
 	padding-right: 20px;
 	height: 35%;
-	width: 50%;
+	width: 50%;*/
 }
-
-.button {
-	text-decoration: none;
-	padding: 6px 12px;
-	font-size: 16px;
-	line-height: 1.4285713;
-	background-color: #BB0000;
-	color: #FFFFFF;
-	border-radius: 3px;
-	text-align: center;
-	z-index: 0;
-}
-
-.button:focus {
-	background-color: #BB0000;
-	color: white;
-}
-
-.button:hover {
-	background-color: white;
-	color: #BB0000;
-}
-
-.botton:active {
-	background-color: #BB0000;
-	color: white;
-}
-
-.bootcamp-cv-pubs .container {
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
-	grid-row-gap: 20px;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	text-align: center;
-	justify-content: center;
-}
-
-/*.bootcamp-cv-pubs .container button:hover {
-	color: #000000;
-}
-
-.bootcamp-cv-pubs .container .sub-page-link:hover {
-	color: #000000;
-	cursor: pointer;
-}*/
 
 #research-metrics {
 	text-align: center;
@@ -126,6 +99,111 @@
 #research-interests .asassn-logo {
 	height: 21%;
 	width: 30%;
+}
+
+#vice {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.7)), url(../images/circuitry.jpeg);
+}
+
+#vice #vice-name .vice-acronym {
+	text-align: center;
+	color: white;
+	font-size: 38px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#vice .vice-logo .container {
+	display: grid;
+	justify-content: center;
+}
+
+#vice .vice-logo .container img {
+	height: 142px;
+	width: 401px;
+}
+
+#vice .vice-links .container {
+	display: grid;
+	margin-left: 20%;
+	margin-right: 20%;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	justify-content: center;
+}
+
+#vice .vice-links .container div {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#vice .vice-links .container div figure img {
+	height: 100px;
+	width: 100px;
+}
+
+#vice .vice-links .container div figure figcaption {
+	min-width: 200px;
+}
+
+#vice .vice-link-label {
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	#vice #vice-name .vice-acronym {
+		font-size: 55px;
+	}
+
+	#vice .vice-logo .container img {
+		height: 177.5px;
+		width: 501.25px;
+	}
+
+	#vice .vice-links .container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#vice .vice-links .container div figure figcaption {
+		min-width: 100px;
+	}
+
+	#vice .vice-link-label {
+		font-size: 40px;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	#vice .vice-links .container {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#vice .vice-links .container div figure img {
+		height: 200px;
+		width: 200px;
+	}
+
+	#vice .vice-links .container div figure figcaption {
+		min-width: 200px;
+	}
+
+	#vice .vice-link-label {
+		font-size: 60px;
+	}
+
 }
 
 /* narrower laptop displays */

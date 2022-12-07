@@ -96,6 +96,17 @@ header.hero img {
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
+.cv-pubs {
+	display: grid;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	justify-content: center;
+}
+
+
 /* wide screens */
 @media screen and (min-width: 1400px) {
 
