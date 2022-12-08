@@ -1,34 +1,34 @@
 
-/*#impacts .section-content {
+/*#dei .section-content {
 	text-align: justify;
 	text-justify: inter-word;
 }*/
 
-#impacts .use-background-image {
+#dei .use-background-image {
 	background-size: 30vw;
 }
 
-#impacts #polaris .polaris-logo {
+#dei #polaris .polaris-logo {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 50%;
 }
 
-#impacts #polaris #mentorship-course {
+#dei #polaris #mentorship-course {
 	position: relative;
 	display: flex;
 	margin-left: 20vw; /* margins mimic base .section-content class */
 	margin-right: 20vw;
 }
 
-#impacts #polaris #mentorship-course .section-content {
+#dei #polaris #mentorship-course .section-content {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
-#impacts #polaris #mentorship-course img.polaris-roundel {
+#dei #polaris #mentorship-course img.polaris-roundel {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
@@ -37,7 +37,7 @@
 	height: 20vh;
 }
 
-#impacts #polaris #ursa {
+#dei #polaris #ursa {
 	position: relative;
 	display: flex;
 	margin-left: 20vw; /* margins mimic base .section-content class */
@@ -45,14 +45,14 @@
 	/*padding-bottom: 50px;*/
 }
 
-#impacts #polaris #ursa .section-content {
+#dei #polaris #ursa .section-content {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
-#impacts #polaris #ursa img.ursa-logo {
+#dei #polaris #ursa img.ursa-logo {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
@@ -70,11 +70,11 @@
 /* tablets */
 @media screen and (max-width: 980px) {
 
-	#impacts #polaris .polaris-logo {
+	#dei #polaris .polaris-logo {
 		width: 70%;
 	}
 
-	#impacts #polaris #mentorship-course .polaris-roundel {
+	#dei #polaris #mentorship-course .polaris-roundel {
 		width: 50vw;
 		float: none;
 		padding-left: 0px;
@@ -82,7 +82,7 @@
 		margin-right: auto;
 	}
 
-	#impacts #polaris #ursa .ursa-logo {
+	#dei #polaris #ursa .ursa-logo {
 		width: 50vw;
 		float: none;
 		padding-right: 0px;
@@ -97,15 +97,15 @@
 /* smartphones */
 @media screen and (max-width: 500px) {
 
-	#impacts #polaris .polaris-logo {
+	#dei #polaris .polaris-logo {
 		width: 90%;
 	}
 
-	#impacts #polaris #mentorship-course .polaris-roundel {
+	#dei #polaris #mentorship-course .polaris-roundel {
 		width: 80vw;
 	}
 
-	#impacts #polaris #ursa .ursa-logo {
+	#dei #polaris #ursa .ursa-logo {
 		width: 100vw;
 	}
 

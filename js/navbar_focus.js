@@ -23,7 +23,7 @@ const navdivs = [
 	document.getElementById("collabs"),
 	// document.getElementById("comptools"),
 	document.getElementById("teaching"),
-	document.getElementById("impacts"),
+	document.getElementById("dei"),
 	document.getElementById("bio"),
 	document.getElementById("contact")
 ]

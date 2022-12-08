@@ -96,7 +96,7 @@ header.hero img {
 	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
-.cv-pubs {
+.bootcamp-cv-pubs {
 	display: grid;
 	grid-row-gap: 30px;
 	grid-template-columns: 1fr;
