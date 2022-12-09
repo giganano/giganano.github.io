@@ -37,6 +37,10 @@ footer .socials .container .facebook-logo {
 	width: 45px;
 }
 
+footer a i {
+	color: white;
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
 	footer .socials .container {

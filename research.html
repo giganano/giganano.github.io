@@ -13,9 +13,57 @@
 	<div id="home"></div>
 
 	<!-- ==== Mobile Menu ==== -->
-<!-- 	<nav id="mobile-nav">
+	<nav id="mobile-nav">
 		<a href="#" class="navbar-brand">Research</a>
-	</nav> -->
+		<button class="toggle-collapse">
+			<i class="toggle fa-solid fa-align-center fa-xl"></i>
+		</button>
+		<div class="navbar-collapse">
+			<ul class="navbar-nav">
+				<li><a
+					href="./index.html"
+					class="nav-item dormant">
+					<i class="fa-solid fa-angles-left"></i>
+					Home
+				</a></li>
+				<li><a
+					href="#background"
+					class="nav-item focus">
+					Background
+				</a></li>
+				<li><a
+					href="#metrics"
+					class="nav-item dormant">
+					Metrics
+				</a></li>
+				<li><a
+					href="#dwarf-galaxies"
+					class="nav-item dormant">
+					Dwarf Galaxies
+				</a></li>
+				<li><a
+					href="#milky-way"
+					class="nav-item dormant">
+					The Milky Way
+				</a></li>
+				<li><a
+					href="#vice"
+					class="nav-item dormant">
+					VICE
+				</a></li>
+				<li><a
+					href="#origin-elements"
+					class="nav-item dormant">
+					Origin of the Elements
+				</a></li>
+				<li><a
+					href="other-work"
+					class="nav-item dormant">
+					Other Work
+				</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<!-- ==== Navigation Bar ==== -->
 	<div class="navbar">
@@ -33,6 +81,11 @@
 					Background
 				</a></li>
 				<li><a
+					href="#metrics"
+					class="nav-item dormant">
+					Metrics
+				</a></li>
+				<li><a
 					href="#dwarf-galaxies"
 					class="nav-item dormant">
 					Dwarf Galaxies
@@ -47,6 +100,16 @@
 					class="nav-item dormant">
 					VICE
 				</a></li>
+				<li><a
+					href="#origin-elements"
+					class="nav-item dormant">
+					Origin of the Elements
+				</a></li>
+				<li><a
+					href="other-work"
+					class="nav-item dormant">
+					Other Work
+				</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -55,9 +118,43 @@
 		<h1 class="research-page-header">My Research</h1>
 	</div>
 
+	<!-- ==== Background ==== -->
+	<section id="background">
+
+		<div id="background-top">
+			<h2 class="section-title">Background</h2>
+		</div>
+
+		<span class="divider center red"></span>
+
+		<div class="container">
+			<img
+				src="./images/jajohnson_periodic_table.png"
+				class="jaj-periodic-table">
+			<div class="section-content">
+				I am broadly interesting in galaxy evolution and the origin of
+				the elements.
+				Galactic chemical evolution (GCE) bridges the gap between
+				nuclear physics and astrophysics.
+				By combining galactic processes such as star formation with
+				nucleosynthetic yields from stellar evolution and supernova
+				explosion models, GCE parameterizes the enrichment rates of
+				various elements in the interstellar medium (ISM).
+			</div>
+		</div>
+
+	</section>
+
 	<!-- ===== Research Metrics ===== -->
-	<div id="research-metrics">
-		<div id="research-merics">
+	<section id="metrics" class="use-background-image">
+
+		<div id="metrics-top">
+			<h2 class="section-title">Metrics</h2>
+		</div>
+
+		<span class="divider center grey"></span>
+
+		<div id="research-metrics">
 			<div class="metrics">
 				<div class="container">
 					<div>
@@ -101,48 +198,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!-- ==== Background ==== -->
-	<div id="background">
-	<section>
-
-		<div id="background-top">
-			<h2 class="section-title">Background</h2>
-		</div>
-
-		<span class="divider center red"></span>
-
-		<div class="container">
-			<img
-				src="./images/jajohnson_periodic_table.png"
-				class="jaj-periodic-table">
-			<div class="section-content">
-				I am broadly interesting in galaxy evolution and the origin of
-				the elements.
-				Galactic chemical evolution (GCE) bridges the gap between
-				nuclear physics and astrophysics.
-				By combining galactic processes such as star formation with
-				nucleosynthetic yields from stellar evolution and supernova
-				explosion models, GCE parameterizes the enrichment rates of
-				various elements in the interstellar medium (ISM).
-			</div>
-		</div>
-
 	</section>
 
-	<!-- spacing -->
-	<div>&nbsp;</div>
-
-	</div>
-
 	<!-- ==== Dwarf Galaxies ==== -->
-	<div id="dwarf-galaxies">
-
-	<!-- spacing -->
-	<div>&nsbp;</div>
-
-	<section>
+	<section id="dwarf-galaxies">
 
 		<div id="dwarf-galaxies-top">
 			<h2 class="section-title">Dwarf Galaxies</h2>
@@ -169,18 +228,8 @@
 
 	</section>
 
-	<!-- spacing -->
-	<div>&nsbp;</div>
-
-	</div>
-
 	<!-- ==== Milky Way ==== -->
-	<div id="milky-way">
-
-	<!-- spacing -->
-	<div>&nsbp;</div>
-
-	<section>
+	<section id="milky-way">
 
 		<div id="milky-way-top">
 			<h2 class="section-title">The Milky Way</h2>
@@ -207,18 +256,8 @@
 
 	</section>
 
-	<!-- spacing -->
-	<div>&nsbp;</div>
-
-	</div>
-
-	<!-- ===== Computational Tools ===== -->
-	<div id="vice" class="use-background-image">
-
-	<!-- spacing --> 
-	<div>&nbsp;</div>
-
-	<section>
+	<!-- ===== VICE ===== -->
+	<section id="vice" class="use-background-image">
 
 		<div class="vice-logo">
 			<div class="container">
@@ -322,10 +361,92 @@
 
 	</section>
 
-	<!-- spacing -->
-	<div>&nbsp;</div>
+	<!-- ==== Origin of the Elements ==== -->
+	<section id="origin-elements">
 
-	</div>
+		<div id="origin-elements-top">
+			<h2 class="section-title">The Origin of the Elements</h2>
+		</div>
+
+		<span class="divider center red"></span>
+
+		<div class="section-content">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+
+	</section>
+
+	<!-- ==== Other Work ==== -->
+	<section id="other-work">
+
+		<div id="other-work-top">
+			<h2 class="section-title">Other Work</h2>
+		</div>
+
+		<span class="divider center red"></span>
+
+		<div class="section-content">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div class="socials">
+			<div class="container">
+				<a href="https://twitter.com/giganano9" target="_blank">
+						<i class="fa-brands fa-square-twitter fa-3x"></i>
+				</a>
+				<a href="https://github.com/giganano" target="_blank">
+						<i class="fa-brands fa-square-github fa-3x"></i>
+				</a>
+				<a href="https://www.facebook.com/jamie.johnson.528"
+					target="_blank">
+						<i class="fa-brands fa-square-facebook fa-3x"></i>
+				</a>
+			</div>
+		</div>
+		<div class="section-content">
+			© 2022 James W. Johnson. All rights reserved.
+		</div>
+		<div class="section-content">
+			Image sources:
+			<a href="https://www.wired.com/story/green-bank-observatory-reluctantly-embraces-its-alien-hunting-future/"
+			target="_blank">image 1</a>
+		</div>
+		<div class="section-content"><a
+			href="https://github.com/giganano/giganano.github.io"
+			target="_blank">Webpage source code</a>
+		</div>
+
+	</footer>
 
 	<!-- ==== javascripts ==== -->
 	<script
@@ -340,6 +461,8 @@
 		crossorigin="anonymous"></script>
 
 	<script src="./js/counter.js"></script>
+	<script src="./js/navbar_focus.js"></script>
+	<script src="./js/navbar_collapse.js"></script>
 
 </body>
 

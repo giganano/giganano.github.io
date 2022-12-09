@@ -14,19 +14,13 @@
  * focus, dormant : The strings to swap in and out of navbar.innerHTML when
  * 		different sections come in and out of view.
  */
+var sections = document.getElementsByTagName("section");
 const navbar = document.getElementById("navigation");
 const mobileNavbar = document.getElementById("mobile-nav");
-const navdivs = [
-	document.getElementById("header-top"),
-	document.getElementById("research"),
-	document.getElementById("talks"),
-	document.getElementById("collabs"),
-	// document.getElementById("comptools"),
-	document.getElementById("teaching"),
-	document.getElementById("dei"),
-	document.getElementById("bio"),
-	document.getElementById("contact")
-]
+var navdivs = [];
+for (var i = 0; i < sections.length; i++) {
+	navdivs.push(document.getElementById(sections[i].id));
+}
 const focus = "focus\">"
 const dormant = "dormant\">"
 cycleNavbars();
@@ -59,6 +53,12 @@ function updateNavbar() {
 			"focus")) current = i;
 	}
 
+	/*
+	 * Pages other than the homepage have an additional link back to the
+	 * homepage at the beginning, so the correct index is one larger than
+	 * what this script will infer for those pages.
+	 */
+	if (window.location.pathname.split("/").pop() != "index.html") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = navbar.children[0].children[divIndex].children[0];
 		let oldChild = navbar.children[0].children[current].children[0];
@@ -86,6 +86,12 @@ function updateMobileNavbar() {
 		if (elem.classList.contains("focus")) current = i;
 	}
 
+	/*
+	 * Pages other than the homepage have an additional link back to the
+	 * homepage at the beginning, so the correct index is one larger than
+	 * what this script will infer for those pages.
+	 */
+	if (window.location.pathname.split("/").pop() != "index.html") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = mobileNavbar.children[2].children[0].children[divIndex];
 		let oldChild = mobileNavbar.children[2].children[0].children[current];

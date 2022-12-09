@@ -9,9 +9,28 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-#dwarf-galaxies {
+#background {
+	padding-top: 0;
+}
+
+#metrics {
+	/*height: calc(100vh - 50px);*/
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)), url(../images/greenbank_sunset.jpeg);
+}
+
+#milky-way {
 	background-color: #000000;
 }
+
+#other-work {
+	background-color: #000000;
+}
+
+/*#dwarf-galaxies {
+	background-color: #000000;
+}*/
 
 .research-page-header {
 	font-size: 88px;

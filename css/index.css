@@ -45,8 +45,13 @@ button {
 }
 
 section {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 h1, h2, h3, h4, th, td, li {
@@ -89,6 +94,7 @@ button {
 	background-color: #DD0000;
 	color: white;
 	text-align: center;
+	border-radius: 10px;
 }
 
 .button:focus {
@@ -212,6 +218,10 @@ footer .section-content {
 
 	.section-title {
 		font-size: 50px;
+	}
+
+	.button {
+		font-size: 20px;
 	}
 
 	.section-content {

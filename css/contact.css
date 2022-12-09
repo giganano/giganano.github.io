@@ -9,8 +9,9 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-
 #contact {
+	padding-top: 0; /* overrides section margins */
+	padding-bottom: 0;
 	background-image: linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)), url(../images/me_ivy.jpeg);
