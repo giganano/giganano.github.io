@@ -195,6 +195,10 @@ footer .section-content {
 	text-justify: none;
 }
 
+footer .socials .container a {
+	color: white;
+}
+
 .quotation {
 	color: #a1a1a1;
 	font-size: 22px;

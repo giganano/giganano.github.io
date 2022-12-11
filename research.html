@@ -130,7 +130,7 @@
 		<div class="container">
 			<img
 				src="./images/jajohnson_periodic_table.png"
-				class="jaj-periodic-table">
+				class="left">
 			<div class="section-content">
 				I am broadly interesting in galaxy evolution and the origin of
 				the elements.
@@ -209,21 +209,59 @@
 
 		<span class="divider center red"></span>
 
-		<div class="section-content">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="container">
+			<img
+				src="./images/research/gsefit_afe_feh.jpg"
+				class="left"
+				alt="One-zone model fit to Gaia-Sausage Enceladus">
+			<div class="section-content">
+				The simplest models of galactic chemical evolution (GCE)
+				are called "one-zone" models, which assume instantaneous
+				mixing in the interstellar medium (ISM).
+				Due to their small sizes, turbulent velocities, and inefficient
+				star formation, this approximation likely applies best to
+				dwarf galaxies.
+				<br><br>
+				This figure shows a fit of one of these models to
+				the <em>Gaia</em>-Sausage Enceladus (GSE), a disrupted dwarf
+				galaxy in the inner stalo halo of the Milky Way.
+				GSE exhibits the behavior of a "classic" chemical evolution
+				model, where the [&alpha;/Fe] ratio decreases with
+				increasing [Fe/H].
+				This work follows a novel, statistically robust star-by-star
+				fitting method, the details of which can be found in
+				<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221001816J/abstract"
+					target="_blank">Johnson et al. (2022)</a>.
+			</div>
+		</div>
+
+		<div class="container">
+
+			<img
+				src="./images/research/accretion-driven-starburst-ofefeh.png"
+				class="left mobile-only"
+				alt="accretion-driven starburst">
+			<div class="section-content">
+				Dwarf galaxies often have bursty star formation histories.
+				Isolating this effect, <a
+					href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.1364J/abstract"
+					target="_blank">Johnson & Weinberg (2020)</a> quantify
+				the effects of simple starbursts in one-zone GCE models.
+				In any starburst scenario, the principle observational
+				signature is a surplus of high [&alpha;/Fe] stars, as in this
+				figure.
+				The details contain information on the timing and strength of
+				the burst, and if the burst's decay is accompanied by quick
+				drops in the star formation efficiency, low [&alpha;/Fe] stars
+				can form as well.
+				Here &alpha; refers to an "alpha element," specifically O or
+				Mg, whose enrichment is dominated by metallicity-independent
+				yields from massive stars.
+			</div>
+			<img
+				src="./images/research/accretion-driven-starburst-ofefeh.png"
+				class="right"
+				alt="accretion-driven starburst">
 		</div>
 
 	</section>
@@ -237,21 +275,28 @@
 
 		<span class="divider center red"></span>
 
-		<div class="section-content">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="container">
+			<img
+				src="./images/research/tracks_migration.png"
+				class="left"
+				alt="GCE evolutionary tracks incorporating stellar migration">
+			<div class="section-content">
+				In the Milky Way, processes such as stellar migration and
+				radial gas flows have prompted the development of
+				"multi-zone" GCE models stitching together many one-zone
+				models to describe the abundances in different Galactic
+				regions.
+				<a
+					href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4484J/abstract"
+					target="_blank">Johnson et al. (2021)</a> presents one of
+				these models combining inside-out galaxy growth with stellar
+				migration.
+				This empirically motivated combination leads to a natural
+				explanation of many details of the Galactic abundance
+				structure.
+				The assembly history of the Milky Way is a topic of debate, so
+				I continually investigate variations of this model.
+			</div>
 		</div>
 
 	</section>
@@ -273,7 +318,71 @@
 
 		<span class="divider center red"></span>
 
-		<div class="vice-links">
+		<div id="install-docs-source">
+			<button>
+				<a
+					href="https://pypi.org/project/vice"
+					class="button"
+					target="_blank">
+					<i class="fa-regular fa-circle-down"></i>
+					&nbsp;
+					Install
+				</a>
+			</button>
+			<button>
+				<a
+					href="https://vice-astro.readthedocs.io"
+					class="button"
+					target="_blank">
+					<i class="fa-solid fa-book"></i>
+					&nbsp;
+					Documentation
+				</a>
+			</button>
+			<button>
+				<a
+					href="https://github.com/giganano/VICE.git"
+					class="button"
+					target="_blank">
+					<i class="fa-brands fa-github"></i>
+					&nbsp;
+					Source Code
+				</a>
+			</button>
+		</div>
+
+		<div class="package-details">
+			<!-- <div class="section-content">
+				VICE is an open-source GCE software that I created and
+				continue to maintain.
+				Check it out!
+			</div> -->
+			<div class="column">
+				<div class="section-content">
+					<h3>What it is</h3>
+					VICE is an open-source GCE modeling software that I
+					created.
+					Many evolutionary parameters, such as the galaxy's star
+					formation history, are arbitrary, user-defined functions.
+					Best described as a "one size fits all" GCE software,
+					this implementation allows users to explore highly complex
+					parameterizations.
+				</div>
+			</div>
+			<div class="column border">
+				<div class="section-content">
+					<h3>Why to use it</h3>
+					VICE is a python package written in C, allowing it to
+					enjoy both the powerful computing speeds of a compiled
+					language and the ease of use of python.
+					In keeping with its mantra of flexibility, users can also
+					construct their own expressions for nucleosynthetic yields
+					independent of any stellar evolution model.
+				</div>
+			</div>
+		</div>
+
+<!-- 		<div class="vice-links">
 			<div class="container">
 				<div>
 					<figure>
@@ -326,9 +435,9 @@
 					</figure>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div id="vice-description">
+<!-- 		<div id="vice-description">
 			<div class="section-content">
 				VICE is an open-source galactic chemical evolution software.
 				A python package with a backend written in C, VICE enjoys the
@@ -357,7 +466,7 @@
 				In this way, users can construct their own mixing processes for
 				their models and let VICE handle the rest.
 			</div>
-		</div>
+		</div> -->
 
 	</section>
 

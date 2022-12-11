@@ -41,8 +41,9 @@
 .container {
 	position: relative;
 	display: flex;
-	margin-left: 20vw; /* margins mimic base .section-content class */
-	margin-right: 20vw;
+	margin-left: 15vw; /* margins mimic base .section-content class */
+	margin-right: 15vw;
+	margin-bottom: 5vh;
 }
 
 .container .section-content {
@@ -52,18 +53,34 @@
 	margin-bottom: auto;
 }
 
-#background .container .jaj-periodic-table {
+/*#background .container .jaj-periodic-table {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-right: 50px;
 	height: 40vh;
-/*	display: block;
-	float: left;
-	padding-right: 20px;
-	height: 35%;
-	width: 50%;*/
+}*/
+
+.container img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 25vw;
+}
+
+.container img.left {
+	padding-right: 50px;
+}
+
+.container img.left.mobile-only {
+	display: none;
+	padding-right: 0;
+}
+
+.container img.right {
+	padding-left: 50px;
 }
 
 #research-metrics {
@@ -110,7 +127,7 @@
 	color: white;
 }
 
-#research-interests .jaj-periodic-table {
+/*#research-interests .jaj-periodic-table {
 	height: 35%;
 	width: 50%;
 }
@@ -118,7 +135,7 @@
 #research-interests .asassn-logo {
 	height: 21%;
 	width: 30%;
-}
+}*/
 
 #vice {
 	background-image: linear-gradient(
@@ -142,6 +159,13 @@
 #vice .vice-logo .container img {
 	height: 142px;
 	width: 401px;
+}
+
+#vice #install-docs-source {
+	display: flex;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	justify-content: center;
 }
 
 #vice .vice-links .container {
@@ -175,14 +199,132 @@
 	font-size: 30px;
 }
 
+#vice .package-details {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+}
+
+#vice .package-details h3 {
+	text-align: center;
+}
+
+#vice .package-details .section-content {
+	margin-left: 10%;
+	margin-right: 10%;
+	/*text-align: center;*/
+}
+
+#vice .package-details .column {
+	float: left;
+	width: 50%;
+}
+
+#vice .package-details .column .section-content {
+	margin-left: 5%;
+	margin-right: 5%;
+	/*text-align: justify;*/
+}
+
+#vice .package-details .column.border {
+	/*border-right: 1px solid #a1a1a1;*/
+	border-left: 3px solid #a1a1a1;
+}
+
+#vice .package-details .column .teaching-icon {
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
+
+	.container {
+		display: inline;
+	}
+
+	.container img {
+		padding-bottom: 5vh;
+		width: 70vw;
+	}
+
+	.container img.left {
+		padding-right: 0;
+	}
+
+	.container img.left.mobile-only {
+		display: block;
+		/*padding-right: 0;*/
+	}
+
+	.container img.right {
+		display: none;
+	}
+
+	.container .section-content {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
 
 	#vice #vice-name .vice-acronym {
 		font-size: 55px;
 	}
 
-	#vice .vice-logo .container img {
+	#vice #install-docs-source {
+		display: grid;
+		grid-row-gap: 15px;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		/*margin-left: 15vw;
+		margin-right: 15vw;*/
+		justify-content: center;
+	}
+
+	#vice .package-details {
+		display: inline-block;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	#vice .package-details .column {
+		position: relative;
+		display: flex;
+		width: 100%;
+		/*margin-left: 0;*/
+		/*margin-right: 0;*/
+		/*padding-right: 0;*/
+	}
+
+	#vice .package-details .column.border {
+		border-right: none;
+		border-left: none;
+		border-top: 1px solid #a1a1a1;
+		/*border-bottom: 1px solid #a1a1a1;*/
+		/*margin-top: 5%;*/
+		/*margin-bottom: 5%;*/
+	}
+
+	#vice .package-details .column .section-content {
+		text-align: justify;
+		text-justify: inter-word;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 8%;
+	}
+
+	#vice .package-details .column.border .section-content {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+
+/*	#vice .vice-logo .container img {
 		height: 177.5px;
 		width: 501.25px;
 	}
@@ -198,12 +340,21 @@
 
 	#vice .vice-link-label {
 		font-size: 40px;
-	}
+	}*/
 
 }
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
+	.container .section-content {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	.container img {
+		width: 90%;
+	}
 
 	#vice .vice-links .container {
 		grid-template-rows: repeat(3, 1fr);
@@ -221,6 +372,12 @@
 
 	#vice .vice-link-label {
 		font-size: 60px;
+	}
+
+	#vice .package-details .column .section-content {
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 }
