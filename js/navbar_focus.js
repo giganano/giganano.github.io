@@ -11,6 +11,8 @@
  * mobileNavbar : The same as navbar but for mobile screens.
  * navdivs : The div items in the calling script that have sections represented
  * 		on the navigation bar.
+ * page : The name of the calling html script - used only to determine if the
+ * 		user is looking at the front page or not.
  * focus, dormant : The strings to swap in and out of navbar.innerHTML when
  * 		different sections come in and out of view.
  */
@@ -18,7 +20,9 @@ var sections = document.getElementsByTagName("section");
 const navbar = document.getElementById("navigation");
 const mobileNavbar = document.getElementById("mobile-nav");
 var navdivs = [];
-const page = window.location.pathname.split("/").pop();
+var page = window.location.pathname.split("/").pop();
+if (page === "" || page === "index") page = "index.html";
+console.log(page);
 for (var i = 0; i < sections.length; i++) {
 	navdivs.push(document.getElementById(sections[i].id));
 }
@@ -60,7 +64,7 @@ function updateNavbar() {
 	 * what this script will infer for those pages. A blank page name
 	 * corresponds to the bare webpage url with now "/index.html" at the end.
 	 */
-	if (page != "index.html" && page != "") divIndex++;
+	if (page != "index.html") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = navbar.children[0].children[divIndex].children[0];
 		let oldChild = navbar.children[0].children[current].children[0];
@@ -94,7 +98,7 @@ function updateMobileNavbar() {
 	 * what this script will infer for those pages. A blank page name
 	 * corresponds to the bare webpage url with now "/index.html" at the end.
 	 */
-	if (page != "index.html" && page != "") divIndex++;
+	if (page != "index.html") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = mobileNavbar.children[2].children[0].children[divIndex];
 		let oldChild = mobileNavbar.children[2].children[0].children[current];
