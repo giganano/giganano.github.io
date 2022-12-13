@@ -16,6 +16,11 @@
 	display: table;
 }
 
+.slides .container figure a img {
+	width: 600px;
+	height: 338px;
+}
+
 .slides .container figure figcaption {
 	display: table-caption;
 	caption-side: bottom;

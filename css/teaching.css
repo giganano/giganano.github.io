@@ -1,0 +1,149 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
+
+#teaching-content {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+}
+
+#teaching-content .column {
+	float: left;
+	width: 33.33%;
+}
+
+#teaching-content .column .section-content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#teaching-content .column.border {
+	border-right: 1px solid #a1a1a1;
+	border-left: 1px solid #a1a1a1;
+}
+
+#teaching-content .column .teaching-icon {
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* narrower screens */
+@media screen and (max-width: 1200px) {
+
+	#teaching-content #bootcamp.column .section-content {
+		text-align: right;
+	}
+
+	#teaching-content #mentor.column .section-content {
+		text-align: center;
+	}
+
+	#teaching-content #gta.column .section-content{
+		text-align: left;
+	}
+
+}
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	#teaching-content {
+		display: inline;
+	}
+
+	#teaching-content .column {
+		position: relative;
+		display: flex;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#teaching-content .column.border {
+		border-right: none;
+		border-left: none;
+		border-top: 1px solid #a1a1a1;
+		border-bottom: 1px solid #a1a1a1;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	#teaching-content .column .section-content {
+		text-align: justify;
+		text-justify: inter-word;
+		margin-left: 10%;
+		margin-right: 5%;
+	}
+
+	#teaching-content .column.border .section-content {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	#teaching-content .column .teaching-icon {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	#teaching-content #bootcamp.column .section-content {
+		text-align: justify;
+	}
+
+	#teaching-content #mentor.column .section-content {
+		text-align: justify;
+	}
+
+	#teaching-content #gta.column .section-content {
+		text-align: justify;
+	}
+
+}
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	#teaching-content .column {
+		display: inline;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#teaching-content .column.border .teaching-icon {
+		padding-top: 5%;
+	}
+
+	#teaching-content .column.border .section-content {
+		padding-top: 0;
+	}
+
+	#teaching-content #bootcamp.column .section-content {
+		text-align: left;
+	}
+
+	#teaching-content #mentor.column .section-content {
+		text-align: left;
+	}
+
+	#teaching-content #gta.column .section-content {
+		text-align: left;
+	}
+
+}
+

@@ -14,7 +14,8 @@
 @import "research.css";
 @import "talks.css";
 @import "collaborators.css";
-@import "comptools.css";
+@import "teaching.css";
+@import "dei.css";
 @import "bio.css";
 @import "contact.css";
 @import "footer.css";
@@ -43,8 +44,8 @@ button {
 }
 
 section {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 h1, h2, h3, h4, th, td, li {
@@ -70,6 +71,38 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+/* ------------- buttons ------------- */
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.button {
+	text-decoration: none;
+	padding: 6px 24px;
+	font-size: 25px;
+	line-height: 1.4285713;
+	background-color: #DD0000;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.button:focus {
+	background-color: #BB0000;
+}
+
+.button:hover {
+	background-color: #BB0000;
+}
+
+.botton:active {
+	background-color: #BB0000;
+}
+/* ----------------------------------- */
 
 
 
@@ -112,7 +145,11 @@ span.divider.grey {
 	background-color: #000000;
 }
 
-#impacts {
+#teaching {
+	background-color: #000000;
+}
+
+#bio {
 	background-color: #000000;
 }
 /* ------------------------------------- */
@@ -139,8 +176,12 @@ span.divider.grey {
 .section-content {
 	color: white;
 	font-size: 22px;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .quotation {
@@ -168,6 +209,11 @@ span.divider.grey {
 		font-size: 50px;
 	}
 
+	.button {
+		font-size: 24px;
+		padding: 9px 18px;
+	}
+
 	.section-content {
 		font-size: 28px;
 		margin-left: 10%;
@@ -184,6 +230,10 @@ span.divider.grey {
 /* smartphones */
 @media screen and (max-width: 500px) {
 
+	.button {
+		padding: 12px 24px;
+	}
+
 	.section-title {
 		font-size: 60px;
 	}
@@ -192,6 +242,7 @@ span.divider.grey {
 		font-size: 38px;
 		margin-left: 5%;
 		margin-right: 5%;
+		text-align: left;
 	}
 
 	.quotation {

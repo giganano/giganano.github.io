@@ -9,6 +9,15 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+#pubs-lead-author {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#pubs-co-author {
+	background-color: #000000;
+}
+
 .pubs-section-head {
 	color: #a1a1a1;
 	font-size: 22px;
