@@ -9,7 +9,14 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+footer .section-content {
+	text-align: center;
+	text-justify: none;
+}
+
 footer {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -17,9 +24,14 @@ footer .socials .container {
 	display: grid;
 	margin-left: 40%;
 	margin-right: 40%;
+	margin-bottom: 10px;
 	grid-column-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
+}
+
+footer .socials .container a {
+	color: white;
 }
 
 footer .socials .container .twitter-logo {

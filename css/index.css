@@ -49,11 +49,6 @@ section {
 	padding-bottom: 50px;
 }
 
-footer {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
 h1, h2, h3, h4, th, td, li {
 	color: white;
 }
@@ -188,15 +183,6 @@ span.divider.grey {
 	padding-bottom: 10px;
 	text-align: justify;
 	text-justify: inter-word;
-}
-
-footer .section-content {
-	text-align: center;
-	text-justify: none;
-}
-
-footer .socials .container a {
-	color: white;
 }
 
 .quotation {
