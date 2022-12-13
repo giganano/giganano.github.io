@@ -62,15 +62,16 @@
 @media screen and (max-width: 980px) {
 
 	#teaching-content {
-		display: inline;
+		display: inline-block;
 	}
 
 	#teaching-content .column {
 		position: relative;
 		display: flex;
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		float: none;
 	}
 
 	#teaching-content .column.border {
@@ -85,7 +86,7 @@
 	#teaching-content .column .section-content {
 		text-align: justify;
 		text-justify: inter-word;
-		margin-left: 10%;
+		margin-left: 5%;
 		margin-right: 5%;
 	}
 
@@ -121,8 +122,8 @@
 	#teaching-content .column {
 		display: inline;
 		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	#teaching-content .column.border .teaching-icon {

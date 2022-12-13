@@ -9,35 +9,63 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-#bio-content .section-content {
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+#bio #bio-content {
+	position: relative;
+	display: flex;
+	margin-left: 15vw;
+	margin-right: 15vw;
 }
 
-#bio-content .section-content img {
-	float: left;
-	width: 267px;
-	height: 355px;
-	padding-right: 20px;
+#bio #bio-content .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-left: auto;
+}
+
+#bio #bio-content img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+	width: 25vw;
 }
 
 
 /* tablets */
 @media screen and (max-width: 980px) {
 
-	#bio-content .section-content {
+	#bio #bio-content {
+		display: inline;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#bio #bio-content .section-content {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 
-	#bio-content .section-content img {
-		display: block;
-		float: none;
-		padding-right: 0px;
+	#bio #bio-content img {
+		padding-right: 0;
 		padding-bottom: 20px;
-		margin-left: auto;
-		margin-right: auto;
+		width: 40vw;
+	}
+
+}
+
+
+/* smartphones */
+@media screen and (max-width: 500px) {
+
+	#bio #bio-content .section-content {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#bio #bio-content img {
+		width: 70vw;
 	}
 
 }
