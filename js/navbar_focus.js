@@ -18,6 +18,7 @@ var sections = document.getElementsByTagName("section");
 const navbar = document.getElementById("navigation");
 const mobileNavbar = document.getElementById("mobile-nav");
 var navdivs = [];
+const page = window.location.pathname.split("/").pop();
 for (var i = 0; i < sections.length; i++) {
 	navdivs.push(document.getElementById(sections[i].id));
 }
@@ -56,9 +57,10 @@ function updateNavbar() {
 	/*
 	 * Pages other than the homepage have an additional link back to the
 	 * homepage at the beginning, so the correct index is one larger than
-	 * what this script will infer for those pages.
+	 * what this script will infer for those pages. A blank page name
+	 * corresponds to the bare webpage url with now "/index.html" at the end.
 	 */
-	if (window.location.pathname.split("/").pop() != "index.html") divIndex++;
+	if (page != "index.html" && page != "") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = navbar.children[0].children[divIndex].children[0];
 		let oldChild = navbar.children[0].children[current].children[0];
@@ -89,9 +91,10 @@ function updateMobileNavbar() {
 	/*
 	 * Pages other than the homepage have an additional link back to the
 	 * homepage at the beginning, so the correct index is one larger than
-	 * what this script will infer for those pages.
+	 * what this script will infer for those pages. A blank page name
+	 * corresponds to the bare webpage url with now "/index.html" at the end.
 	 */
-	if (window.location.pathname.split("/").pop() != "index.html") divIndex++;
+	if (page != "index.html" && page != "") divIndex++;
 	if (current >= 0 && current != divIndex) {
 		let newChild = mobileNavbar.children[2].children[0].children[divIndex];
 		let oldChild = mobileNavbar.children[2].children[0].children[current];
