@@ -15,7 +15,6 @@
 @import "talks.css";
 @import "collaborators.css";
 @import "teaching.css";
-@import "comptools.css";
 @import "dei.css";
 @import "bio.css";
 @import "contact.css";
@@ -211,7 +210,8 @@ span.divider.grey {
 	}
 
 	.button {
-		font-size: 20px;
+		font-size: 24px;
+		padding: 9px 18px;
 	}
 
 	.section-content {
@@ -229,6 +229,10 @@ span.divider.grey {
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
+	.button {
+		padding: 12px 24px;
+	}
 
 	.section-title {
 		font-size: 60px;

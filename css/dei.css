@@ -1,8 +1,13 @@
-
-/*#dei .section-content {
-	text-align: justify;
-	text-justify: inter-word;
-}*/
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
 
 #dei .use-background-image {
 	background-size: 30vw;
@@ -50,7 +55,6 @@
 	display: flex;
 	margin-left: 20vw; /* margins mimic base .section-content class */
 	margin-right: 20vw;
-	/*padding-bottom: 50px;*/
 }
 
 #dei #polaris #ursa .section-content {
@@ -85,17 +89,8 @@
 		margin-right: 10vw;
 	}
 
-/*	#dei #polaris #mentorship-course .polaris-roundel {
-		width: 50vw;
-		float: none;
-		padding-left: 0px;
-		margin-left: auto;
-		margin-right: auto;
-	}*/
-
 	#dei #polaris #mentorship-course img.polaris-roundel.top {
 		display: block;
-		/*position: relative;*/
 		width: 50vw;
 		margin-left: auto;
 		margin-right: auto;
@@ -119,13 +114,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-right: 0;
-		/*width: 50vw;
-		float: none;
-		padding-right: 0px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		margin-left: auto;
-		margin-right: auto;*/
 	}
 
 }

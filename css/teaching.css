@@ -1,3 +1,13 @@
+/*
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ * 
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design.
+ */
 
 #teaching-content {
 	padding-top: 5vh;
@@ -30,11 +40,6 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-/*#teaching-content .column.border .section-content i {
-	text-align: center;
-	display: block;
-}*/
 
 /* narrower screens */
 @media screen and (max-width: 1200px) {

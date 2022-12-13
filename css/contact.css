@@ -38,13 +38,6 @@
 	height: 168px;
 }
 
-/* tablets */
-@media screen and (max-width: 980px) {
-	#contact .contact-line {
-		font-size: 42px;
-	}
-}
-
 /* wide screens */
 @media screen and (min-width: 1400px) {
 
@@ -54,8 +47,17 @@
 
 }
 
+/* tablets */
+@media screen and (max-width: 980px) {
+	#contact .contact-line {
+		font-size: 42px;
+	}
+}
+
 /*
- * Override the section-title font-size for smartphones in landspace mode,
+ * smartphones
+ *
+ * Override the section-title font-size in landspace mode,
  * because otherwise the text is too big to fit on the screen.
  */
 @media screen and (max-width: 980px) and (orientation: landscape) {

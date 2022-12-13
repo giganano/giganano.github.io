@@ -116,6 +116,14 @@
 
 	<div id="header-top">
 		<h1 class="research-page-header">My Research</h1>
+		<div class="ads-link">
+			<button>
+				<a href="https://ui.adsabs.harvard.edu/user/libraries/rIqfpNKmSdaOMIAhkk2VzQ" class="button" target="_blank">
+					<i class="fa-regular fa-folder-open"></i>
+					My Papers | NASA ADS
+				</a>
+			</button>
+		</div>
 	</div>
 
 	<!-- ==== Background ==== -->
@@ -130,16 +138,34 @@
 		<div class="container">
 			<img
 				src="./images/jajohnson_periodic_table.png"
-				class="left">
+				class="left jajohnson-periodic-table">
 			<div class="section-content">
+				What is the assembly history of the Milky Way?
+				How does its evolution compare to smaller dwarf galaxies?
+				What are the relative yields of different elements from stars
+				and supernovae?
+				<br><br>
 				I am broadly interesting in galaxy evolution and the origin of
 				the elements.
 				Galactic chemical evolution (GCE) bridges the gap between
-				nuclear physics and astrophysics.
-				By combining galactic processes such as star formation with
-				nucleosynthetic yields from stellar evolution and supernova
-				explosion models, GCE parameterizes the enrichment rates of
-				various elements in the interstellar medium (ISM).
+				nuclear physics and astrophysics by combining galactic
+				processes like star formation with nucleosynthetic yields from
+				stellar evolution models to estimate enrichment rates and
+				elemental abundances in the interstellar medium (ISM).
+				By studying the chemical compositions of stars, we can
+				understand both the evolutionary histories of their host
+				galaxies and the stellar evolution processes that shaped their
+				nucleosynthetic yields.
+				<br><br>
+				My work draws heavily on numerical and statistical modeling
+				applied to large datasets from modern spectroscopic surveys
+				like <a
+					href="https://www.sdss.org/dr12/irspec/"
+					target="_blank">APOGEE</a>, SDSS-V's new <a
+					href="https://www.sdss.org/dr15/future/mwm/"
+					target="_blank">Milky Way Mapper</a> program, and the <a
+					href="http://h3survey.rc.fas.harvard.edu/"
+					target="_blank">H3 Survey</a>.
 			</div>
 		</div>
 
@@ -352,11 +378,6 @@
 		</div>
 
 		<div class="package-details">
-			<!-- <div class="section-content">
-				VICE is an open-source GCE software that I created and
-				continue to maintain.
-				Check it out!
-			</div> -->
 			<div class="column">
 				<div class="section-content">
 					<h3>What it is</h3>
@@ -367,6 +388,8 @@
 					Best described as a "one size fits all" GCE software,
 					this implementation allows users to explore highly complex
 					parameterizations.
+					VICE also provides a variety of nucleosynthetic yield
+					tables from stellar evolution studies to explore.
 				</div>
 			</div>
 			<div class="column border">
@@ -375,98 +398,14 @@
 					VICE is a python package written in C, allowing it to
 					enjoy both the powerful computing speeds of a compiled
 					language and the ease of use of python.
-					In keeping with its mantra of flexibility, users can also
+					In keeping with its mantra of flexibility, users may
 					construct their own expressions for nucleosynthetic yields
-					independent of any stellar evolution model.
+					independent of stellar evolution models.
+					VICE users also enjoy excellent support provided by a team
+					of developers!
 				</div>
 			</div>
 		</div>
-
-<!-- 		<div class="vice-links">
-			<div class="container">
-				<div>
-					<figure>
-						<a
-							href="https://pypi.org/project/vice"
-							target="_blank">
-							<img src="./images/pypi_logo.png">
-						</a>
-						<figcaption>
-							<a
-								href="https://pypi.org/project/vice"
-								target="_blank"
-								class="vice-link-label">
-								Install
-							</a>
-						</figcaption>
-					</figure>	
-				</div>
-				<div>
-					<figure>
-						<a
-							href="https://vice-astro.readthedocs.io"
-							target="_blank">
-							<img src="./images/readthedocs_logo.png">
-						</a>
-						<figcaption>
-							<a
-								href="https://vice-astro.readthedocs.io"
-								target="_blank"
-								class="vice-link-label">
-								Documentation
-							</a>
-						</figcaption>
-					</figure>
-				</div>
-				<div>
-					<figure>
-						<a href="https://github.com/giganano/VICE.git"
-							target="_blank">
-							<img src="./images/github_logo.jpeg">
-						</a>
-						<figcaption>
-							<a
-								href="htps://github.com/giganano/VICE.git"
-								taret="_blank"
-								class="vice-link-label">
-								Source Code
-							</a>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div> -->
-
-<!-- 		<div id="vice-description">
-			<div class="section-content">
-				VICE is an open-source galactic chemical evolution software.
-				A python package with a backend written in C, VICE enjoys the
-				powerful computing speeds of a compiled language while
-				retaining the scientific flexibility and ease-of-use of python.
-				Best described as a "one-size fits all" software library for
-				this purpose, it can handle most chemical evolution models
-				without any modifications to its source code.
-				<br><br>
-				Many evolutionary parameters typically built into these models
-				(e.g. a galaxy's star formation history) are recognized by VICE
-				as arbitrary, user-defined functions of time, allowing
-				exploration of highly complex parameter spaces.
-				In keeping with this model, VICE also allows users to declare
-				their own nucleosynthetic yields directly, independent of
-				previous studies in the literature; it will also calculate
-				these yields upon request to assist in this process.
-				<br><br>
-				In March 2020, we published updates to VICE that extend its
-				features to multi-zone chemical evolution models.
-				In keeping with its model of flexibility, users may specify the
-				mixing processes affecting both gas and stars in their models
-				by telling it directly how much gas is moving between pairs of
-				zones and which zone each individual stellar population is in
-				at a given time.
-				In this way, users can construct their own mixing processes for
-				their models and let VICE handle the rest.
-			</div>
-		</div> -->
 
 	</section>
 
@@ -499,37 +438,17 @@
 				I am collaborating with OSU students on addressing similar
 				questions for carbon and helium, and plan to investigate
 				additional elements in the future.
+				<br><br>
+				These projects are also closely related to collaborative work
+				I've done with <a href="https://rcookeast.wixsite.com/home"
+				target="_blank">Ryan Cooke</a> on interpreting helium isotope
+				ratios in the ISM and with <a
+				href="https://www.emilyjgriffith.com/" target="_blank">Emily
+				Griffith</a> and <a href="https://www.astronomy.ohio-state.edu/weinberg.21/?_gl=1*7w02dh*_ga*MTMyODc3OTk0Mi4xNjMzNTMyMjIx*_ga_09WC99HMPE*MTY0NDg3MDA2Ny4zLjEuMTY0NDg3MjMyNy4w" target="_blank">David
+				Weinberg</a> on the two-process model deducing relative yields
+				from the separation between the chemical thin and thick disks.
 			</div>
 		</div>
-
-<!-- 		<div class="container">
-			<img
-				src="./images/research/cooke_helium_isotopes.png"
-				class="left mobile-only"
-				alt="Intrinsic scatter in abundance ratios">
-			<div class="section-content">
-				The normalization of effective nucleosynthetic yields is
-				uncertain due to a strong degeneracy with the strength of
-				outflows in GCE models.
-				Yields and outflows are the primary source and sink terms,
-				so a model with high yields and strong outflows generally has a
-				low yield and weak outflow counterpart that makes similar
-				predictions.
-				However, the abundances of elements produced by Big Bang
-				Nucleosynthesis are sensitive to how much gas the Milky Way
-				has exchanged with its surroundings.
-				In <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...932...60C/abstract"
-				target="_blank">Cooke et al. (2022)</a>, we found that our
-				measurements of the helium isotope ratio in the Orion Nebula
-				are best explained by GCE models with high yields and strong
-				outflows.
-			</div>
-			<img
-				src="./images/research/cooke_helium_isotopes.png"
-				class="right"
-				alt="Intrinsic scatter in abundance ratios"
-				style="width: 50%;">
-		</div> -->
 
 	</section>
 
@@ -542,21 +461,63 @@
 
 		<span class="divider center red"></span>
 
-		<div class="section-content">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="container">
+			<img
+				src="./images/research/snia_binaryfrac.png"
+				class="left mobile-only"
+				alt="Metallicity effects of the specific SN Ia rate">
+			<div class="section-content">
+				If all galaxies were the same, then each galaxy would produce
+				similar numbers of supernovae.
+				Instead, low stellar mass galaxies have higher specific Type Ia
+				supernova (SN Ia) rates than more massive galaxies
+				(scaling as ~M<SUP>-0.3</SUP>, shallow black dashed line in the
+				figure).
+				Low mass galaxies are empirically known to host lower
+				metallicity stellar populations, and the close binary fraction
+				increases toward low metal abundances as well.
+				In <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221001818J/abstract" target="_blank">
+				Johnson, Kochanek & Stanek (2022)</a>, we found that this leads
+				to a natural explanation of the observations, suggesting that
+				the elevated SN Ia rates arise due to a higher binary fraction
+				as a consequence of the low metallicities of dwarf galaxies.
+			</div>
+			<img
+				src="./images/research/snia_binaryfrac.png"
+				class="right"
+				alt="Metallicity effects of the specific SN Ia rate">
+		</div>
+
+		<div class="container">
+			<img
+				src="./images/research/twinbias.png"
+				class="left"
+				alt="Halo spin assembly bias">
+			<div class="section-content">
+				As an undergraduate, I studied the origins of halo spin
+				assembly bias, which refers to the result from cosmological
+				N-body simulations that high spin dark matter halos at fixed
+				mass tend to be found in denser environments than their low
+				spin counterparts.
+				In collaboration with <a
+					href="https://www.citytech.cuny.edu/faculty/AMaller"
+					target="_blank">Ari Maller</a> and
+				<a
+					href="https://www.nsf.gov/staff/staff_bio.jsp?lan=aberlind&org=MPS&from_org=MPS"
+					target="_blank">Andreas Berlind</a>, who was a faculty
+				member at <a href="https://as.vanderbilt.edu/physics-astronomy/"
+					target="_blank">Vanderbilt University</a> at the time, we
+				found that similar mass halos in close proximity to one another
+				tend to have slightly higher spin due to perturbations from the
+				local tidal field (see Figure).
+				In <a
+					href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.486.1156J/abstract"
+					target="_blank">Johnson et al. (2019)</a>, we demonstrate
+				that this "twin bias" accounts for the majority of the effect.
+				Though the correlation between halo spin and twin distance is
+				subtle, twin halos have a substantial effect on statistical
+				measurements of spatial clustering.
+			</div>
 		</div>
 
 	</section>

@@ -2,8 +2,8 @@
  * Continually monitors which sections of the webpage are currently within view
  * and places the "focus" state in the navbar appropriately for whichever
  * section currently occupies the largest screen covering fraction. The "focus"
- * state simply turns the label red while the others will remain the "dormant"
- * state where they stay grey.
+ * state simply turns the label red while the others will remain in the
+ * "dormant" state where they stay grey.
  * 
  * Globals
  * -------

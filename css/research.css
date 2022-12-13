@@ -14,10 +14,11 @@
 }
 
 #metrics {
-	/*height: calc(100vh - 50px);*/
 	background-image: linear-gradient(
 		rgba(0, 0, 0, 0.5),
 		rgba(0, 0, 0, 0.5)), url(../images/greenbank_sunset.jpeg);
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 #milky-way {
@@ -28,14 +29,17 @@
 	background-color: #000000;
 }
 
-/*#dwarf-galaxies {
-	background-color: #000000;
-}*/
-
-.research-page-header {
+#header-top .research-page-header {
 	font-size: 88px;
-	margin-left: auto;
-	margin-right: auto
+}
+
+#header-top .ads-link {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	justify-content: center;
 }
 
 .container {
@@ -46,31 +50,12 @@
 	margin-bottom: 5vh;
 }
 
-.container.vertical {
-	/*position: relative;*/
-	display: inline;
-}
-
 .container .section-content {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: auto;
 	margin-bottom: auto;
 }
-
-.container.vertical .section-content {
-	margin-left: 15vw;
-	margin-right: 15vw;
-}
-
-/*#background .container .jaj-periodic-table {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	padding-right: 50px;
-	height: 40vh;
-}*/
 
 .container img {
 	margin-left: auto;
@@ -84,6 +69,10 @@
 	padding-right: 50px;
 }
 
+.container img.left.jajohnson-periodic-table {
+	width: 35vw;
+}
+
 .container img.left.mobile-only {
 	display: none;
 	padding-right: 0;
@@ -91,14 +80,6 @@
 
 .container img.right {
 	padding-left: 50px;
-}
-
-img.center {
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 #research-metrics {
@@ -145,20 +126,16 @@ img.center {
 	color: white;
 }
 
-/*#research-interests .jaj-periodic-table {
-	height: 35%;
-	width: 50%;
-}
-
-#research-interests .asassn-logo {
-	height: 21%;
-	width: 30%;
-}*/
-
 #vice {
 	background-image: linear-gradient(
 		rgba(0, 0, 0, 0.7),
 		rgba(0, 0, 0, 0.7)), url(../images/circuitry.jpeg);
+}
+
+#vice .vice-logo .container {
+	display: grid;
+	justify-content: center;
+	padding-top: 50px; /* same as section */
 }
 
 #vice #vice-name .vice-acronym {
@@ -167,11 +144,6 @@ img.center {
 	font-size: 38px;
 	margin-left: 10%;
 	margin-right: 10%;
-}
-
-#vice .vice-logo .container {
-	display: grid;
-	justify-content: center;
 }
 
 #vice .vice-logo .container img {
@@ -243,11 +215,9 @@ img.center {
 #vice .package-details .column .section-content {
 	margin-left: 5%;
 	margin-right: 5%;
-	/*text-align: justify;*/
 }
 
 #vice .package-details .column.border {
-	/*border-right: 1px solid #a1a1a1;*/
 	border-left: 3px solid #a1a1a1;
 }
 
@@ -260,8 +230,34 @@ img.center {
 	padding-bottom: 10px;
 }
 
+/* narrower laptop displays */
+@media screen and (max-width: 1100px) {
+
+	.metrics .container {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
+
+	.metrics .container {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counter {
+		font-size: 60px;
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+	}
+
+	.counter-label {
+		font-size: 38px;
+	}
 
 	.container {
 		display: inline;
@@ -278,21 +274,14 @@ img.center {
 
 	.container img.left.mobile-only {
 		display: block;
-		/*padding-right: 0;*/
+	}
+
+	.container img.left.jajohnson-periodic-table {
+		width: 70vw;
 	}
 
 	.container img.right {
 		display: none;
-	}
-
-	img.center {
-		width: 90vw;
-		margin-left: 5vw;
-		margin-right: 5vw;
-		padding-left: 0;
-		padding-right: 0;
-		border-left: 0;
-		border-right: 0;
 	}
 
 	.container .section-content {
@@ -309,8 +298,6 @@ img.center {
 		grid-row-gap: 15px;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: 1fr;
-		/*margin-left: 15vw;
-		margin-right: 15vw;*/
 		justify-content: center;
 	}
 
@@ -324,18 +311,12 @@ img.center {
 		position: relative;
 		display: flex;
 		width: 100%;
-		/*margin-left: 0;*/
-		/*margin-right: 0;*/
-		/*padding-right: 0;*/
 	}
 
 	#vice .package-details .column.border {
 		border-right: none;
 		border-left: none;
 		border-top: 1px solid #a1a1a1;
-		/*border-bottom: 1px solid #a1a1a1;*/
-		/*margin-top: 5%;*/
-		/*margin-bottom: 5%;*/
 	}
 
 	#vice .package-details .column .section-content {
@@ -351,29 +332,26 @@ img.center {
 		padding-bottom: 5%;
 	}
 
-
-/*	#vice .vice-logo .container img {
-		height: 177.5px;
-		width: 501.25px;
-	}
-
-	#vice .vice-links .container {
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	#vice .vice-links .container div figure figcaption {
-		min-width: 100px;
-	}
-
-	#vice .vice-link-label {
-		font-size: 40px;
-	}*/
-
 }
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
+	.metrics .container {
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.counter {
+		font-size: 80px;
+		width: 160px;
+		height: 160px;
+		line-height: 160px;
+	}
+
+	.counter-label {
+		font-size: 51px;
+	}
 
 	.container .section-content {
 		margin-left: 5vw;
@@ -384,10 +362,8 @@ img.center {
 		width: 90%;
 	}
 
-	img.center {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
+	.container img.left.jajohnson-periodic-table {
+		width: 90%;
 	}
 
 	#vice .vice-links .container {
@@ -412,78 +388,6 @@ img.center {
 		text-align: left;
 		margin-left: 0;
 		margin-right: 0;
-	}
-
-}
-
-/* narrower laptop displays */
-@media screen and (max-width: 1050px) {
-
-	.metrics .container {
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-}
-
-/* tablets */
-@media screen and (max-width: 980px) {
-
-	.button {
-		font-size: 24px;
-		padding: 9px 18px;
-	}
-
-	.metrics .container {
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.counter {
-		font-size: 60px;
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
-	}
-
-	.counter-label {
-		font-size: 38px;
-	}
-
-	#research-interests .jaj-periodic-table {
-		height: 63%;
-		width: 90%;
-	}
-
-	#research-interests .asassn-logo {
-		height: 42%;
-		width: 60%;
-	}
-
-}
-
-/* smartphones */
-@media screen and (max-width: 500px) {
-
-	.button {
-		font-size: 32px;
-		padding: 12px 24px;
-	}
-
-	.metrics .container {
-		grid-template-rows: repeat(6, 1fr);
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.counter {
-		font-size: 80px;
-		width: 160px;
-		height: 160px;
-		line-height: 160px;
-	}
-
-	.counter-label {
-		font-size: 51px;
 	}
 
 }
