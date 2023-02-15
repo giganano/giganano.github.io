@@ -26,6 +26,7 @@
 html, body {
 	min-height: 100%;
 	min-width: 100%;
+	font-family: "Times New Roman";
 }
 
 html {
@@ -39,8 +40,17 @@ body, button {
 	margin: 0px;
 }
 
+h1, h2, h3 {
+	font-family: "Helvetica";
+}
+
 button {
 	border: transparent;
+	font-family: "Geneva";
+}
+
+nav {
+	font-family: "Helvetica";
 }
 
 section {
@@ -210,7 +220,7 @@ span.divider.grey {
 	}
 
 	.button {
-		font-size: 24px;
+		font-size: 20px;
 		padding: 9px 18px;
 	}
 
@@ -232,6 +242,7 @@ span.divider.grey {
 
 	.button {
 		padding: 12px 24px;
+		font-size: 22px;
 	}
 
 	.section-title {

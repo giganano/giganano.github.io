@@ -20,6 +20,10 @@
 	color: white;
 }
 
+#contact h3 {
+	font-family: "Times New Roman";
+}
+
 #contact .contact-line {
 	color: white;
 	font-size: 28px;
