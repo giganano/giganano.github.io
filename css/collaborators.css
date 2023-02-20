@@ -29,16 +29,18 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 
-.collaborators .container div {
-	margin-left: 30px;
-	margin-right: 30px;
+.collaborators .container div.person {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	max-width: 300px;
+	max-width: 250px;
 	display: table;
 }
 
@@ -72,7 +74,7 @@
 	height: 480px;
 }
 
-.collaborators .container .section-content {
+.collaborators .container div.person .section-content {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;

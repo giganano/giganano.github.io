@@ -46,6 +46,10 @@
 	color: #a1a1a1;
 }
 
+.navbar ul {
+	padding-inline-start: 0px;
+}
+
 .navbar ul li {
 	display: inline;
 }
