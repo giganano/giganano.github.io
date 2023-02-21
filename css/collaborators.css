@@ -89,7 +89,9 @@
 		margin-right: 10vw;
 	}
 
-	.collaborators .container div {
+	.collaborators .container div.person {
+		padding-left: 0px;
+		padding-right: 0px;
 		max-width: 400px;
 	}
 
