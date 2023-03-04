@@ -15,8 +15,9 @@
 
 .collaborators .groupname {
 	color: #a1a1a1;
+	font-family: "Raleway";
 	font-size: 30px;
-	font-style: italic;
+	/*font-style: italic;*/
 	text-align: center;
 	margin-left: 30%;
 	margin-right: 30%;
