@@ -16,6 +16,7 @@
 @import "collaborators.css";
 @import "teaching.css";
 @import "dei.css";
+@import "vita.css";
 @import "bio.css";
 @import "contact.css";
 @import "footer.css";
@@ -168,7 +169,7 @@ span.divider.grey {
 	background-color: #000000;
 }
 
-#bio {
+#vita {
 	background-color: #000000;
 }
 /* ------------------------------------- */

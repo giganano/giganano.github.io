@@ -13,4 +13,3 @@ Image Sources
 - Large Magellanic Cloud: https://esahubble.org/images/heic0411d/
 
 - The Milky Way: https://www.britannica.com/place/Milky-Way-Galaxy
-
