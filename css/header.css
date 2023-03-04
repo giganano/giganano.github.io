@@ -94,13 +94,13 @@ header.hero img {
 	margin-right: auto;
 	margin-top: 20vh;
 	margin-bottom: 0;
-	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+	text-shadow: 0 0 15px black, 0 0 15px black, 0 0 15px black, 0 0 15px black;
 }
 
 .page-subheader {
 	font-size: 38px;
 	text-align: center;
-	text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+	text-shadow: 0 0 15px black, 0 0 15px black, 0 0 15px black, 0 0 15px black;
 }
 
 .bootcamp-cv-pubs {

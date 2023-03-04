@@ -40,8 +40,13 @@ body, button {
 	margin: 0px;
 }
 
-h1, h2, h3 {
+h1 {
 	font-family: "Helvetica";
+}
+
+h2, h3 {
+	/*font-family: "Helvetica";*/
+	font-family: "Raleway";
 }
 
 button {
@@ -80,6 +85,10 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+figcaption {
+	font-family: "Arial";
 }
 
 
@@ -178,12 +187,14 @@ span.divider.grey {
 	margin-bottom: 20px;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	font-size: 40px;
+	font-size: 55px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
 .section-content {
+	/*font-family: "Raleway", sans-serif;*/
+	font-family: "Arial";
 	color: white;
 	font-size: 22px;
 	margin-left: 20vw;
@@ -196,6 +207,7 @@ span.divider.grey {
 
 .quotation {
 	color: #a1a1a1;
+	font-family: "Arial";
 	font-size: 22px;
 	font-style: italic;
 	text-align: center;
