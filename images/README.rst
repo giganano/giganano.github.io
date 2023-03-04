@@ -10,3 +10,6 @@ Image Sources
 
 - NGC 3628 Mosaic: https://www.hansonastronomy.com/ngc-3628-mosaic
 
+- Large Magellanic Cloud: https://esahubble.org/images/heic0411d/
+
+- The Milky Way: https://www.britannica.com/place/Milky-Way-Galaxy
