@@ -12,6 +12,7 @@
 #pubs-lead-author {
 	padding-top: 0;
 	padding-bottom: 0;
+	margin-bottom: 50px;
 }
 
 #pubs-co-author {
@@ -20,11 +21,12 @@
 
 .pubs-section-head {
 	color: #a1a1a1;
-	font-size: 22px;
+	font-size: 30px;
 	text-align: center;
 }
 
 .pub-item {
+	font-family: "Arial";
 	color: white;
 	font-size: 22px;
 	margin-left: 15%;

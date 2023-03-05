@@ -21,6 +21,20 @@
 	background-color: #000000;
 }
 
+.bootcamp-source {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.section-title {
+	font-family: "Raleway";
+}
+
 .bootcamp-page-header {
 	font-size: 88px;
 	margin-left: auto;
@@ -73,6 +87,7 @@
 }
 
 .bootcamp-session .session-content .session-material {
+	font-family: "Arial";
 	text-align: left;
 	color: white;
 	width: 30vw;
@@ -80,6 +95,7 @@
 }
 
 .bootcamp-session .session-content .session-resources {
+	font-family: "Arial";
 	text-align: left;
 	color: white;
 	width: 25vw;

@@ -9,19 +9,58 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+#research-interests .section-content {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+}
+
+#research-interests .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.8fr 1fr;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#research-interests .container .topic {
+	justify-content: center;
+	display: inline-block;
+	text-align: center;
+	align-items: center;
+}
+
+#research-interests .container .topic .topic-name {
+	font-size: 35px;
+}
+
+#research-interests .container .topic .img-container {
+	height: 250px;  /* maximum height */
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+}
+
+#research-interests .container .topic .img-container img {
+	max-height: 250px;
+	max-width: 250px;
+	width: auto;
+	width: auto;
+	display: block;
+	vertical-align: middle;
+}
+
+#research-interests .container .topic .section-content {
+	text-align: justify;
+	color: #a1a1a1;
+}
+
 #background {
 	padding-top: 0;
 }
 
-#metrics {
-	background-image: linear-gradient(
-		rgba(0, 0, 0, 0.5),
-		rgba(0, 0, 0, 0.5)), url(../images/greenbank_sunset.jpeg);
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
-
-#milky-way {
+#dwarf-galaxies {
 	background-color: #000000;
 }
 
@@ -30,6 +69,7 @@
 }
 
 #header-top .research-page-header {
+	font-family: "Raleway";
 	font-size: 88px;
 }
 
@@ -80,50 +120,6 @@
 
 .container img.right {
 	padding-left: 50px;
-}
-
-#research-metrics {
-	text-align: center;
-}
-
-.counter {
-	font-size: 40px;
-	color: #FFFFFF;
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	background: #DD0000;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	line-height: 80px;
-	border: 2px solid #FFFFFF;
-}
-
-.counter-label {
-	font-size: 25px;
-	color: #DD0000;
-	justify-content: center;
-	text-align: center;
-}
-
-.metrics .container {
-	display: grid;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 10%;
-	margin-right: 10%;
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
-	grid-template-columns: repeat(6, 1fr);
-	text-align: center;
-	justify-content: center;
-}
-
-.metrics .container div {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: white;
 }
 
 #vice {
@@ -204,7 +200,6 @@
 #vice .package-details .section-content {
 	margin-left: 10%;
 	margin-right: 10%;
-	/*text-align: center;*/
 }
 
 #vice .package-details .column {
@@ -230,33 +225,16 @@
 	padding-bottom: 10px;
 }
 
-/* narrower laptop displays */
-@media screen and (max-width: 1100px) {
-
-	.metrics .container {
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-}
-
 /* tablets */
 @media screen and (max-width: 980px) {
 
-	.metrics .container {
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: repeat(2, 1fr);
+	#research-interests .container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.8fr 0.8fr 1fr 1fr;
 	}
 
-	.counter {
-		font-size: 60px;
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
-	}
-
-	.counter-label {
-		font-size: 38px;
+	#research-interests .container .topic .topic-name {
+		font-size: 40px;
 	}
 
 	.container {
@@ -337,20 +315,28 @@
 /* smartphones */
 @media screen and (max-width: 500px) {
 
-	.metrics .container {
-		grid-template-rows: repeat(6, 1fr);
-		grid-template-columns: repeat(1, 1fr);
+	#research-interests .container {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
-	.counter {
-		font-size: 80px;
-		width: 160px;
-		height: 160px;
-		line-height: 160px;
+	#research-interests .container .topic .topic-name {
+		font-size: 50px;
 	}
 
-	.counter-label {
-		font-size: 51px;
+	#research-interests .container .topic .section-content {
+		text-align: left;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#research-interests .container .topic .img-container {
+		height: 500px;
+	}
+
+	#research-interests .container .topic .img-container img {
+		max-height: 500px;
+		max-width: 500px;
 	}
 
 	.container .section-content {
