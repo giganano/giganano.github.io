@@ -16,6 +16,7 @@
 @import "collaborators.css";
 @import "teaching.css";
 @import "dei.css";
+@import "vita.css";
 @import "bio.css";
 @import "contact.css";
 @import "footer.css";
@@ -129,8 +130,12 @@ button {
 span.divider {
 	background-color: white;
 	display: block;
-	margin: 35px 0px;
-	width: 50vw;
+	/*margin: 35px 0px;*/
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 50%;
 	height: 3px;
 }
 
@@ -168,7 +173,7 @@ span.divider.grey {
 	background-color: #000000;
 }
 
-#bio {
+#vita {
 	background-color: #000000;
 }
 /* ------------------------------------- */
@@ -193,7 +198,6 @@ span.divider.grey {
 }
 
 .section-content {
-	/*font-family: "Raleway", sans-serif;*/
 	font-family: "Arial";
 	color: white;
 	font-size: 22px;
@@ -227,6 +231,12 @@ span.divider.grey {
 /* tablets */
 @media screen and (max-width: 980px) {
 
+	span.divider {
+		width: 60%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.section-title {
 		font-size: 50px;
 	}
@@ -251,6 +261,10 @@ span.divider.grey {
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
+	span.divider {
+		width: 75%;
+	}
 
 	.button {
 		padding: 12px 24px;
