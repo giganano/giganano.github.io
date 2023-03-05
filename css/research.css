@@ -44,11 +44,16 @@
 
 #research-interests .container .topic .img-container img {
 	max-height: 250px;
-	max-width: 250px;
+	max-width: 65%;
 	width: auto;
 	width: auto;
 	display: block;
 	vertical-align: middle;
+}
+
+#research-interests .container .topic .img-container img.casA {
+	height: 300px;
+	object-position: 0 -20px;
 }
 
 #research-interests .container .topic .section-content {
