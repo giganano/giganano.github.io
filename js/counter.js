@@ -29,9 +29,7 @@ async function readMetrics() {
 	var data = {};
 
 	let response = await fetch("./data/metrics.json");
-	if (!response.ok) {
-		throw new Error(`HTTP Error! Status: ${response.status}`);
-	} else {
+	if (response.ok) {
 		var contents = await response.json();
 		data["pubs"] = +contents["data"]["pubs"];
 		data["lead_author"] = +contents["data"]["lead_author"];
@@ -39,6 +37,8 @@ async function readMetrics() {
 		data["citations"] = +contents["data"]["citations"];
 		data["hindex"] = +contents["data"]["hindex"];
 		data["talks"] = +contents["data"]["talks"];
+	} else {
+		throw new Error(`HTTP Error! Status: ${response.status}`);
 	}
 
 	return data;

@@ -22,7 +22,6 @@ const mobileNavbar = document.getElementById("mobile-nav");
 var navdivs = [];
 var page = window.location.pathname.split("/").pop();
 if (page === "" || page === "index") page = "index.html";
-console.log(page);
 for (var i = 0; i < sections.length; i++) {
 	navdivs.push(document.getElementById(sections[i].id));
 }
