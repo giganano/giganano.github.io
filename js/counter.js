@@ -1,17 +1,17 @@
 /*
  * Sweeps the HTML document for elements of the "counter" class and treats them
  * as integers which will count up from zero to a specified final value over
- * some time interval.
+ * some number of cycles.
  *
  * Globals
  * -------
  * counters : all instances of the "counter" class from the calling HTML script.
- * time : the number of cycles to run the updateCount function through -> the
+ * cycles : the number of cycles to run the updateCount function through -> the
  * 		higher the value, the longer it takes to count. At 400, this is about 2
  * 		seconds.
  */
 const counters = document.querySelectorAll(".counter");
-const time = 400;
+const cycles = 400;
 for (var i = 0; i < counters.length; i++) {
 	let counter = counters[i];
 	readMetrics()
@@ -58,7 +58,7 @@ function updateCount(counter, metrics, currentValue) {
 	/* Only count up if the counter is on screen, otherwise sleep */
 	if (isInView(counter)) {
 		if (currentValue < target) {
-			currentValue += 1.0 / time * target;
+			currentValue += 1.0 / cycles * target;
 			setTimeout(updateCount, 0, counter, metrics, currentValue);
 			counter.innerText = Math.floor(currentValue);
 		} else {
