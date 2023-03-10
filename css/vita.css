@@ -6,7 +6,9 @@
  * tablets - width of between 500 and 980 CSS pixels
  * smartphones - width of less than 500 CSS pixels
  *
- * This style sheet implements these simple breakpoints for responsive design.
+ * This style sheet implements these simple breakpoints for responsive design,
+ * as well as a couple more at 1100px and 600px for narrower laptops and
+ * tablets, respectively.
  */
 
 .vita-download {
@@ -188,9 +190,7 @@
 }
 
 #research-metrics {
-	background-image: linear-gradient(
-		rgba(0, 0, 0, 0.5),
-		rgba(0, 0, 0, 0.5)), url(../images/tidaltail.jpeg);
+	background-image: url(../images/tidaltail.jpeg);
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 }
@@ -203,8 +203,8 @@
 	display: grid;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
 	grid-template-columns: repeat(6, 1fr);
@@ -212,36 +212,47 @@
 	justify-content: center;
 }
 
-#research-metrics .metrics .container .counter {
-	font-size: 40px;
-	color: #FFFFFF;
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	background: #DD0000;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	line-height: 80px;
-	border: 2px solid #FFFFFF;
-}
-
-#research-metrics .metrics .container div {
+#research-metrics .metrics .container .item {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
+	background: rgba(221, 0, 0, 0.6); /* equivalent to #DD0000 */
+	width: 150px;
+	height: 280px;
+	border: 2px solid white;
+	border-radius: 30px;
 	justify-content: center;
 	display: table;
 }
 
-#research-metrics .metrics .container div .label-container {
+#research-metrics .metrics .container .item .counter {
+	font-family: "Arial";
+	font-size: 60px;
+	color: white;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 20px;
+	line-height: 80px;
+	width: 100%;
+}
+
+#research-metrics .metrics .container .item i {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#research-metrics .metrics .container .item .label-container {
 	display: table-row;
 	height: 80px;
 }
 
-#research-metrics .metrics .container div .label-container .counter-label {
+#research-metrics .metrics .container .item .label-container .counter-label {
 	font-family: "Raleway";
-	font-size: 25px;
+	font-size: 22px;
 	color: #FFFFFF;
 	text-align: center;
 	vertical-align: middle;
@@ -254,6 +265,20 @@
 	#research-metrics .metrics .container {
 		grid-template-rows: repeat(2, 1fr);
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	#research-metrics .metrics .container .item {
+		/*height: 280px;*/
+		width: 280px;
+	}
+
+	#research-metrics .metrics .container .item .counter {
+		font-size: 80px;
+		padding-top: 0;
+	}
+
+	#research-metrics .metrics .container .item .label-container .counter-label {
+		font-size: 35px;
 	}
 
 }
@@ -309,15 +334,15 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	#research-metrics .metrics .container .counter {
-		font-size: 60px;
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
-	}
+}
 
-	#research-metrics .metrics .container div .label-container .counter-label {
-		font-size: 38px;
+
+/* narrower tablets */
+@media screen and (max-width: 600px) {
+
+	#research-metrics .metrics .container {
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: 1fr;
 	}
 
 }
@@ -396,19 +421,18 @@
 		text-align: center;
 	}
 
-	#research-metrics .metrics .container {
-		grid-template-rows: repeat(6, 1fr);
-		grid-template-columns: repeat(1, 1fr);
+	#research-metrics .metrics .container .item {
+		width: 400px;
 	}
 
-	#research-metrics .metrics .container .counter {
-		font-size: 80px;
+	#research-metrics .metrics .container .item .counter {
+		font-size: 100px;
 		width: 160px;
 		height: 160px;
 		line-height: 160px;
 	}
 
-	#research-metrics .metrics .container div .label-container .counter-label {
+	#research-metrics .metrics .container .item .label-container .counter-label {
 		font-size: 50px;
 	}
 
