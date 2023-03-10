@@ -55,7 +55,7 @@ function generateList(section) {
 			${data[i]["refline"]}
 		</div>
 		<div class="arxiv">
-			${data[i]["arxiv"]}
+			arxiv:${data[i]["arxiv"]}
 		</div>
 	</div>
 </li>`;
