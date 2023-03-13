@@ -244,6 +244,11 @@
 		font-size: 40px;
 	}
 
+	#header-top .ads-link {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
 	.container {
 		display: inline;
 	}
@@ -348,6 +353,11 @@
 	#research-interests .container .topic .img-container img {
 		max-height: 500px;
 		max-width: 500px;
+	}
+
+	#header-top .ads-link {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.container .section-content {
