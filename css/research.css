@@ -199,6 +199,8 @@
 }
 
 #vice .package-details h3 {
+	font-size: 30px;
+	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -290,6 +292,10 @@
 		padding-bottom: 0;
 	}
 
+	#vice .package-details h3 {
+		font-size: 40px;
+	}
+
 	#vice .package-details .column {
 		position: relative;
 		display: flex;
@@ -373,6 +379,10 @@
 
 	#vice .vice-link-label {
 		font-size: 60px;
+	}
+
+	#vice .package-details h3 {
+		font-size: 50px;
 	}
 
 	#vice .package-details .column .section-content {
