@@ -86,6 +86,10 @@ figcaption {
 	font-family: "Arial";
 }
 
+::selection {
+	background: rgba(221, 0, 0, 0.5);
+}
+
 
 /* ------------- buttons ------------- */
 button {
