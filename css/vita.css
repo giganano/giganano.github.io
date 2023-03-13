@@ -259,6 +259,7 @@
 	display: table-cell;
 }
 
+
 /* narrower laptop displays */
 @media screen and (max-width: 1100px) {
 
@@ -282,6 +283,7 @@
 	}
 
 }
+
 
 /* tablets */
 @media screen and (max-width: 980px) {
