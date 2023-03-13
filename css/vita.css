@@ -1,7 +1,7 @@
 /*
  * Simple standard for distinguishing between monitors, tablets, and
  * smartphones:
- * 
+ *
  * Monitors - width of 980 CSS pixels and up
  * tablets - width of between 500 and 980 CSS pixels
  * smartphones - width of less than 500 CSS pixels
