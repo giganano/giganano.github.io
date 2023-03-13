@@ -9,144 +9,221 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-#teaching-content {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	margin-left: 5%;
-	margin-right: 5%;
+#teaching .teaching-category {
+	color: #a1a1a1;
+	font-family: "Raleway";
+	font-size: 40px;
+	text-align: center;
+}
+
+#teaching .bootcamp {
 	position: relative;
 	display: flex;
-}
-
-#teaching-content .column {
-	float: left;
-	width: 33.33%;
-}
-
-#teaching-content .column .section-content {
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-#teaching-content .column.border {
-	border-right: 1px solid #a1a1a1;
-	border-left: 1px solid #a1a1a1;
-	border-style: solid;
-}
-
-#teaching-content .column .teaching-icon {
-	text-align: center;
-	display: block;
+	align-items: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	color: white;
-	font-size: 22px;
-	padding-top: 10px;
+}
+
+#teaching .source-button {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#teaching .bootcamp i {
+	color: #a1a1a1;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 50px;
+	display: inline;
+}
+
+#teaching .bootcamp .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#teaching .courses {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr;
+	grid-column-gap: auto;
+	grid-row-gap: 0;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	justify-content: center;
+}
+
+#teaching .courses .item {
+	display: inline;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#teaching .courses .item.left {
+	/*border-left: 2px solid #a1a1a1;*/
+	text-align: left;
+}
+
+#teaching .courses .item.right {
+	/*border-right: 2px solid #a1a1a1;*/
+	text-align: right;
+}
+
+#teaching .courses .item.center {
+	border-left: 2px solid #a1a1a1;
+	border-right: 2px solid #a1a1a1;
+	text-align: center;
+}
+
+#teaching .courses .item i {
+	color: #DD0000;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 10px;
 }
 
-/* narrower screens */
-@media screen and (max-width: 1200px) {
-
-	#teaching-content #bootcamp.column .section-content {
-		text-align: right;
-	}
-
-	#teaching-content #mentor.column .section-content {
-		text-align: center;
-	}
-
-	#teaching-content #gta.column .section-content{
-		text-align: left;
-	}
-
+#teaching .courses .item .title {
+	font-family: "Raleway";
+	font-size: 30px;
+	padding-bottom: 10px;
 }
+
+#teaching .courses .item.left .title {
+	text-align: left;
+}
+
+#teaching .courses .item.right .title {
+	text-align: right;
+}
+
+#teaching .courses .item.center .title {
+	text-align: center;
+}
+
+#teaching .courses .item .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #a1a1a1;
+	font-size: 20px;
+}
+
+#teaching .courses .item.left .section-content {
+	text-align: left;
+}
+
+#teaching .courses .item.right .section-content {
+	text-align: right;
+}
+
+#teaching .courses .item.center .section-content {
+	text-align: center;
+}
+
 
 /* tablets */
 @media screen and (max-width: 980px) {
 
-	#teaching-content {
-		display: inline;
-		padding-top: 0;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	#teaching-content .column {
-		position: relative;
-		display: flex;
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-		float: none;
-	}
-
-	#teaching-content .column.border {
-		border-right: none;
-		border-left: none;
-		border-top: 1px solid #a1a1a1;
-		border-bottom: 1px solid #a1a1a1;
-		border-style: solid;
-		margin-top: 5%;
-		margin-bottom: 5%;
-	}
-
-	#teaching-content .column .section-content {
-		text-align: justify;
-		text-justify: inter-word;
+	#teaching .bootcamp {
+		display: inline-block;
 		margin-left: 10%;
-		margin-right: 0;
+		margin-right: 10%;
 	}
 
-	#teaching-content .column.border .section-content {
-		padding-top: 5vh;
-		padding-bottom: 5vh;
-	}
-
-	#teaching-content .column .teaching-icon {
+	#teaching .bootcamp i {
+		display: grid;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 0;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: auto;
-		margin-bottom: auto;
+		justify-content: center;
 	}
 
-	#teaching-content #bootcamp.column .section-content {
-		text-align: justify;
+	#teaching .courses {
+		grid-template-columns: 1fr;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
-	#teaching-content #mentor.column .section-content {
-		text-align: justify;
+	#teaching .courses .item {
+		border-bottom: 2px solid #a1a1a1;
 	}
 
-	#teaching-content #gta.column .section-content {
-		text-align: justify;
+	#teaching .courses .item.left {
+		text-align: center;
+	}
+
+	#teaching .courses .item.right {
+		text-align: center;
+	}
+
+	#teaching .courses .item.center {
+		border-left: none;
+		border-right: none;
+	}
+
+	#teaching .courses .item.last {
+		border-bottom: none;
+	}
+
+	#teaching .courses .item .title {
+		font-size: 35px;
+	}
+
+	#teaching .courses .item.left .title {
+		text-align: center;
+	}
+
+	#teaching .courses .item.right .title {
+		text-align: center;
+	}
+
+	#teaching .courses .item.center .title {
+		text-align: center;
+	}
+
+	#teaching .courses .item .section-content {
+		font-size: 25px;
+	}
+
+	#teaching .courses .item.left .section-content {
+		text-align: center;
+	}
+
+	#teaching .courses .item.right .section-content {
+		text-align: center;
+	}
+
+	#teaching .courses .item.center .section-content {
+		text-align: center;
 	}
 
 }
 
+
 /* smartphones */
 @media screen and (max-width: 500px) {
 
-	#teaching-content .column {
-		display: inline-block;
-	}
-
-	#teaching-content .column .teaching-icon {
-		margin-top: 50px;
-	}
-
-	#teaching-content .column .section-content {
-		margin-left: 0;
-	}
-
-	#teaching-content #bootcamp.column .section-content {
-		text-align: left;
-	}
-
-	#teaching-content #mentor.column .section-content {
-		text-align: left;
-	}
-
-	#teaching-content #gta.column .section-content {
-		text-align: left;
+	#teaching .bootcamp {
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 }
