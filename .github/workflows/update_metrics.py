@@ -53,10 +53,15 @@ https://api.adsabs.harvard.edu/v1/biblib/libraries/%s""" % (sys.argv[1],
 		"co-author": COAUTHOR_PAPERS_LIBID
 	}[spec])
 
-	with Popen(cmd, **SUBPROC_KWARGS) as proc:
-		out, err = proc.communicate()
-		data = json.loads(out)
-		return data["documents"]
+	while True:
+		with Popen(cmd, **SUBPROC_KWARGS) as proc:
+			out, err = proc.communicate()
+			if not timedout(out):
+				data = json.loads(out)
+				break
+			else:
+				continue
+	return data["documents"]
 
 
 def updated_metrics():
@@ -74,9 +79,14 @@ curl -H "Authorization: Bearer %s" -H "Content-type: application/json" \
 https://api.adsabs.harvard.edu/v1/metrics \
 -X POST -d '{"bibcodes": %s}'""" % (sys.argv[1], str(docs).replace('\'', '\"'))
 	
-	with Popen(cmd, **SUBPROC_KWARGS) as proc:
-		out, err = proc.communicate()
-		metrics = json.loads(out)
+	while True:
+		with Popen(cmd, **SUBPROC_KWARGS) as proc:
+			out, err = proc.communicate()
+			if not timedout(out):
+				metrics = json.loads(out)
+				break
+			else:
+				continue
 	return {
 		"pubs": len(docs),
 		"lead_author": len(bibcodes(spec = "first-author")),
@@ -128,6 +138,18 @@ def save_metrics():
 	else:
 		sys.stdout.write("false\n")
 
+
+def timedout(response):
+	r"""
+	Determine if the HTTP response by ADS was a 504 Gateway Time-out HTML page
+	instead of the JSON formatted query response.
+	This script will sipmly keep sending the query until it gets the JSON text
+	it wants from ADS.
+	"""
+	result = "<html>" in response
+	result &= "</html>" in response
+	result &= "504 Gateway Time-out" in response
+	return result
 
 
 if __name__ == "__main__": save_metrics()
