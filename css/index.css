@@ -36,7 +36,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-body, button {
+body {
 	background: #252525;
 	margin: 0px;
 }
@@ -46,13 +46,7 @@ h1 {
 }
 
 h2, h3 {
-	/*font-family: "Helvetica";*/
 	font-family: "Raleway";
-}
-
-button {
-	border: transparent;
-	font-family: "Geneva";
 }
 
 nav {
@@ -92,35 +86,59 @@ figcaption {
 	font-family: "Arial";
 }
 
+::selection {
+	background: rgba(221, 0, 0, 0.5);
+}
+
 
 /* ------------- buttons ------------- */
 button {
 	border: none;
 	outline: none;
 	background-color: transparent;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 25px;
+	background-color: #DD0000;
+	border-radius: 10px;
+	border-bottom: 4px solid #AA0000;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.button {
+button:focus {
+	background-color: #BB0000;
+}
+
+button:hover {
+	background-color: #BB0000;
+}
+
+button:active {
+	background-color: #BB0000;
+}
+
+a > button {
+	font-family: "Helvetica";
 	text-decoration: none;
-	padding: 6px 24px;
-	font-size: 25px;
-	line-height: 1.4285713;
-	background-color: #DD0000;
 	color: white;
 	text-align: center;
-	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
 }
 
-.button:focus {
-	background-color: #BB0000;
+a > button > i {
+	padding-right: 5px;
 }
 
-.button:hover {
-	background-color: #BB0000;
-}
-
-.botton:active {
-	background-color: #BB0000;
+a.button {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* ----------------------------------- */
 
@@ -241,9 +259,15 @@ span.divider.grey {
 		font-size: 50px;
 	}
 
-	.button {
-		font-size: 20px;
-		padding: 9px 18px;
+	button {
+		font-size: 30px;
+		/*padding: 9px 18px;*/
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		border-bottom: 5px solid #AA0000;
+		border
 	}
 
 	.section-content {
@@ -266,9 +290,10 @@ span.divider.grey {
 		width: 75%;
 	}
 
-	.button {
+	button {
 		padding: 12px 24px;
-		font-size: 22px;
+		font-size: 35px;
+		border-bottom: 6px solid #AA0000;
 	}
 
 	.section-title {

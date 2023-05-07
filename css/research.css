@@ -199,6 +199,8 @@
 }
 
 #vice .package-details h3 {
+	font-size: 30px;
+	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -240,6 +242,11 @@
 
 	#research-interests .container .topic .topic-name {
 		font-size: 40px;
+	}
+
+	#header-top .ads-link {
+		margin-left: 10vw;
+		margin-right: 10vw;
 	}
 
 	.container {
@@ -288,6 +295,10 @@
 		display: inline-block;
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	#vice .package-details h3 {
+		font-size: 40px;
 	}
 
 	#vice .package-details .column {
@@ -344,6 +355,11 @@
 		max-width: 500px;
 	}
 
+	#header-top .ads-link {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.container .section-content {
 		margin-left: 5vw;
 		margin-right: 5vw;
@@ -373,6 +389,10 @@
 
 	#vice .vice-link-label {
 		font-size: 60px;
+	}
+
+	#vice .package-details h3 {
+		font-size: 50px;
 	}
 
 	#vice .package-details .column .section-content {

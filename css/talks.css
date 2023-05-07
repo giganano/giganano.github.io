@@ -1,31 +1,93 @@
 /*
- * This style sheet doesn't require any adaptive response, because this section
- * of the website is just a flex display showing figures and captions within
- * their own div containers. It renders fine on all screens.
+ * Simple standard for distinguishing between monitors, tablets, and
+ * smartphones:
+ *
+ * Monitors - width of 980 CSS pixels and up
+ * tablets - width of between 500 and 980 CSS pixels
+ * smartphones - width of less than 500 CSS pixels
+ *
+ * This style sheet implements these simple breakpoints for responsive design,
+ * with the exception of introducing smartphone-like displays at 650px wide
+ * screens as the thumbnail links themselves are 600 px.
  */
 
-.slides .container {
-	display: flex;
-	flex-wrap: wrap;
+#talks .slides .container {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
 	justify-content: center;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
-.slides .container figure {
+#talks .slides .container .bottom-border {
+	border-bottom: 2px solid #a1a1a1;
+}
+
+#talks .slides .container figure {
 	display: table;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.slides .container figure a img {
+#talks .slides .container figure > a > img {
 	width: 600px;
 	height: 338px;
+	padding-bottom: 10px;
 }
 
-.slides .container figure figcaption {
+#talks .slides .container figure > figcaption {
+	padding-bottom: 20px;
 	display: table-caption;
 	caption-side: bottom;
 	color: white;
 	font-size: 22px;
 	text-align: center;
+}
+
+
+/* tablets */
+@media screen and (max-width: 980px) {
+
+	#talks .slides .container {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#talks .slides .container figure {
+		padding-bottom: 0;
+	}
+
+}
+
+
+/* smartphones */
+@media screen and (max-width: 650px) {
+
+	#talks .slides .container {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#talks .slides .container figure > a {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#talks .slides .container figure > a > img {
+		width: 90%;
+		height: 50.7%;
+	}
+
+	#talks .slides .container figure figcaption {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 }
 
