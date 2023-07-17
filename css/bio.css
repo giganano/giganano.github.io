@@ -66,6 +66,7 @@
 	margin-right: calc(10% + 5px);
 	margin-top: 100px; /* half the icon height plus item.padding-top */
 	margin-bottom: auto;
+	padding-top: 1px;
 	vertical-align: middle;
 	height: 0;
 	border-bottom: 2px solid #a1a1a1;
@@ -144,6 +145,7 @@
 		margin-right: auto;
 		margin-top: 0;
 		margin-bottom: 10px;
+		padding-right: 1px;
 		height: 80px;
 		border-bottom: none;
 		border-left: 2px solid #a1a1a1;
