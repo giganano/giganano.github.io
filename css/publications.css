@@ -9,6 +9,15 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
+.nasa-ads-link {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
 #pubs-lead-author {
 	padding-top: 0;
 	padding-bottom: 0;

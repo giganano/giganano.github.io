@@ -96,14 +96,14 @@ button {
 	border: none;
 	outline: none;
 	background-color: transparent;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-bottom: 5px;
 	padding-right: 10px;
 	padding-left: 10px;
 	font-size: 25px;
 	background-color: #DD0000;
 	border-radius: 10px;
-	border-bottom: 4px solid #AA0000;
+	border-bottom: 5px solid #AA0000;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
