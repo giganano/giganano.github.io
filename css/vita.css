@@ -34,6 +34,7 @@
 	font-size: 40px;
 	text-align: left;
 	margin-left: 20%;
+	margin-right: 20%;
 }
 
 #vita .academic-appts {
@@ -187,7 +188,7 @@
 
 #vita .awards-honors .award-or-honor .section-content .details {
 	color: #a1a1a1;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 #research-metrics {
@@ -258,6 +259,8 @@
 	text-align: center;
 	vertical-align: middle;
 	display: table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -295,6 +298,7 @@
 
 	#vita .vita-category {
 		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 	#vita .academic-appts .appt {
@@ -360,7 +364,7 @@
 
 	#vita .vita-category {
 		text-align: center;
-		margin-left: 0;
+		/*margin-left: 0;*/
 		font-size: 50px;
 	}
 
