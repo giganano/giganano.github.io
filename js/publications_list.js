@@ -93,7 +93,7 @@ async function readFile(filename) {
 
 
 /*
- * Bolds each instance of "J.W. Johnson" in an author's list.
+ * Bolds each instance of "Johnson J.W." in an author's list.
  *
  * Parameters
  * ----------
@@ -102,7 +102,7 @@ async function readFile(filename) {
  */
 function boldMyName(authors) {
 
-	let myName = "J.W. Johnson";
+	let myName = "Johnson J.W.";
 	if (authors.includes(myName)) {
 		let idx = authors.indexOf(myName);
 		return authors.slice(0,
