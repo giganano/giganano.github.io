@@ -6,18 +6,18 @@
 		"journal": "MNRAS",
 		"volume": null,
 		"page": null,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": 2210.01816,
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001816J/abstract"
 	},
 	{
 		"title": "Binaries drive high Type Ia supernova rates in dwarf galaxies",
 		"authors": "Johnson J.W., Kochanek C.S., Stanek K.Z.",
-		"year": 2022,
+		"year": 2023,
 		"journal": "MNRAS",
-		"volume": null,
-		"page": null,
-		"status": "under peer review",
+		"volume": 526,
+		"page": 5911,
+		"status": "accepted",
 		"arxiv": 2210.01818,
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001818J/abstract"
 	},
