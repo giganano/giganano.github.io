@@ -98,7 +98,7 @@
 	font-family: "Arial";
 	text-align: left;
 	color: white;
-	width: 25vw;
+	width: 30vw;
 	font-size: 22px;
 }
 
@@ -127,12 +127,12 @@
 	}
 
 	.bootcamp-session .session-content .session-material {
-		width: 80vw;
+		width: 80%;
 		font-size: 28px;
 	}
 
 	.bootcamp-session .session-content .session-resources {
-		width: 80vw;
+		width: 80%;
 		font-size: 28px;
 	}
 
@@ -155,12 +155,12 @@
 	}
 
 	.bootcamp-session .session-content .session-material {
-		width: 90vw;
+		width: 90%;
 		font-size: 35px;
 	}
 
 	.bootcamp-session .session-content .session-resources {
-		width: 90vw;
+		width: 90%;
 		font-size: 35px;
 	}
 
