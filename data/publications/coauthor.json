@@ -1,5 +1,16 @@
 [
 	{
+		"title": "The APO-K2 Catalog. II. Accurate Stellar Ages for Red Giant Branch Stars Across the Milky Way",
+		"authors": "Warfield J.T., et al., incl. Johnson J.W.",
+		"year": 2024,
+		"journal": "AJ",
+		"volume": null,
+		"page": null,
+		"status": "accepted",
+		"arxiv": "2403.16250",
+		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240316250W/abstract"
+	},
+	{
 		"title": "Nature vs. Nurture: Distinguishing effects from stellar processing and chemical evolution on carbon and nitrogen in red giant stars",
 		"authors": "Roberts J.D., et al., incl. Johnson J.W.",
 		"year": 2024,
@@ -7,7 +18,7 @@
 		"volume": null,
 		"page": null,
 		"status": "accepted",
-		"arxiv": 2403.03249,
+		"arxiv": "2403.03249",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240303249R/abstract"
 	},
 	{
@@ -18,7 +29,7 @@
 		"volume": null,
 		"page": null,
 		"status": "under peer review",
-		"arxiv": 2309.05719,
+		"arxiv": "2309.05719",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2023arXiv230905719W/abstract"
 	},
 	{
@@ -29,7 +40,7 @@
 		"volume": 944,
 		"page": 47,
 		"status": "accepted",
-		"arxiv": 2210.01821,
+		"arxiv": "2210.01821",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...47G/abstract"
 	},
 	{
@@ -40,7 +51,7 @@
 		"volume": null,
 		"page": null,
 		"status": "under peer review",
-		"arxiv": 2204.02989,
+		"arxiv": "2204.02989",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220402989C/abstract"
 	},
 	{
@@ -51,7 +62,7 @@
 		"volume": 932,
 		"page": 60,
 		"status": "accepted",
-		"arxiv": 2203.11256,
+		"arxiv": "2203.11256",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220311256C/abstract"
 	},
 	{
