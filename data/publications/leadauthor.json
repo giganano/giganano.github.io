@@ -1,5 +1,16 @@
 [
 	{
+		"title": "The Milky Way Radial Metallicity Gradient as an Equilibrium Phenomenon: Why Old Stars are Metal-Rich",
+		"authors": "Johnson J.W., et al.",
+		"year": 2024,
+		"journal": "AAS Journals",
+		"volume": null,
+		"page": null,
+		"status": "under peer review",
+		"arxiv": "2410.13256",
+		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv241013256J/abstract"
+	},
+	{
 		"title": "Dwarf galaxy archaeology from chemical abundances and star formation histories",
 		"authors": "Johnson J.W., et al.",
 		"year": 2023,
@@ -7,7 +18,7 @@
 		"volume": 526,
 		"page": 5084,
 		"status": "accepted",
-		"arxiv": 2210.01816,
+		"arxiv": "2210.01816",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001816J/abstract"
 	},
 	{
@@ -18,7 +29,7 @@
 		"volume": 526,
 		"page": 5911,
 		"status": "accepted",
-		"arxiv": 2210.01818,
+		"arxiv": "2210.01818",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001818J/abstract"
 	},
 	{
@@ -29,7 +40,7 @@
 		"volume": 520,
 		"page": 782,
 		"status": "accepted",
-		"arxiv": 2202.04666,
+		"arxiv": "2202.04666",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220204666J/abstract"
 	},
 	{
@@ -40,7 +51,7 @@
 		"volume": 508,
 		"page": 4484,
 		"status": "accepted",
-		"arxiv": 2103.09838,
+		"arxiv": "2103.09838",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4484J/abstract"
 
 	},
@@ -52,7 +63,7 @@
 		"volume": 498,
 		"page": 1364,
 		"status": "accepted",
-		"arxiv": 1911.02598,
+		"arxiv": "1911.02598",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.1364J/abstract"
 	},
 	{
@@ -63,7 +74,7 @@
 		"volume": 486,
 		"page": 1156,
 		"status": "accepted",
-		"arxiv": 1812.02206,
+		"arxiv": "1812.02206",
 		"ads": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.486.1156J/abstract"
 	}
 ]
