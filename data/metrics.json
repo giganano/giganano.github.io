@@ -1,10 +1,10 @@
 {
     "data": {
-        "pubs": "20",
+        "pubs": "21",
         "lead_author": "7",
         "co_author": "14",
-        "citations": "408",
-        "hindex": "10",
+        "citations": "440",
+        "hindex": "11",
         "talks": "10"
     }
 }
