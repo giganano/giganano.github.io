@@ -8,7 +8,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2404.08765",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240408765W/abstract"
+		"bibcode": "2024arXiv240408765W"
 	},
 	{
 		"title": "Galactic Chemical Evolution Models Favor an Extended Type Ia Supernova Delay-Time Distribution",
@@ -19,7 +19,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2404.08059",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240408059D/abstract"
+		"bibcode": "2024arXiv240408059D"
 	},
 	{
 		"title": "The APO-K2 Catalog. II. Accurate Stellar Ages for Red Giant Branch Stars Across the Milky Way",
@@ -30,7 +30,7 @@
 		"page": 208,
 		"status": "accepted",
 		"arxiv": "2403.16250",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240316250W/abstract"
+		"bibcode": "2024arXiv240316250W"
 	},
 	{
 		"title": "Nature vs. Nurture: Distinguishing effects from stellar processing and chemical evolution on carbon and nitrogen in red giant stars",
@@ -41,7 +41,7 @@
 		"page": 149,
 		"status": "accepted",
 		"arxiv": "2403.03249",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv240303249R/abstract"
+		"bibcode": "2024arXiv240303249R"
 	},
 	{
 		"title": "The Scale of Stellar Yields: Implications of the Measured Mean Iron Yield of Core Collapse Supernovae",
@@ -52,7 +52,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2309.05719",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2023arXiv230905719W/abstract"
+		"bibcode": "2023arXiv230905719W"
 	},
 	{
 		"title": "Untangling the Sources of Abundance Dispersion in Low-Metallicity Stars",
@@ -63,7 +63,7 @@
 		"page": 47,
 		"status": "accepted",
 		"arxiv": "2210.01821",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...47G/abstract"
+		"bibcode": "2023ApJ...944...47G"
 	},
 	{
 		"title": "Birth of the Galactic Disk Revealed by the H3 Survey",
@@ -74,7 +74,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2204.02989",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220402989C/abstract"
+		"bibcode": "2022arXiv220402989C"
 	},
 	{
 		"title": "Primordial Helium-3 Redux: The Helium Isotope Ratio of the Orion Nebula",
@@ -85,7 +85,7 @@
 		"page": 60,
 		"status": "accepted",
 		"arxiv": "2203.11256",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220311256C/abstract"
+		"bibcode": "2022arXiv220311256C"
 	},
 	{
 		"title": "Residual Abundances in GALAH-DR3: Implications for Nucleosynthesis and Identification of Unique Stellar Populations",
@@ -96,7 +96,7 @@
 		"page": 23,
 		"status": "accepted",
 		"arxiv": "2110.06240",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021arXiv211006240G/abstract"
+		"bibcode": "2021arXiv211006240G"
 	},
 	{
 		"title": "Chemical Cartography with APOGEE: Mapping Disk Populations with a Two-Process Model and Residual Abundances",
@@ -107,7 +107,7 @@
 		"page": 32,
 		"status": "accepted",
 		"arxiv": "2108.08860",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022ApJS..260...32W/abstract"
+		"bibcode": "2022ApJS..260...32W"
 	},
 	{
 		"title": "CNO dredge-up in a sample of APOGEE/Kepler red giants: tests of stellar models and galactic evolutionary trends of N/O and C/N",
@@ -118,7 +118,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2106.03912",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021arXiv210603912V/abstract"
+		"bibcode": "2021arXiv210603912V"
 	},
 	{
 		"title": "The Impact of Black Hole Formation on Population-averaged Supernova Yields",
@@ -129,7 +129,7 @@
 		"page": 73,
 		"status": "accepted",
 		"arxiv": "2103.09837",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021ApJ...921...73G/abstract"
+		"bibcode": "2021ApJ...921...73G"
 	},
 	{
 		"title": "Nucleosynthesis signatures of neutrino-driven winds from proto-neutron stars: a perspective from chemical evolution models",
@@ -140,7 +140,7 @@
 		"page": 3499,
 		"status": "accepted",
 		"arxiv": "2102.04920",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.3499V/abstract"
+		"bibcode": "2021MNRAS.508.3499V"
 	},
 	{
 		"title": "The Similarity of Abundance Ratio Trends and Nucleosynthesis Patterns in the Milky Way Disk and Bulge",
@@ -151,7 +151,7 @@
 		"page": 77,
 		"status": "accepted",
 		"arxiv": "2009.05063",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021ApJ...909...77G/abstract"
+		"bibcode": "2021ApJ...909...77G"
 	}
 ]
 

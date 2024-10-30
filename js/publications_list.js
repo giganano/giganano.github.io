@@ -44,7 +44,9 @@ function generateList(section) {
 				data[i]["refline"] = journalInfo(data[i]);
 				HTML += `
 <li class="pub-item">
-	<a href="${data[i]["ads"]}" target="_blank" class="title">
+	<a href="https://ui.adsabs.harvard.edu/abs/${data[i]["bibcode"]}/abstract"
+		target="_blank"
+		class="title">
 		${data[i]["title"]}
 	</a>
 	<div class="authors">

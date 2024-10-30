@@ -8,7 +8,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2410.13256",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2024arXiv241013256J/abstract"
+		"bibcode": "2024arXiv241013256J"
 	},
 	{
 		"title": "Dwarf galaxy archaeology from chemical abundances and star formation histories",
@@ -19,7 +19,7 @@
 		"page": 5084,
 		"status": "accepted",
 		"arxiv": "2210.01816",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001816J/abstract"
+		"bibcode": "2022arXiv221001816J"
 	},
 	{
 		"title": "Binaries drive high Type Ia supernova rates in dwarf galaxies",
@@ -30,7 +30,7 @@
 		"page": 5911,
 		"status": "accepted",
 		"arxiv": "2210.01818",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv221001818J/abstract"
+		"bibcode": "2022arXiv221001818J"
 	},
 	{
 		"title": "Empirical constraints on the nucleosynthesis of nitrogen",
@@ -41,7 +41,7 @@
 		"page": 782,
 		"status": "accepted",
 		"arxiv": "2202.04666",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2022arXiv220204666J/abstract"
+		"bibcode": "2022arXiv220204666J"
 	},
 	{
 		"title": "Stellar migration and chemical enrichment in the Milky Way disc: a hybrid model",
@@ -52,7 +52,7 @@
 		"page": 4484,
 		"status": "accepted",
 		"arxiv": "2103.09838",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4484J/abstract"
+		"bibcode": "2021MNRAS.508.4484J"
 
 	},
 	{
@@ -64,7 +64,7 @@
 		"page": 1364,
 		"status": "accepted",
 		"arxiv": "1911.02598",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.1364J/abstract"
+		"bibcode": "2020MNRAS.498.1364J"
 	},
 	{
 		"title": "The secondary spin bias of dark matter halos",
@@ -75,7 +75,7 @@
 		"page": 1156,
 		"status": "accepted",
 		"arxiv": "1812.02206",
-		"ads": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.486.1156J/abstract"
+		"bibcode": "2019MNRAS.486.1156J"
 	}
 ]
 
