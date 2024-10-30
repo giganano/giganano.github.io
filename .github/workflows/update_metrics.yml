@@ -23,6 +23,12 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Install Dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
+
       - name: Check for Updates and Push to Origin if Necessary
         shell: bash
         run: |
