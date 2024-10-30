@@ -11,13 +11,16 @@ ARGV
 """
 
 from subprocess import Popen, PIPE
+import requests
+import warnings
 import json
 import sys
 import os
 
-ALL_PAPERS_LIBID = "rIqfpNKmSdaOMIAhkk2VzQ"
-LEAD_AUTHOR_PAPERS_LIBID = "go1WSseGTMeft2SxdESAgw"
-COAUTHOR_PAPERS_LIBID = "sZkjSf_XRSKSRykqBe6B_w"
+# From a previous implementation of this script, kept here for record
+# ALL_PAPERS_LIBID = "rIqfpNKmSdaOMIAhkk2VzQ"
+# LEAD_AUTHOR_PAPERS_LIBID = "go1WSseGTMeft2SxdESAgw"
+# COAUTHOR_PAPERS_LIBID = "sZkjSf_XRSKSRykqBe6B_w"
 
 SUBPROC_KWARGS = {
 	"stdout": PIPE,
@@ -29,7 +32,8 @@ SUBPROC_KWARGS = {
 
 def bibcodes(spec = "all"):
 	r"""
-	Get the list of bibcodes in a given ADS library.
+	Get the list of bibcodes for all papers, first/second author, or
+	contributing author.
 
 	Parameters
 	----------
@@ -44,24 +48,16 @@ def bibcodes(spec = "all"):
 		A ``list`` containing strings of the bibcodes of each paper in the
 		corresponding library.
 	"""
-	cmd = """\
-curl -H "Authorization: Bearer %s" \
-https://api.adsabs.harvard.edu/v1/biblib/libraries/%s""" % (sys.argv[1],
-	{
-		"all": ALL_PAPERS_LIBID,
-		"first-author": LEAD_AUTHOR_PAPERS_LIBID,
-		"co-author": COAUTHOR_PAPERS_LIBID
-	}[spec])
-
-	while True:
-		with Popen(cmd, **SUBPROC_KWARGS) as proc:
-			out, err = proc.communicate()
-			if not timedout(out):
-				data = json.loads(out)
-				break
-			else:
-				continue
-	return data["documents"]
+	if spec == "all":
+		return bibcodes(spec = "first-author") + bibcodes(spec = "co-author")
+	else:
+		paths = {
+			"first-author": "data/publications/leadauthor.json",
+			"co-author": "data/publications/coauthor.json"
+		}
+		with open(paths[spec], 'r') as f:
+			data = json.loads(f.read())
+		return [data[i]["bibcode"] for i in range(len(data))]
 
 
 def updated_metrics():
@@ -73,22 +69,18 @@ def updated_metrics():
 	metrics : ``dict``
 		A dictionary produced from the ADS API's returned JSON string.
 	"""
-	docs = bibcodes()
-	cmd = """\
-curl -H "Authorization: Bearer %s" -H "Content-type: application/json" \
-https://api.adsabs.harvard.edu/v1/metrics \
--X POST -d '{"bibcodes": %s}'""" % (sys.argv[1], str(docs).replace('\'', '\"'))
-	
-	while True:
-		with Popen(cmd, **SUBPROC_KWARGS) as proc:
-			out, err = proc.communicate()
-			if not timedout(out):
-				metrics = json.loads(out)
-				break
-			else:
-				continue
+	payload = {"bibcodes": bibcodes(spec = "all")}
+	metrics = requests.post("https://api.adsabs.harvard.edu/v1/metrics",
+		headers = {
+			"Authorization": "Bearer " + sys.argv[1],
+			"Content-type": "application/json"
+		},
+		data = json.dumps(payload)
+	).json()
+	if len(metrics["skipped bibcodes"]): warnings.warn("""\
+Some bibcodes were skipped: %s""" % (metrics["skipped bibcodes"]))
 	return {
-		"pubs": len(docs),
+		"pubs": len(payload["bibcodes"]),
 		"lead_author": len(bibcodes(spec = "first-author")),
 		"co_author": len(bibcodes(spec = "co-author")),
 		"citations": metrics["citation stats"]["total number of citations"],

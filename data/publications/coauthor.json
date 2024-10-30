@@ -19,7 +19,7 @@
 		"page": null,
 		"status": "under peer review",
 		"arxiv": "2404.08059",
-		"bibcode": "2024arXiv240408059D"
+		"bibcode": "2024ApJ...973...55D"
 	},
 	{
 		"title": "The APO-K2 Catalog. II. Accurate Stellar Ages for Red Giant Branch Stars Across the Milky Way",
@@ -30,7 +30,7 @@
 		"page": 208,
 		"status": "accepted",
 		"arxiv": "2403.16250",
-		"bibcode": "2024arXiv240316250W"
+		"bibcode": "2024AJ....167..208W"
 	},
 	{
 		"title": "Nature vs. Nurture: Distinguishing effects from stellar processing and chemical evolution on carbon and nitrogen in red giant stars",
@@ -41,18 +41,18 @@
 		"page": 149,
 		"status": "accepted",
 		"arxiv": "2403.03249",
-		"bibcode": "2024arXiv240303249R"
+		"bibcode": "2024MNRAS.530..149R"
 	},
 	{
 		"title": "The Scale of Stellar Yields: Implications of the Measured Mean Iron Yield of Core Collapse Supernovae",
 		"authors": "Weinberg D.H., Griffith E.J., Johnson J.W., Thompson T.A.",
 		"year": 2023,
 		"journal": "AAS Journals",
-		"volume": null,
-		"page": null,
+		"volume": 973,
+		"page": 122,
 		"status": "under peer review",
 		"arxiv": "2309.05719",
-		"bibcode": "2023arXiv230905719W"
+		"bibcode": "2024ApJ...973..122W"
 	},
 	{
 		"title": "Untangling the Sources of Abundance Dispersion in Low-Metallicity Stars",
@@ -85,7 +85,7 @@
 		"page": 60,
 		"status": "accepted",
 		"arxiv": "2203.11256",
-		"bibcode": "2022arXiv220311256C"
+		"bibcode": "2022ApJ...932...60C"
 	},
 	{
 		"title": "Residual Abundances in GALAH-DR3: Implications for Nucleosynthesis and Identification of Unique Stellar Populations",
@@ -96,7 +96,7 @@
 		"page": 23,
 		"status": "accepted",
 		"arxiv": "2110.06240",
-		"bibcode": "2021arXiv211006240G"
+		"bibcode": "2022ApJ...931...23G"
 	},
 	{
 		"title": "Chemical Cartography with APOGEE: Mapping Disk Populations with a Two-Process Model and Residual Abundances",
