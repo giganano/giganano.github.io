@@ -59,6 +59,45 @@
 	height: auto;
 }
 
+.collaborators .container .circular-landscape img.dfeuillet {
+	object-position: 0px -40px;
+}
+
+.collaborators .container .circular-landscape img.rrampalli {
+	object-position: -25px 0px;
+	height: 250px;
+	width: auto;
+}
+
+.collaborators .container .circular-landscape img.fvincenzo {
+	object-position: 0px -20px;
+}
+
+.collaborators .container .circular-landscape img.abredall {
+	object-position: -50px -50px;
+	width: 260px;
+	height: 480px;
+}
+
+.collaborators .container .circular-landscape img.dtessmer {
+	object-position: -50px -100px;
+	width: 400px;
+}
+
+.collaborators .container .circular-landscape img.dboyea {
+	object-position: -50px 0px;
+	width: 360px;
+	height: 338px;
+}
+
+.collaborators .container .circular-landscape img.mweller {
+	object-position: 0px -75px;
+}
+
+.collaborators .container .circular-landscape img.ckochanek {
+	object-position: 0px -20px;
+}
+
 .collaborators .container div.person .section-content {
 	margin-left: auto;
 	margin-right: auto;
@@ -88,6 +127,14 @@
 	.collaborators .container .circular-landscape img {
 		width: 350px;
 		height: auto;
+	}
+
+	.collaborators .container .circular-landscape img.rrampalli {
+		height: 350px;
+	}
+
+	.collaborators .container .circular-landscape img.dtessmer {
+		width: 520px;
 	}
 
 	.collaborators .container .circular-landscape img.dboyea {
