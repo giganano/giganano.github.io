@@ -59,23 +59,6 @@
 	height: auto;
 }
 
-.collaborators .container .circular-landscape img.mweller {
-	object-position: 0px -50px;
-}
-
-.collaborators .container .circular-landscape img.dboyea {
-	object-position: -50px 0px;
-	width: 360px;
-	height: 338px;
-}
-
-.collaborators .container .circular-landscape img.abredall {
-	/*object-position: -100px -50px;*/
-	object-position: -50px -50px;
-	width: 360px;
-	height: 480px;
-}
-
 .collaborators .container div.person .section-content {
 	margin-left: auto;
 	margin-right: auto;
