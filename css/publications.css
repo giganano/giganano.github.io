@@ -43,6 +43,14 @@
 	margin-bottom: 10px;
 }
 
+#pubs-lead-author ol {
+	margin-left: 20px;
+}
+
+#pubs-co-author ol {
+	margin-left: 20px;
+}
+
 .pub-item .title {
 	color: #DD0000;
 	font-style: italic;
@@ -101,10 +109,6 @@
 @media screen and (max-width: 500px) {
 
 	.pubs-section-head {
-		font-size: 45px;
-	}
-
-	.pub-item {
 		font-size: 45px;
 	}
 
