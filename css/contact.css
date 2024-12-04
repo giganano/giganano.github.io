@@ -26,9 +26,11 @@
 
 #contact .contact-line {
 	color: white;
-	font-family: "Raleway";
+	font-family: "Arial";
 	font-size: 28px;
 	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 #contact .container {
