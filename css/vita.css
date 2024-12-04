@@ -141,6 +141,9 @@
 	padding-top: 0px;
 	padding-bottom: 0px;
 	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 40px;
 }
 
 #vita .awards-honors .award-or-honor .logo.award i {
@@ -393,8 +396,16 @@
 	}
 
 	#vita .awards-honors .award-or-honor .logo {
-		margin-left: calc(50% - 50px);
-		margin-right: calc(50% - 50px);
+		margin-left: calc(50% - 80px);
+		margin-right: calc(50% - 80px);
+		width: 160px;
+		height: 160px;
+	}
+
+	#vita .awards-honors .award-or-honor .logo i {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 80px;
 	}
 
 	#research-metrics .metrics .container .item {
