@@ -9,8 +9,37 @@
  * This style sheet implements these simple breakpoints for responsive design.
  */
 
-#dei .use-background-image {
-	background-size: 30vw;
+#dei #cassi {
+	position: relative;
+	display: flex;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	max-width: 60vw;
+}
+
+#dei #cassi #logos {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;
+	margin-top: auto;
+	margin-bottom: auto;
+	min-width: 40%;
+}
+
+#dei #cassi #logos img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30vw;
+	width: 90%;
+}
+
+#dei #cassi .section-content {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 #dei #polaris .polaris-logo {
@@ -73,8 +102,53 @@
 	height: 20vh;
 }
 
+/* wide tablets */
+@media screen and (max-width: 1100px) {
+
+	#dei #cassi {
+		display: inline;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#dei #cassi #logos {
+		display: flex;
+		grid-template-columns: none;
+		grid-template-rows: none;
+	}
+
+	#dei #cassi #logos img {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
+		height: 100%;
+	}
+
+	#dei #cassi #logos img.cassi-logo {
+		margin-left: 15vw;
+		margin-right: auto;
+	}
+
+	#dei #cassi #logos img.calbridge-logo {
+		margin-right: 15vw;
+		margin-left: auto;
+	}
+
+	#dei #cassi .section-content {
+		margin-left: 20vw;
+		margin-right: 20vw;
+	}
+
+
+}
+
 /* tablets */
 @media screen and (max-width: 980px) {
+
+	#dei #cassi .section-content {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
 
 	#dei #polaris .polaris-logo {
 		width: 70%;
@@ -106,7 +180,7 @@
 
 	#dei #polaris #ursa .section-content {
 		margin-left: 10vw;
-		margin-right: 10vw;       
+		margin-right: 10vw;
 	}
 
 	#dei #polaris #ursa img.ursa-logo {
@@ -120,6 +194,25 @@
 
 /* smartphones */
 @media screen and (max-width: 500px) {
+
+	#dei #cassi #logos {
+		display: grid;
+		grid-template-rows: 2fr;
+		grid-template-columns: 1fr;
+		padding-bottom: 50px;
+	}
+
+	#dei #cassi #logos img {
+		min-width: 85vw;
+	}
+
+	#dei #cassi #logos img.cassi-logo {
+		margin-left: auto;
+	}
+
+	#dei #cassi #logos img.calbridge-logo {
+		margin-right: auto;
+	}
 
 	#dei #polaris .polaris-logo {
 		width: 90%;
