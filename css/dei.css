@@ -139,6 +139,41 @@
 		margin-right: 20vw;
 	}
 
+	#dei #polaris #mentorship-course {
+		display: inline;
+	}
+
+	#dei #polaris #mentorship-course img.polaris-roundel.top {
+		display: block;
+		width: 30vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#dei #polaris #mentorship-course img.polaris-roundel.bottom {
+		display: none;
+	}
+
+	#dei #polaris #mentorship-course .section-content {
+		margin-left: 20vw;
+		margin-right: 20vw;
+	}
+
+	#dei #polaris #ursa {
+		display: inline;
+	}
+
+	#dei #polaris #ursa img.ursa-logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0;
+	}
+
+	#dei #polaris #ursa .section-content {
+		margin-left: 20vw;
+		margin-right: 20vw;
+	}
 
 }
 
@@ -154,40 +189,14 @@
 		width: 70%;
 	}
 
-	#dei #polaris #mentorship-course {
-		display: inline;
-	}
-
 	#dei #polaris #mentorship-course .section-content {
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
 
-	#dei #polaris #mentorship-course img.polaris-roundel.top {
-		display: block;
-		width: 50vw;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#dei #polaris #mentorship-course img.polaris-roundel.bottom {
-		display: none;
-	}
-
-	#dei #polaris #ursa {
-		display: inline;
-	}
-
 	#dei #polaris #ursa .section-content {
 		margin-left: 10vw;
 		margin-right: 10vw;
-	}
-
-	#dei #polaris #ursa img.ursa-logo {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-right: 0;
 	}
 
 }
@@ -218,14 +227,13 @@
 		width: 90%;
 	}
 
-	#dei #polaris #mentorship-course .polaris-roundel {
-		width: 80vw;
+	#dei #polaris #mentorship-course img.polaris-roundel.top {
+		width: 50vw;
 	}
 
 	#dei #polaris #ursa .ursa-logo {
 		width: 100vw;
 	}
-
 
 }
 
