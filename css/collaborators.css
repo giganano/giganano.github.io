@@ -59,6 +59,10 @@
 	height: auto;
 }
 
+.collaborators .container .circular-landscape img.rcooke {
+	object-position: 0px -25px;
+}
+
 .collaborators .container .circular-landscape img.dfeuillet {
 	object-position: 0px -40px;
 }
