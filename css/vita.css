@@ -37,29 +37,17 @@
 	margin-right: 20%;
 }
 
-#vita .academic-appts {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-#vita .academic-appts .appt {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 20%;
-	margin-right: 5%;
-	width: 75%;
-	display: grid;
-	grid-template-columns: 1fr 7fr;
-	grid-column-gap: 15px;
-}
-
-#vita .academic-appts .appt .dates {
+#vita .date-box {
 	height: 75px;
 	width: 200px;
 	background-color: #DD0000;
 	border-radius: 20px;
 	display: inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#vita .date-box .dates {
 	text-align: center;
 	line-height: 75px;
 	font-family: "Raleway";
@@ -68,7 +56,7 @@
 	color: white;
 }
 
-#vita .academic-appts .appt .section-content {
+#vita .section-content {
 	text-align: left;
 	font-style: normal;
 	color: white;
@@ -78,8 +66,25 @@
 	padding-bottom: 0;
 }
 
-#vita .academic-appts .appt .section-content .details {
+#vita .details {
 	color: #a1a1a1;
+}
+
+#vita .academic-appts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#vita .academic-appts .appt {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20vw;
+	margin-right: 5vw;
+	max-width: 75vw;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	grid-column-gap: 15px;
 }
 
 #vita .education {
@@ -91,40 +96,12 @@
 #vita .education .school {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 20%;
-	margin-right: 5%;
-	width: 75%;
+	margin-left: 20vw;
+	margin-right: 5vw;
+	max-width: 75vw;
 	display: grid;
 	grid-template-columns: 1fr 7fr;
 	grid-column-gap: 15px;
-}
-
-#vita .education .school .dates {
-	height: 75px;
-	width: 200px;
-	background-color: #DD0000;
-	border-radius: 20px;
-	display: inline-block;
-	text-align: center;
-	line-height: 75px;
-	font-family: "Raleway";
-	font-style: bold;
-	font-size: 25px;
-	color: white;
-}
-
-#vita .education .school .section-content {
-	text-align: left;
-	font-style: normal;
-	color: white;
-	margin-left: 0;
-	margin-right: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-#vita .education .school .section-content .details {
-	color: #a1a1a1;
 }
 
 #vita .awards-honors {
@@ -137,9 +114,9 @@
 #vita .awards-honors .award-or-honor {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 20%;
-	margin-right: 5%;
-	width: 75%;
+	margin-left: 20vw;
+	margin-right: 5vw;
+	max-width: 75vw;
 	display: grid;
 	grid-template-columns: 1fr 7fr;
 	grid-column-gap: 15px;
@@ -170,9 +147,10 @@
 	top: -5px;
 }
 
-#vita .awards-honors .award-or-honor .vertical-center {
+#vita .vertical-center {
+	margin-top: auto;
+	margin-bottom: auto;
 	vertical-align: middle;
-	line-height: 100px;
 }
 
 #vita .awards-honors .award-or-honor .section-content {
@@ -188,7 +166,6 @@
 
 #vita .awards-honors .award-or-honor .section-content .details {
 	color: #a1a1a1;
-	/*font-style: italic;*/
 }
 
 #research-metrics {
@@ -267,9 +244,24 @@
 /* narrower laptop displays */
 @media screen and (max-width: 1100px) {
 
+	#vita .academic-appts .appt {
+		margin-left: 10vw;
+		max-width: 85vw;
+	}
+
+	#vita .education .school {
+		margin-left: 10vw;
+		max-width: 85vw;
+	}
+
+	#vita .awards-honors .award-or-honor {
+		margin-left: 10vw;
+		max-width: 85vw;
+	}
+
 	#research-metrics .metrics .container {
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	#research-metrics .metrics .container .item {
@@ -302,38 +294,22 @@
 	}
 
 	#vita .academic-appts .appt {
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 90%;
-		grid-template-columns: 1fr 5fr;
-		grid-column-gap: 20px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		max-width: 90vw;
 	}
 
 	#vita .education .school {
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 90%;
-		grid-template-columns: 1fr 5fr;
-		grid-column-gap: 20px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-
-	#vita .awards-honors {
-		display: inline;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		max-width: 90vw;
 	}
 
 	#vita .awards-honors .award-or-honor {
-		height: auto;
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 90%;
-		grid-template-columns: 1fr 5fr;
-		grid-column-gap: 20px;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		max-width: 90vw;
+		grid-template-columns: 1 17fr;
 	}
 
 	#research-metrics .metrics .container {
@@ -364,68 +340,54 @@
 
 	#vita .vita-category {
 		text-align: center;
-		/*margin-left: 0;*/
 		font-size: 50px;
+	}
+
+	#vita .date-box {
+		margin-left: calc(50% - 100px);
+		margin-right: calc(50% - 100px);
+	}
+
+	#vita .section-content {
+		padding-top: 20px;
+		text-align: center;
 	}
 
 	#vita .academic-appts .appt {
-		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr;
-		grid-row-gap: 20px;
+		display: inline;
 		margin-bottom: 50px;
 		margin-top: 50px;
-	}
-
-	#vita .academic-appts .appt .dates {
 		margin-left: auto;
 		margin-right: auto;
-		height: 100px;
-		width: 400px;
-		font-size: 50px;
-		line-height: 100px;
+		max-width: 95%;
 	}
 
-	#vita .academic-appts .appt .section-content {
-		text-align: center;
-	}
 
 	#vita .education .school {
-		justify-content: center;
-		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr;
-		grid-row-gap: 20px;
+		display: inline;
 		margin-bottom: 50px;
 		margin-top: 50px;
-	}
-
-	#vita .education .school .dates {
 		margin-left: auto;
 		margin-right: auto;
-		height: 100px;
-		width: 400px;
-		font-size: 50px;
-		line-height: 100px;
-	}
-
-	#vita .education .school .section-content {
-		text-align: center;
+		max-width: 95%;
 	}
 
 	#vita .awards-honors .award-or-honor {
-		grid-template-columns: 1fr;
-		grid-template-rows: 100px 1fr;
-		grid-row-gap: 20px;
+		display: inline;
 		margin-top: 50px;
 		margin-bottom: 50px;
-	}
-
-	#vita .awards-honors .award-or-honor .logo {
 		margin-left: auto;
 		margin-right: auto;
+		max-width: 95%;
 	}
 
 	#vita .awards-honors .award-or-honor .section-content {
-		text-align: center;
+		padding-top: 20px;
+	}
+
+	#vita .awards-honors .award-or-honor .logo {
+		margin-left: calc(50% - 50px);
+		margin-right: calc(50% - 50px);
 	}
 
 	#research-metrics .metrics .container .item {
