@@ -74,7 +74,8 @@
 }
 
 .collaborators .container .circular-landscape img.fvincenzo {
-	object-position: 0px -20px;
+	width: 300px;
+	height: auto;
 }
 
 .collaborators .container .circular-landscape img.abredall {
@@ -135,6 +136,10 @@
 
 	.collaborators .container .circular-landscape img.rrampalli {
 		height: 350px;
+	}
+
+	.collaborators .container .circular-landscape img.fvincenzo {
+		width: 400px;
 	}
 
 	.collaborators .container .circular-landscape img.dtessmer {
