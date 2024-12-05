@@ -28,6 +28,7 @@ html, body {
 	min-height: 100%;
 	min-width: 100%;
 	font-family: "Times New Roman";
+	overflow-x: hidden; /* doesn't display anything beyond the page width */
 }
 
 html {

@@ -18,7 +18,6 @@ header.hero {
 	position: relative;
 	display: table;
 	z-index:  1;
-	min-width: 100%;
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
