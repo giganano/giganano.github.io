@@ -78,11 +78,11 @@
 	height: auto;
 }
 
-.collaborators .container .circular-landscape img.abredall {
+/*.collaborators .container .circular-landscape img.abredall {
 	object-position: -50px -50px;
 	width: 260px;
 	height: 480px;
-}
+}*/
 
 .collaborators .container .circular-landscape img.dtessmer {
 	object-position: -50px -100px;
@@ -95,8 +95,10 @@
 	height: 338px;
 }
 
-.collaborators .container .circular-landscape img.mweller {
-	object-position: 0px -75px;
+.collaborators .container .circular-landscape img.ldubay {
+	object-position: -15px 0px;
+	height: 250px;
+	width: auto;
 }
 
 .collaborators .container .circular-landscape img.ckochanek {
@@ -149,13 +151,17 @@
 	.collaborators .container .circular-landscape img.dboyea {
 		object-position: -75px 0px;
 		width: 480px;
-		height: 451px;
+		height: auto;
 	}
 
-	.collaborators .container .circular-landscape img.abredall {
+	.collaborators .container .circular-landscape img.ldubay {
+		height: 350px;
+	}
+
+/*	.collaborators .container .circular-landscape img.abredall {
 		width: 450px;
 		height: 600px;
-	}
+	}*/
 
 	.collaborators .container .section-content {
 		font-size: 45px;
