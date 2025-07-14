@@ -1,34 +1,56 @@
 [
 	{
-		"title": "Many Elements Matter: Detailed Abundance Patterns Reveal Star-formation and Enrichment Differences among Milky Way Structural Components",
-		"authors": "Griffith E.J., Hogg D.W., Hasselquist S., Johnson J.W., Price-Whelan A., Sit T., Stone-Martinez A., Weinberg D.H.",
-		"year": 2024,
+		"title": "The Nineteenth Data Release of the Sloan Digital Sky Survey",
+		"authors": "SDSS Collaboration, et al., incl. Johnson J.W.",
+		"year": 2025,
 		"journal": "AAS Journals",
 		"volume": null,
 		"page": null,
 		"status": "under peer review",
+		"arxiv": "2507.07093",
+		"bibcode": "2025arXiv250707093S"
+	},
+	{
+		"title": "Sloan Digital Sky Survey-V: Pioneering Panoptic Spectroscopy",
+		"authors": "Kollmeier J.A., et al., incl. Johnson J.W.",
+		"year": 2025,
+		"journal": "AJ",
+		"volume": null,
+		"page": null,
+		"status": "under peer review",
+		"arxiv": "2507.06989",
+		"bibcode": "2025arXiv250706989K"
+	},
+	{
+		"title": "Many Elements Matter: Detailed Abundance Patterns Reveal Star-formation and Enrichment Differences among Milky Way Structural Components",
+		"authors": "Griffith E.J., Hogg D.W., Hasselquist S., Johnson J.W., Price-Whelan A., Sit T., Stone-Martinez A., Weinberg D.H.",
+		"year": 2025,
+		"journal": "AJ",
+		"volume": 169,
+		"page": 280,
+		"status": "accepted",
 		"arxiv": "2410.22121",
-		"bibcode": "2024arXiv241022121G"
+		"bibcode": "2025AJ....169..280G"
 	},
 	{
 		"title": "Modeling the Galactic Chemical Evolution of Helium",
 		"authors": "Weller M.K., Weinberg D.H., Johnson J.W.",
-		"year": 2024,
+		"year": 2025,
 		"journal": "MNRAS",
-		"volume": null,
-		"page": null,
-		"status": "under peer review",
+		"volume": 583,
+		"page": 1517,
+		"status": "accepted",
 		"arxiv": "2404.08765",
-		"bibcode": "2024arXiv240408765W"
+		"bibcode": "2025MNRAS.538.1517W"
 	},
 	{
 		"title": "Galactic Chemical Evolution Models Favor an Extended Type Ia Supernova Delay-Time Distribution",
 		"authors": "Dubay L.O., Johnson J.A. Johnson J.W.",
 		"year": 2024,
-		"journal": "AAS Journals",
-		"volume": null,
-		"page": null,
-		"status": "under peer review",
+		"journal": "ApJ",
+		"volume": 973,
+		"page": 55,
+		"status": "accepted",
 		"arxiv": "2404.08059",
 		"bibcode": "2024ApJ...973...55D"
 	},
@@ -61,7 +83,7 @@
 		"journal": "AAS Journals",
 		"volume": 973,
 		"page": 122,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": "2309.05719",
 		"bibcode": "2024ApJ...973..122W"
 	},
