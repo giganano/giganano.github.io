@@ -46,13 +46,13 @@
 	{
 		"title": "Sloan Digital Sky Survey-V: Pioneering Panoptic Spectroscopy",
 		"authors": "Kollmeier J.A., et al., incl. Johnson J.W.",
-		"year": 2025,
+		"year": 2026,
 		"journal": "AJ",
-		"volume": null,
-		"page": null,
-		"status": "under peer review",
+		"volume": 171,
+		"page": 52,
+		"status": "accepted",
 		"arxiv": "2507.06989",
-		"bibcode": "2025arXiv250706989K"
+		"bibcode": "2026AJ....171...52K"
 	},
 	{
 		"title": "Many Elements Matter: Detailed Abundance Patterns Reveal Star-formation and Enrichment Differences among Milky Way Structural Components",
