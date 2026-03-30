@@ -1,5 +1,16 @@
 [
 	{
+		"title": "Scylla at APOGEE: The Impact of Starbursts on the Chemical Evolution of the Magellanic Clouds",
+		"authors": "Escala I., et al., incl. Johnson J.W.",
+		"year": 2026,
+		"journal": "AAS Journals",
+		"volume": null,
+		"page": null,
+		"status": "accepted",
+		"arxiv": "2603.25909",
+		"bibcode": "2026arxiv260325909E"
+	},
+	{
 		"title": "[C/N] Ages for Red Giants and their Implications for Galactic Archaeology",
 		"authors": "Roberts J.D., Pinsonneault M.H., Johnson J.A., Dubay L.O., Johnson J.W.",
 		"year": 2025,
@@ -17,7 +28,7 @@
 		"journal": "AAS Journals",
 		"volume": null,
 		"page": null,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": "2508.00988",
 		"bibcode": "2025arXiv250800988D"
 	},
@@ -26,9 +37,9 @@
 		"authors": "Otto J.M., et al., incl. Johnson J.W.",
 		"year": 2025,
 		"journal": "AAS Journals",
-		"volume": null,
-		"page": null,
-		"status": "under peer review",
+		"volume": 171,
+		"page": 91,
+		"status": "accepted",
 		"arxiv": "2507.07264",
 		"bibcode": "2025arXiv250707264O"
 	},
