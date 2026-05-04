@@ -55,10 +55,14 @@ function generateList(section) {
 	<div class="pub-details">
 		<div class="journal">
 			${data[i]["refline"]}
-		</div>
+		</div>`;
+				if (data[i]["arxiv"] != null) {
+					HTML += `
 		<div class="arxiv">
 			arxiv:${data[i]["arxiv"]}
-		</div>
+		</div>`;
+				} else {}
+				HTML += `
 	</div>
 </li>`;
 			}
