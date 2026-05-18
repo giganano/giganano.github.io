@@ -60,9 +60,9 @@ function updateCount(counter, metrics, currentValue) {
 		if (currentValue < target) {
 			currentValue += 1.0 / cycles * target;
 			setTimeout(updateCount, 0, counter, metrics, currentValue);
-			counter.innerText = Math.floor(currentValue);
+			counter.innerText = Math.floor(currentValue).toLocaleString();
 		} else {
-			counter.innerText = target;
+			counter.innerText = target.toLocaleString();
 		}
 	} else {
 		setTimeout(updateCount, 100, counter, metrics, currentValue);

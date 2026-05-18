@@ -185,8 +185,8 @@
 	display: grid;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
 	grid-template-columns: repeat(6, 1fr);
@@ -201,7 +201,7 @@
 	margin-right: auto;
 	color: white;
 	background: rgba(221, 0, 0, 0.6); /* equivalent to #DD0000 */
-	width: 150px;
+	width: 170px;
 	height: 280px;
 	border: 2px solid white;
 	border-radius: 30px;
@@ -414,7 +414,6 @@
 
 	#research-metrics .metrics .container .item .counter {
 		font-size: 100px;
-		width: 160px;
 		height: 160px;
 		line-height: 160px;
 	}
