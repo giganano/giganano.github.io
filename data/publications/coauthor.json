@@ -1,14 +1,25 @@
 [
 	{
-		"title": "Galactic Genesis Decoded Abundances I: shared disk enrichment patterns",
+		"title": "Milky Way Mapper Decoded Abundances II: From patterns to paths",
 		"authors": "Ness, M.K., et al., incl. Johnson J.W.",
 		"year": 2026,
 		"journal": "MNRAS",
 		"volume": null,
 		"page": null,
 		"status": "accepted",
-		"arxiv": null,
-		"bibcode": "2026MNRAS.tmp..626N"
+		"arxiv": "2605.21735",
+		"bibcode": "2026arXiv260521735N"
+	},
+	{
+		"title": "Milky Way Mapper Decoded Abundances I: Shared disk enrichment patterns",
+		"authors": "Ness, M.K., et al., incl. Johnson J.W.",
+		"year": 2026,
+		"journal": "MNRAS",
+		"volume": null,
+		"page": null,
+		"status": "accepted",
+		"arxiv": "2605.20487",
+		"bibcode": "2026arXiv260520487N"
 	},
 	{
 		"title": "Scylla at APOGEE: The Impact of Starbursts on the Chemical Evolution of the Magellanic Clouds",
