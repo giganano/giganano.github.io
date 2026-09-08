@@ -39,7 +39,7 @@
 		"journal": "AAS Journals",
 		"volume": null,
 		"page": null,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": "2510.08688",
 		"bibcode": "2025arXiv251008688J"
 	},
@@ -50,7 +50,7 @@
 		"journal": "AAS Journals",
 		"volume": null,
 		"page": null,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": "2510.05223",
 		"bibcode": "2025arXiv251005223J"
 	},
@@ -61,7 +61,7 @@
 		"journal": "ApJ",
 		"volume": 1002,
 		"page": 127,
-		"status": "under peer review",
+		"status": "accepted",
 		"arxiv": "2509.03577",
 		"bibcode": "2026ApJ..1002..127R"
 	},

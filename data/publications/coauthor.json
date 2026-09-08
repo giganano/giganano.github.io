@@ -1,5 +1,16 @@
 [
 	{
+		"title": "A Broken Clock Is Right Twice A Day: [Ce/Mg] Is Not A Universal Chemical Clock",
+		"authors": "Dubay L.O., et al., incl. Johnson J.W.",
+		"year": 2026,
+		"journal": "AAS Journals",
+		"volume": null,
+		"page": null,
+		"status": "under peer review",
+		"arxiv": "2608.26261",
+		"bibcode": "2026arXiv260826261D"
+	},
+	{
 		"title": "The Twentieth Data Release of the Sloan Digital Sky Survey: First All-Sky BOSS Spectra, eROSITA-SDSS-V Mapper Coordinated Observations, and a Preview of the Local Volume Mapper",
 		"authors": "SDSS Collaboration, et al., incl. Johnson J.W.",
 		"year": 2026,
@@ -12,7 +23,7 @@
 	},
 	{
 		"title": "Milky Way Mapper Decoded Abundances II: From patterns to paths",
-		"authors": "Ness, M.K., et al., incl. Johnson J.W.",
+		"authors": "Ness M.K., et al., incl. Johnson J.W.",
 		"year": 2026,
 		"journal": "MNRAS",
 		"volume": 550,
@@ -23,7 +34,7 @@
 	},
 	{
 		"title": "Milky Way Mapper Decoded Abundances I: Shared disk enrichment patterns",
-		"authors": "Ness, M.K., et al., incl. Johnson J.W.",
+		"authors": "Ness M.K., et al., incl. Johnson J.W.",
 		"year": 2026,
 		"journal": "MNRAS",
 		"volume": 548,
