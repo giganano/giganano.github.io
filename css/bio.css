@@ -10,11 +10,11 @@
  */
 
 #bio #bio-diagram {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-bottom: 10px;
 	display: grid;
-	grid-template-columns: repeat(9, 1fr);
+	grid-template-columns: repeat(11, 1fr);
 	grid-template-rows: 1fr;
 	justify-content: center;
 }
