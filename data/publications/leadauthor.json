@@ -22,6 +22,17 @@
 		"bibcode": "2026MNRAS.550g1155B"
 	},
 	{
+		"title": "That's so Retro: The Gaia-Sausage-Enceladus Merger Trajectory as the Origin of the Chemical Abundance Bimodality in the Milky Way Disk",
+		"authors": "Johnson J.W., Feuillet D.K., Bonaca A., de Brito Silva D.",
+		"year": 2026,
+		"journal": "AAS Journals",
+		"volume": 1010,
+		"page": 87,
+		"status": "accepted",
+		"arxiv": "2510.08688",
+		"bibcode": "2026ApJ..1010...87J"
+	},
+	{
 		"title": "Metals versus Non-metals: Chemical Evolution of Hydrogen and Helium Isotopes in the Milky Way",
 		"authors": "Johnson J.W., Weller M.K., Cooke R.J.",
 		"year": 2025,
@@ -31,17 +42,6 @@
 		"status": "under peer review",
 		"arxiv": "2510.08689",
 		"bibcode": "2025arXiv251008689J"
-	},
-	{
-		"title": "That's so Retro: The Gaia-Sausage-Enceladus Merger Trajectory as the Origin of the Chemical Abundance Bimodality in the Milky Way Disk",
-		"authors": "Johnson J.W., Feuillet D.K., Bonaca A., de Brito Silva D.",
-		"year": 2025,
-		"journal": "AAS Journals",
-		"volume": null,
-		"page": null,
-		"status": "accepted",
-		"arxiv": "2510.08688",
-		"bibcode": "2025arXiv251008688J"
 	},
 	{
 		"title": "Constraints on Radial Gas Flows in the Milky Way Disk Revealed by Large Stellar Age Catalogs",
