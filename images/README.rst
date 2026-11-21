@@ -2,6 +2,8 @@
 Image Sources
 =============
 
+- RealScientists DE: https://bsky.app/profile/realscientists.de
+
 - Galaxy Equations: https://www.openaccessgovernment.org/astrophysics-and-astronomy/126706/
 
 - Gemini North at Sunset: https://www.physics.unlv.edu/~jeffery/astro/telescope/gemini_north_sunset.html
