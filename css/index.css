@@ -18,6 +18,7 @@
 @import "dei.css";
 @import "vita.css";
 @import "bio.css";
+@import "outreach.css";
 @import "contact.css";
 @import "footer.css";
 @import "publications.css";
@@ -179,11 +180,15 @@ span.divider.grey {
 
 
 /* ----- section background colors ----- */
+#research {
+	background-color: #000000;
+}
+
 #talks {
 	background-color: #000000;
 }
 
-#teaching {
+#outreach {
 	background-color: #000000;
 }
 
