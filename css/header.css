@@ -150,7 +150,14 @@ header.hero img {
 	.page-subheader {
 		font-size: 30px;
 	}
-
+/*
+	.bootcamp-cv-pubs {
+		grid-row-gap: 30px;
+		grid-column-gap: 0px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+*/
 }
 
 /* smartphones */
